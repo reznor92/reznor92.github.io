@@ -5,9 +5,7 @@
   src: url("../fonts/BebasNeue Regular.ttf");
   src: url("../fonts/BebasNeue Regular.woff"); }
 
-@font-face {
-  font-family: 'oswald_bold';
-  src: url("../fonts/oswald_bold.ttf"); }
+
 
 * {
   -webkit-box-sizing: border-box;
@@ -37,7 +35,8 @@ header {
   .nav li a {
     font-size: 17px;
     color: #565656;
-    font-family: 'oswald_bold';
+    font-family: 'Oswald';
+    font-weight: 700;
     padding: 48px 17px 47px 16px; }
   .nav li .active-nav {
     color: #fff;
@@ -66,7 +65,8 @@ header {
   .home a {
     font-size: 32px;
     color: #fff;
-    font-family: 'oswald_bold';
+    font-family: 'Oswald';
+    font-weight: 700;
     line-height: 60px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.68); }
     .home a .btn-zakaz {
@@ -88,7 +88,8 @@ header {
 
 .title-h2 {
   font-size: 32px;
-  font-family: 'oswald_bold';
+  font-family: 'Oswald';
+  font-weight: 700;
   color: #fd5433;
   font-weight: bold;
   text-align: center;
@@ -105,7 +106,8 @@ header {
   text-align: center; }
   .services .branding .title-branding {
     font-size: 30px;
-    font-family: 'oswald_bold';
+    font-family: 'Oswald';
+    font-weight: 700;
     color: #3d3c3c;
     margin: 32px 0 36px 0; }
   .services .branding p {
@@ -137,7 +139,8 @@ header {
   background: #fd5433; }
   .about-skills .about .name {
     font-size: 22px;
-    font-family: 'oswald_bold';
+    font-family: 'Oswald';
+    font-weight: 700;
     color: white;
     font-weight: bold;
     text-align: left;
@@ -154,7 +157,8 @@ header {
     margin-right: 20px; }
   .about-skills .skills h2 {
     font-size: 22px;
-    font-family: 'oswald_bold';
+    font-family: 'Oswald';
+    font-weight: 700;
     color: white;
     font-weight: bold;
     text-align: left;
@@ -201,17 +205,17 @@ header {
 
 .title-post {
   font-size: 25px;
-  font-family: 'oswald_bold';
+  font-family: 'Oswald';
+    font-weight: 700;
   color: #3d3c3c;
-  font-weight: bold;
   text-align: left;
   margin-bottom: 15px; }
 
 .post-date {
   font-size: 15px;
-  font-family: 'oswald_bold';
+  font-family: 'Oswald';
+  font-weight: 700;
   color: #686868;
-  font-weight: bold;
   margin-bottom: 58px; }
 
 .date-border {
@@ -288,7 +292,8 @@ header {
   .footer .link-message {
     font-size: 32px;
     color: #fff;
-    font-family: 'oswald_bold';
+    font-family: 'Oswald';
+    font-weight: 700;
     line-height: 60px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.68); }
     .footer .link-message .btn-message {
