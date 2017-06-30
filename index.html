@@ -119,11 +119,27 @@
                     <p class="special-offer_info">Откройте соляную пещеру с <br> нуля
                     всего за <span class="special-offer_info-elem">100 000</span> рублей*</p>
                 <form class="special-offer_form"> 
+                   <input type="hidden" name="project_name" value="Global Group">
+                    <input type="hidden" name="admin_email" value="madebygrey@yandex.ua">
+                    <input type="hidden" name="form_subject" value="Заказ">
+                   
+                   
                     <input  type="text" name="Name" placeholder="Имя" required> 
-                    <input type="text" name="Surname" placeholder="Фамилия" required><br> 
-                    <input type="text" name="Email" placeholder="E-mail" required>
-                    <button class="offer_btn">Получить предложение</button> 
-                    <a href="#masterpiece-s" class="offer_link">Что входит?</a> 
+                    <input type="text" id="phone" name="phone" required="required"><br> 
+                    <input type="email" name="Email" placeholder="E-mail" required>
+                    <button class="offer_btn" type="submit">Получить предложение</button> 
+                    <a href="javascript:PopUpShow()" class="offer_link">Что входит?</a>
+                    <div class="b-popup" id="popup1">
+    <div class="b-popup-content">
+            В стоимость входят работы по:
+            Монтажу,
+            Электрике,
+            Вентиляции,
+            Два декор элемента Многослойного соляного покрытия,
+            Монтаж галогенератора и обучение персонала
+            
+    <a href="javascript:PopUpHide()">Закрыть</a>
+                        </div> </div>
                 </form>
 	        </section>
 	            <h2 class="garanti_title">Мы гарантируем:</h2>
@@ -237,8 +253,7 @@
     <div class="wrapper">
       
         <div class="masterpiece_content">
-        <h2>мы создаём<br>шедевры</h2>
-        <p>В работе мы используем множество<br>декоративных элементов и техник</p>
+        <h2>Среди наших клиентов</h2>
         <img src="./img/equipment_marks.png" alt="" class="marks">
         
          <div id="masterpiece-salt">
@@ -253,15 +268,15 @@
             <div class="owl-carousel masterpiece-carousel">
                 <div class="masterpiece-carousel-item">
                     <div class="m-item-info">
-                        <div>светодиодная подсветка</div>
-                        <div class="m-item-info-active">декоративные сталактиты</div>
-                        <div>соляное покрытие</div>
+                        <div>салоны красоты</div>
+                        <div class="m-item-info-active">детские сады</div>
+                        <div>школы</div>
                     </div>
                     <div class="m-item-content">
                         <div class="m-item-content-left"><img src="./img/masterpiece-img.jpg" alt="">
-                        <p>от <span>500</span> руб/м<sup>2</sup></p>
+                        
                         </div>
-                        <div class="m-item-content-right"><h3>Декоративные сталактиты и сталагмиты</h3>
+                        <div class="m-item-content-right"><h3>Детские Сады</h3>
                         <p>представляют собой 
                             декоративные элементы 
                             в помещении с искусственным 
@@ -276,22 +291,22 @@
                             профессионалами, так как на 
                             одном таком элементе может 
                             находиться до 400 кг соли</p>
-                            <a href="#doubt-s">
+                            <a href="#offer-s">
                             <button class="masterpiece-btn">Расчитать индивидуально</button></a>
                             </div>
                     </div>
                 </div>
                     <div class="masterpiece-carousel-item">
                     <div class="m-item-info">
-                        <div>декоративные сталактиты</div>
-                        <div class="m-item-info-active">соляное покрытие</div>
-                        <div>светодиодная подсветка</div>
+                        <div>детские сады</div>
+                        <div class="m-item-info-active">школы</div>
+                        <div>бизнесмены</div>
                     </div>
                     <div class="m-item-content">
                         <div class="m-item-content-left"><img src="./img/masterpiece-img.jpg" alt="" class="img-wr">
-                        <p>от <span>500</span> руб/м<sup>2</sup></p>
+                       
                         </div>
-                        <div class="m-item-content-right"><h3>Декоративные сталактиты и сталагмиты</h3>
+                        <div class="m-item-content-right"><h3>Школы</h3>
                         <p>представляют собой 
                             декоративные элементы 
                             в помещении с искусственным 
@@ -306,22 +321,22 @@
                             профессионалами, так как на 
                             одном таком элементе может 
                             находиться до 400 кг соли</p>
-                            <a href="#doubt-s">
+                            <a href="#offer-s">
                             <button class="masterpiece-btn">Расчитать индивидуально</button></a>
                             </div>
                     </div>
                 </div>
                   <div class="masterpiece-carousel-item">
                     <div class="m-item-info">
-                        <div>    соляное покрытие</div>
-                        <div class="m-item-info-active">светодиодная подсветка</div>
-                        <div>декоративные сталактиты</div>
+                        <div>школы</div>
+                        <div class="m-item-info-active">бизнесмены</div>
+                        <div>салоны красоты</div>
                     </div>
                     <div class="m-item-content">
                         <div class="m-item-content-left"><img src="./img/masterpiece-img.jpg" alt="">
-                        <p>от <span>500</span> руб/м<sup>2</sup></p>
+                        
                         </div>
-                        <div class="m-item-content-right"><h3>Декоративные сталактиты и сталагмиты</h3>
+                        <div class="m-item-content-right"><h3>Бизнесмены</h3>
                         <p>представляют собой 
                             декоративные элементы 
                             в помещении с искусственным 
@@ -336,7 +351,37 @@
                             профессионалами, так как на 
                             одном таком элементе может 
                             находиться до 400 кг соли</p>
-                            <a href="#doubt-s">
+                            <a href="#offer-s">
+                            <button class="masterpiece-btn">Расчитать индивидуально</button></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="masterpiece-carousel-item">
+                    <div class="m-item-info">
+                        <div>бизнесмены</div>
+                        <div class="m-item-info-active">салоны красоты</div>
+                        <div>детские сады</div>
+                    </div>
+                    <div class="m-item-content">
+                        <div class="m-item-content-left"><img src="./img/masterpiece-img.jpg" alt="">
+                        
+                        </div>
+                        <div class="m-item-content-right"><h3>Салоны Красоты</h3>
+                        <p>представляют собой 
+                            декоративные элементы 
+                            в помещении с искусственным 
+                            микроклиматом соляных пещер, 
+                            поторяющие своим 
+                            оформлением рельеф 
+                            природного грота или пещеры. 
+                            Такие дизайнерские элементы 
+                            часто являются изюминкой 
+                            помещения, однако должны 
+                            выполняться только 
+                            профессионалами, так как на 
+                            одном таком элементе может 
+                            находиться до 400 кг соли</p>
+                            <a href="#offer-s">
                             <button class="masterpiece-btn">Расчитать индивидуально</button></a>
                             </div>
                     </div>
@@ -354,8 +399,8 @@
                 <h2>закажите расчёт</h2>
                 <p>Получите от нас коммерческое<br>предложение в трёх ценовых вариантах</p>
                     <input type="text" name="Name" placeholder="Имя" required>
-                    <input type="text" name="Surname" placeholder="Фамилия" required><br>
-                    <input type="text" name="Email" placeholder="E-mail" required><br>
+                    <input type="text" id="phone2" name="phone" required="required"><br> 
+                    <input type="email" name="Email" placeholder="E-mail" required><br>
                     <button class="offer_btn">Получить предложение</button>
             </form>
             <div class="offer-bg"><img src="./img/offer-bg.jpg" alt=""></div>
@@ -393,38 +438,33 @@
         </div>
         <div class="owl-carousel carousel-reviews">
             <div class="carousel-reviews-item">
-                <div class="item-img"><img src="./img/reviews-item.png" alt=""></div>
+                <div class="item-img"><img src="./img/reviews-item.jpg" alt=""></div>
                 <div class="item-info">
-                <h3>Ольга Ларионова</h3>
-                <span>«Безант-К»</span>
-                <p>В короткие сроки компания ООО «Глобал 
-                    Групп» смонтировала в нашей 
-                    Гимназии №42 соляную пещеру, благодаря 
-                    чему мы так быстро приступили 
-                    к оздоровлению детей. Положительных 
-                    отзывов долго ждать не пришлось, родители 
-                    делились впечатлениями о том, что их дети 
-                    стали лучше спать и перенесли 
-                    новый осеннее — зимний сезон 
-                    без насморков и простуд.</p>
+                <h3>Ананов С.А.</h3>
+                <span>Начальник ФКУЗ «МСЧ МВД России по республике Хакасия»</span>
+                <p>Руководством нашей организации было принято решение оборудовать соляную пещеру. После тщательного анализа рынка, было выявлено, что ООО «Глобал Групп» наиболее подходящая организация для заключения договора.<br><br>
+
+                Все документальные и технические вопросы решались без промедления, даже не смотря на географическую отдаленность. Монтажники качественно выполнили работу досрочно. Все командировочные работы входили в стоимость объекта, а не оплачивались сверху, как у многих других монтажных организаций. Все это несомненно показывает высокий уровень управления компанией.</p>
                     <div class="item-figure2"><img src="./img/review--down.png" alt=""></div>
                 </div>
             </div>
-            <div class="carousel-reviews-item">
-                <div class="item-img"><img src="./img/reviews-item.png" alt=""></div>
+            <div class="carousel-reviews-item carousel-reviews-fix">
+                <div class="item-img"><img src="./img/reviews-item2.jpg" alt=""></div>
                 <div class="item-info">
-                <h3>Ольга Ларионова</h3>
-                <span>«Безант-К»</span>
-                <p>В короткие сроки компания ООО «Глобал 
-                    Групп» смонтировала в нашей 
-                    Гимназии №42 соляную пещеру, благодаря 
-                    чему мы так быстро приступили 
-                    к оздоровлению детей. Положительных 
-                    отзывов долго ждать не пришлось, родители 
-                    делились впечатлениями о том, что их дети 
-                    стали лучше спать и перенесли 
-                    новый осеннее — зимний сезон 
-                    без насморков и простуд.</p>
+                <h3>Полковников Игорь Александрович</h3>
+                <span>директор центра реабилитации для детей и подростков с ограниченными возможностями «Фламинго»</span>
+                <p>Большое спасибо команде ООО «Глобал Групп» за понимание и отзывчивость, все работы были выполнены не просто профессионально, но еще и с душой, а это так редко встречается в современном индустриальном обществе.<br><br>
+
+                Я доволен результатом сотрудничества с ООО «Глобал Групп»,<br> и рекомендую организацию как надежного и добросовестного партнера.</p>
+                    <div class="item-figure2"><img src="./img/review--down.png" alt=""></div>
+                </div>
+            </div>
+             <div class="carousel-reviews-item">
+                <div class="item-img"><img src="./img/reviews-item3.jpg" alt=""></div>
+                <div class="item-info">
+                <h3>Заплавная Татьяна Алексеевна</h3>
+                <span>руководитель Спортивно – оздоровительного комплекса Гимназии №42</span>
+                <p>В короткие сроки компания ООО «Глобал Групп» смонтировала в нашей Гимназии №42 соляную пещеру, благодаря чему мы так быстро приступили к оздоровлению детей. Положительных отзывов долго ждать не пришлось, родители делились впечатлениями о том, что их дети стали лучше спать и перенесли новый осеннее<br> — зимний сезон без насморков и простуд.</p>
                     <div class="item-figure2"><img src="./img/review--down.png" alt=""></div>
                 </div>
             </div>
@@ -437,17 +477,19 @@
 <section class="questions" id="questions-s">
     <div class="wrapper">
         <div class="questions_content">
+           
             <form class="questions_form" method= "post" onsubmit="yaCounter39873690.reachGoal('form'); return true;">
                 <h2>появились вопросы?</h2>
                 <p>Задайте их<br>
 нашему специалисту</p>
+                   
                     <input type="text" name="Name" placeholder="Имя" required><br>
-                    <input type="text" name="Surname" placeholder="Фамилия" required><br>
-                    <input type="text" name="Email" placeholder="E-mail" required><br>
+                    <input type="text" id="phone3" name="phone" required="required"><br> 
+                    <input type="email" name="Email" placeholder="E-mail" required><br>
                     <textarea placeholder="Вопрос"></textarea><br>
                     <button class="questions_2-btn">Задать вопрос</button>
             </form>
-            <div class="questions_image"><img src="./img/qeustion-man.jpg" alt=""></div>
+            <div class="questions_image"><img src="./img/qeustion-man.png" alt=""></div>
         </div>
     </div>
 </section>
@@ -466,9 +508,9 @@
         <div class="wrapper">
     <div class="owl-carousel carousel-certificate">
         <div class="certificate-item"><a href="./img/certificate.jpg" class="fancybox1"><img src="./img/certificate.jpg" alt=""></a></div>
-        <div class="certificate-item"><a href="./img/certificate.jpg" class="fancybox1"><img src="./img/certificate.jpg" alt=""></a></div>
-        <div class="certificate-item"><a href="./img/certificate.jpg" class="fancybox1"><img src="./img/certificate.jpg" alt=""></a></div>
-        <div class="certificate-item"><a href="./img/certificate.jpg" class="fancybox1"><img src="./img/certificate.jpg" alt=""></a></div>
+        <div class="certificate-item"><a href="./img/certificate2.jpg" class="fancybox1"><img src="./img/certificate2.jpg" alt=""></a></div>
+        <div class="certificate-item"><a href="./img/certificate3.jpg" class="fancybox1"><img src="./img/certificate3min.jpg" alt=""></a></div>
+        
        
     </div></div></div>
 </section>
@@ -533,8 +575,8 @@ equipment
                     руководителю компании<br>
                     «Глобал Групп»</p>
                     <input type="text" name="Name" placeholder="Имя" required><br>
-                    <input type="text" name="Surname" placeholder="Фамилия" required><br>
-                    <input type="text" name="Email" placeholder="E-mail" required><br>
+                    <input type="text" id="phone4" name="phone" required="required"><br> 
+                    <input type="email" name="Email" placeholder="E-mail" required><br>
                     <textarea placeholder="Вопрос"></textarea><br>
                     <button class="questions_2-btn">Задать вопрос</button>
             </form>
