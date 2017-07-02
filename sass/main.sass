@@ -275,8 +275,8 @@ body
     p
         color: #0b0f1b
         font-size: 24px
-        line-height: 30px
-        margin-top: 55px
+        line-height: 27px
+        margin-top: 105px
 .m-item-content
     display: flex
     margin-top: 95px
@@ -307,6 +307,8 @@ body
     z-index: 10
     position: relative
 .offer_form
+    .success
+        top: 67%
     h2
         color: #fff
         font-family: "GilroyExtraBold"
@@ -337,6 +339,8 @@ body
         outline: none
         box-shadow: none
         transition: background-color 1s ease
+        position: relative
+        z-index: 100
         &:hover
             background-color: #fff
             color: $accent
@@ -364,11 +368,16 @@ body
         right: 166px
 
 //map
-.map
+.map-sect
     background-color: #deeaf2
     padding-top: 154px
     padding-bottom: 130px
     position: relative
+    .map
+        max-width: 1200px
+        margin: auto
+        height: 500px
+        margin-top: 50px
     .cert-marks
         position: absolute
         top: 12%
@@ -484,6 +493,11 @@ body
         text-align: right
         z-index: 1000
         position: relative
+        .success
+            top: 50%
+            left: 30%
+            span
+                color: #000
         h2
             margin: 0
             padding: 0
@@ -544,6 +558,8 @@ body
     &_form
         text-align: right
         max-width: 555px
+        .success
+            top: 55%
         h2
             margin: 0
             padding: 0
@@ -877,6 +893,24 @@ a:focus
 
 #lptrack_banner_pr_line_wrapper
     display: none!important
+.success
+    display: none
+    text-align: center
+    width: 88%
+    position: absolute
+    text-transform: uppercase
+    z-index: 100
+    font-family: "GilroyExtraBold"
+    color: #fff
+    font-size: 30px
+    span
+        margin: auto
+    & ~ *
+        transition: all .5s ease
+    &.active
+        & ~ *
+            opacity: .5
+            filter: blur(10px)
 
                      
 @import "media" // Всегда в конце

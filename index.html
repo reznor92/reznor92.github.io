@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body onload="initialize()">
 <div id="my-page">
       <div id="my-header">
            <header class="header">
@@ -50,13 +50,12 @@
                     <li><a href="#garanti-s">Мы гарантируем</a></li>
                     <li><a href="#our-exp-s">наш опыт</a></li>
                      <li><a href="#masters-s">наши мастера</a></li>
-                     <li><a href="#masterpiece-s">мы создаём шедевры</a></li>
+                     <li><a href="#masterpiece-s">Среди наших клиентов</a></li>
                      <li><a href="#offer-s">закажите расчёт</a></li>
                      <li><a href="#map-s">широкая география клиентов</a></li>
                      <li><a href="#reviews-s">отзывы наших клиентов</a></li>
                      <li><a href="#questions-s">появились вопросы?</a></li>
                      <li><a href="#certificate-s">мы сертифицированы</a></li>
-                     <li><a href="#equipment-s">оборудывание</a></li>
                      <li><a href="#doubt-s">рассчитайте прибыль</a></li>
                      <li><a href="#footer-s">контакты</a></li>
                  </ul>
@@ -67,7 +66,7 @@
                                           
                        <div class="header-top_logo"> <a href="#"><img  src="img/header/header-logo.png" alt="Logo"></a></div>
                         <p class="header-top_tel"><span class="lptracker_phone">+7 (929) 342 03 30</span></p>
-                        <a href="#questions-s" class="header-top_link">Задать вопрос специалисту</a>
+                        <a href="#questions-s" class="header-top_link scrollto">Задать вопрос специалисту</a>
                 </div>
                 <div class="header-top_line"></div>
                 <div id="salt">
@@ -118,14 +117,15 @@
                    <h2 class="special-offer_title">спецпредложение</h2>
                     <p class="special-offer_info">Откройте соляную пещеру с <br> нуля
                     всего за <span class="special-offer_info-elem">100 000</span> рублей*</p>
-                <form class="special-offer_form"> 
+                <form class="special-offer_form" method="post" onsubmit="yaCounter39873690.reachGoal('form'); return true;"> 
+                  <div class="success"><span>Спасибо за заявку!</span></div>
                    <input type="hidden" name="project_name" value="Global Group">
                     <input type="hidden" name="admin_email" value="madebygrey@yandex.ua">
-                    <input type="hidden" name="form_subject" value="Заказ">
+                    <input type="hidden" name="form_subject" value="Спецпредложение">
                    
                    
-                    <input  type="text" name="Name" placeholder="Имя" required> 
-                    <input type="text" id="phone" name="phone" required="required"><br> 
+                    <input  type="text" name="Имя" placeholder="Имя" required> 
+                    <input type="text" id="phone" name="Телефон" required="required"><br> 
                     <input type="email" name="Email" placeholder="E-mail" required>
                     <button class="offer_btn" type="submit">Получить предложение</button> 
                     <a href="javascript:PopUpShow()" class="offer_link">Что входит?</a>
@@ -291,7 +291,7 @@
                             профессионалами, так как на 
                             одном таком элементе может 
                             находиться до 400 кг соли</p>
-                            <a href="#offer-s">
+                            <a href="#offer-s" class="scrollto">
                             <button class="masterpiece-btn">Расчитать индивидуально</button></a>
                             </div>
                     </div>
@@ -321,7 +321,7 @@
                             профессионалами, так как на 
                             одном таком элементе может 
                             находиться до 400 кг соли</p>
-                            <a href="#offer-s">
+                            <a href="#offer-s" class="scrollto">
                             <button class="masterpiece-btn">Расчитать индивидуально</button></a>
                             </div>
                     </div>
@@ -351,7 +351,7 @@
                             профессионалами, так как на 
                             одном таком элементе может 
                             находиться до 400 кг соли</p>
-                            <a href="#offer-s">
+                            <a href="#offer-s" class="scrollto">
                             <button class="masterpiece-btn">Расчитать индивидуально</button></a>
                             </div>
                     </div>
@@ -381,7 +381,7 @@
                             профессионалами, так как на 
                             одном таком элементе может 
                             находиться до 400 кг соли</p>
-                            <a href="#offer-s">
+                            <a href="#offer-s" class="scrollto">
                             <button class="masterpiece-btn">Расчитать индивидуально</button></a>
                             </div>
                     </div>
@@ -395,11 +395,15 @@
 <section class="offer" id="offer-s">
     <div class="offer_content">
         <div class="wrapper">
-         <form class="offer_form">
+         <form class="offer_form" method="post" onsubmit="yaCounter39873690.reachGoal('form'); return true;">
+                <div class="success"><span>Спасибо за заявку!</span></div>
+                   <input type="hidden" name="project_name" value="Global Group">
+                    <input type="hidden" name="admin_email" value="madebygrey@yandex.ua">
+                    <input type="hidden" name="form_subject" value="Коммерческое предложение">
                 <h2>закажите расчёт</h2>
                 <p>Получите от нас коммерческое<br>предложение в трёх ценовых вариантах</p>
-                    <input type="text" name="Name" placeholder="Имя" required>
-                    <input type="text" id="phone2" name="phone" required="required"><br> 
+                    <input type="text" name="Имя" placeholder="Имя" required>
+                    <input type="text" id="phone2" name="Телефон" required="required"><br> 
                     <input type="email" name="Email" placeholder="E-mail" required><br>
                     <button class="offer_btn">Получить предложение</button>
             </form>
@@ -414,15 +418,14 @@
 
 
 <!--Map-->
-<section class="map" id="map-s">
+<section class="map-sect" id="map-s">
     
       <div class="wrapper">
        <h2>широкая<br>география клиентов</h2>
        <div class="cert-marks"><img src="./img/certificate-marks.png" alt=""></div>
        </div>
-       <div class="map_content">
-        <div class="map-img"><img src="./img/map.png" alt=""></div>
-        
+       <div id="map_canvas" class="map"></div>
+       
     </div>
 </section>
 
@@ -479,6 +482,11 @@
         <div class="questions_content">
            
             <form class="questions_form" method= "post" onsubmit="yaCounter39873690.reachGoal('form'); return true;">
+               <div class="success"><span>Спасибо за вопрос!</span></div>
+                   <input type="hidden" name="project_name" value="Global Group">
+                    <input type="hidden" name="admin_email" value="madebygrey@yandex.ua">
+                    <input type="hidden" name="form_subject" value="Вопрос">
+                    
                 <h2>появились вопросы?</h2>
                 <p>Задайте их<br>
 нашему специалисту</p>
@@ -486,7 +494,7 @@
                     <input type="text" name="Name" placeholder="Имя" required><br>
                     <input type="text" id="phone3" name="phone" required="required"><br> 
                     <input type="email" name="Email" placeholder="E-mail" required><br>
-                    <textarea placeholder="Вопрос"></textarea><br>
+                    <textarea placeholder="Вопрос" name="Вопрос"></textarea><br>
                     <button class="questions_2-btn">Задать вопрос</button>
             </form>
             <div class="questions_image"><img src="./img/qeustion-man.png" alt=""></div>
@@ -569,6 +577,10 @@ equipment
     <div class="wrapper">
         <div class="questions2_content">
             <form class="questions2_form" method= "post" onsubmit="yaCounter39873690.reachGoal('form'); return true;">
+               <div class="success"><span>Спасибо за вопрос!</span></div>
+                   <input type="hidden" name="project_name" value="Global Group">
+                    <input type="hidden" name="admin_email" value="madebygrey@yandex.ua">
+                    <input type="hidden" name="form_subject" value="Вопрос">
                 <h2>Остались вопросы?</h2>
                 <p>Задайте их<br>
                     Роману Викторовичу Идоленко<br>
@@ -577,7 +589,7 @@ equipment
                     <input type="text" name="Name" placeholder="Имя" required><br>
                     <input type="text" id="phone4" name="phone" required="required"><br> 
                     <input type="email" name="Email" placeholder="E-mail" required><br>
-                    <textarea placeholder="Вопрос"></textarea><br>
+                    <textarea placeholder="Вопрос" name="Вопрос"></textarea><br>
                     <button class="questions_2-btn">Задать вопрос</button>
             </form>
             <div class="questions2_man"><img src="./img/footer-man.png" alt="Идоленко"></div>
@@ -590,7 +602,7 @@ equipment
 	    <div class="wrapper">
 	        <div class="footer_content">
 	            <div class="footer_content_addr">
-	                <div class="footer-phone"><a href="#"><img src="./img/footer-phone.png" alt="phone"></a><span class="lptracker_phone">+7 (929) 342 03 30</span></div>
+	                <div class="footer-phone"><img src="./img/footer-phone.png" alt="phone"><span class="lptracker_phone">+7 (929) 342 03 30</span></div>
 	                <div class="footer-mail"><a href="mailto:337500@mail.ru"><img src="./img/footer-mail.png" alt="mail"></a>337500@mail.ru</div>
 	            </div>
 	            <div class="footer_content_social">
@@ -615,7 +627,96 @@ equipment
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
 	<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter39873690 = new Ya.Metrika({ id:39873690, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/39873690" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        
+    <script type="text/javascript">
 
+  function initialize() {
+    var latlng = new google.maps.LatLng(56.323678, 44.0);
+    var myOptions = {
+      zoom: 15,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.HYBRID
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions);
+		
+		setMarkers(map, places);
+  }  
+  
+  var places = [
+            ['Владивосток',43.1198091,131.8869243],
+            ['Чита',52.0515032,113.4711906],
+            ['Петропавловск-Камчатский',53.0409109,158.6777259],
+            ['Нерюнгри',56.6614269,124.7058164],
+            ['Кызыл',51.7150832,94.4574804],
+            ['Иркутск',52.2869741,104.3050183],
+            ['Братск',56.1737661,101.6038976],
+            ['Красноярск',56.0152834,92.8932476],
+            ['Кызыл',51.7150832,94.4574804],
+            ['Абакан',53.7175644,91.4293172],
+            ['Шарыпово',55.5222543,89.2205323],
+            ['Шерегеш',52.9269506,87.9926205],
+            ['Междуреченск',53.6836301,88.0813924],
+            ['Лесная поляна',57.686667,39.894167],
+            ['Новокузнецк',53.7595935,87.1215705],
+            ['Прокопьевск',53.888753,86.7591829],
+            ['Бийск',52.5072747,85.1472004],
+            ['Горно-Алтайск',51.942186,85.9719355],
+            ['Чемал',51.400458,86.02293],
+            ['Барнаул',53.3547792,83.7697832],
+            ['Белово',54.4102969,86.2936947],
+            ['Линево',54.4555308,83.3748612],
+            ['Искитим',54.6167986,83.3055678],
+            ['Бердск',54.7750638,83.0800316],
+            ['Краснообск',54.9191126,82.9903162],
+            ['Новосибирск',55.0083526,82.9357327],
+            ['Топки',55.2855221,85.6143806],
+            ['Кемерово',55.3450231,86.0623044],
+            ['Мариинск',56.1936066,87.7130977],
+            ['Томск',56.5010397,84.9924506],
+            ['Северск',56.6192692,84.8816834],
+            ['Семипалатинск',50.4233463,80.250811],
+            ['Астана',51.1605227,71.4703558],
+            ['Омск',54.9884804,73.3242362],
+            ['Называевск',55.5678779,71.3524589],
+            ['Курган',55.4649113,65.3053512],
+            ['Челябинск',55.1644419,61.4368431],
+            ['Пермь',58.0296813,56.2667916],
+            ['Казань',55.8304307,49.0660806],
+            ['Ленинск-Кузнецк',54.6699128,86.1734538],
+            ['Нижний Новгород',56.2965039,43.9360589],
+            ['Ярославль',57.6260744,39.8844708],
+            ['Москва',55.755826,37.6173],
+            ['Липецк',52.6121996,39.5981225],
+            ['Волгоград',52.6121996,39.5981225],
+            ['Краснодар',45.0392674,38.987221],
+            ['Симферополь',44.952117,34.102417],
+            ['Кишинев',47.0104529,28.8638103],
+            ['Баку',40.4092617,49.8670924],
+            ['Сочи',43.6028079,39.7341543],
+            ['Душанбе',38.5597722,68.7870384]
+    ];    
+ 
+    function setMarkers(map, locations) {
+		//Определяем область показа маркеров
+		var latlngbounds = new google.maps.LatLngBounds();	 
+         
+         for (var i = 0; i < places.length; i++) {
+            var myLatLng = new google.maps.LatLng(locations[i][1], locations[i][2]);
+			//Добавляем координаты маркера в область
+			latlngbounds.extend(myLatLng);
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,   
+                title: locations[i][0],
+            }); 
+         }
+	//Центрируем и масштабируем карту
+	map.setCenter( latlngbounds.getCenter(), map.fitBounds(latlngbounds));	 
+    };
 
-</body>
-</html>
+</script>
+        </body>
+        </html>

@@ -92,7 +92,7 @@ $(function() {
     });
     
  $('#my-menu a').click(function() {
-    $('html, body').animate( { scrollTop: $($(this).attr("href")).offset().top }, 800 );
+    $('html, body').animate( { scrollTop: $($(this).attr("href")).offset().top }, 2000 );
 });
 
 });
@@ -294,24 +294,90 @@ $(function() {
 });
 
 $(document).ready(function() {
-
-	//E-mail Ajax Send
-	$("form.special-offer_form").submit(function() { //Change
+	$("form.special-offer_form").submit(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "mail.php",
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			$(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
 			setTimeout(function() {
-				// Done Functions
+				$(th).find('.success').removeClass('active').fadeOut();
 				th.trigger("reset");
-			}, 1000);
+			}, 3000);
 		});
 		return false;
 	});
 
+});
+
+$(document).ready(function() {
+	$("form.offer_form").submit(function() {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			$(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+			setTimeout(function() {
+				$(th).find('.success').removeClass('active').fadeOut();
+				th.trigger("reset");
+			}, 3000);
+		});
+		return false;
+	});
+
+});
+
+$(document).ready(function() {
+	$("form.questions_form").submit(function() {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			$(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+			setTimeout(function() {
+				$(th).find('.success').removeClass('active').fadeOut();
+				th.trigger("reset");
+			}, 3000);
+		});
+		return false;
+	});
+
+});
+
+$(document).ready(function() {
+	$("form.questions2_form").submit(function() {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			$(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+			setTimeout(function() {
+				$(th).find('.success').removeClass('active').fadeOut();
+				th.trigger("reset");
+			}, 3000);
+		});
+		return false;
+	});
+
+});
+
+$(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
 });
 
 
