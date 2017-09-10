@@ -1,0 +1,77 @@
+@import "vars"
+
+.contact
+    padding-top: 150px
+    text-align: center
+    background-color: $very-light-grey
+    h2
+        color: $dark-grey
+        font-family: "SourceSansProBold", sans-serif
+        font-size: 36px
+        text-shadow: (0 1px 0 #fff)
+    p
+        color: #999
+        font-family: "OpenSansLight", sans-serif
+        font-size: 14px
+        margin: 30px 0
+    &__content
+        margin-top: 70px
+    &__info
+        background-color: #fff
+        text-align: left
+        padding: 90px
+        box-shadow: (0 3px 5px rgba(0,0,0,.1))
+        border-radius: (2px / 5px)
+        margin-bottom: 142px
+        max-height: 580px
+        &_title
+            color: $red
+            font-family: "SourceSansProBold", sans-serif
+            font-size: 24px
+            text-transform: uppercase
+            margin-top: 70px
+            margin-bottom: 29px
+            &:first-child
+                margin-top: 0
+        p
+            margin: 0
+            font-size: 18px
+            font-family: "OpenSans"
+            line-height: 24px
+    &__form
+        background-color: #fff
+        padding: 90px
+        box-shadow: (0 3px 5px rgba(0,0,0,.1))
+        border-radius: (2px / 5px)
+        text-align: left
+        margin-bottom: 142px
+        max-height: 580px
+        input, textarea
+            width: 100%
+            color: #999
+            font-family: "OpenSans", sans-serif
+            font-size: 14px
+            border: 0
+            border-bottom: 1px solid #e5e5e5
+            padding-bottom: 20px
+            margin-bottom: 30px
+            outline: none
+        textarea
+            height: 100px
+        .contact-form-send-btn
+            width: 157px
+            height: 44px
+            border-color: transparent
+            border-radius:(2px / 3px 3px 3px 3px)
+            background-color: $red
+            box-shadow:(0 2px 5px 0 rgba(0,0,0,.25))
+            line-height: 44px
+            color: #fff
+            font-family: "OpenSansBold", sans-serif
+            font-size: 14px
+            text-transform: uppercase
+            transition: all 1s ease
+            &:hover
+                background-color: transparent
+                color: #000
+                border-color: #000

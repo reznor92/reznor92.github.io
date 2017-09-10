@@ -1,0 +1,129 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+	display: block
+body
+	line-height: 1
+ol, ul 
+	list-style: none
+blockquote, q 
+	quotes: none
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+*::-webkit-input-placeholder
+	color: $white
+	opacity: 1
+
+*:-moz-placeholder
+	color: $white
+	opacity: 1
+
+*::-moz-placeholder
+	color: $white
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: $white
+	opacity: 1
+
+
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: 'HelveticaNeueCyrLight'
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.wrapper
+    max-width: 1200px
+    margin: 0 auto
+    position: relative
+
+h2
+    font-family: 'Georgia'
+    font-size: 36px
+    color: $green
+    &:before
+        content: ''
+        width: 100px
+        height: 2px
+        background-color: $green
+        position: absolute
+        top: 0
+        left: 0
+        display: inline-block
+    &:after
+        content: ''
+        width: 100px
+        height: 2px
+        background-color: $green
+        position: absolute
+        top: 0
+        right: 0
+        display: inline-block
+p
+    color: $black
+    
+
+.border
+    position: absolute
+    width: 100%
+    bottom: -140px
+    left: 0
+    border: 2px solid $green
+    height: 85%
+    border-bottom: none
+    border-top: none
+
+
+
+@import '01 - header.sass'
+@import '02 - benefits.sass'
+@import '03 - special.sass'
+@import '04 - faq.sass'
+@import '05 - scheme.sass'
+@import '06 - prices.sass'
+@import '07 - testimonials.sass'
+@import '08 - footer.sass'
+
+@import "media" // Всегда в конце

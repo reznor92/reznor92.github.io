@@ -1,0 +1,91 @@
+@import "vars"
+.testimonials
+    text-align: center
+    background-color: #ccc
+    padding-top: 62px
+    &:after
+        content: ""
+        display: table
+        clear: both
+    &__content
+        background-image: url(../img/test-bg.jpg)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        position: relative
+        height: 290px
+        .border
+            bottom: auto
+            top: -47px
+            border-bottom: 2px solid $green
+            height: 108%
+            z-index: 10000
+        h2
+            position: absolute
+            top: -65px
+            left: 50%
+            transform: translate(-50%, 0)
+            &:before
+                top: 16px
+                left: -390px
+            &:after
+                top: 16px
+                right: -391px
+    &__row
+        padding-left: 50px
+        position: relative
+        z-index: 1000
+    &__item
+        width: 315px
+        height: 300px
+        margin-top: 50px
+        display: inline-block
+        position: relative
+        text-align: left
+        padding: 0 30px
+        background-color: #ccc
+        margin-right: 45px
+        vertical-align: top
+        &_photo
+            position: absolute
+            top: -20px
+            left: -20px
+        &_icon
+            float: right
+            margin-right: -22px
+            margin-top: 10px
+        h5
+            margin: 0 auto
+            display: block
+            text-align: center
+            font-family: 'Georgia'
+            font-size: 18px
+            color: $black
+            margin-bottom: 20px
+            margin-top: 65px
+        p
+            font-size: 15px
+            color: $black
+    .item2
+        width: 370px
+        height: 345px
+        h5
+            margin-top: 80px
+            margin-bottom: 6px
+        .testimonials__item_photo
+            position: absolute
+            top: -26px
+            left: 50%
+            transform: translate(-50%, 0)
+        .testimonials__item_icon
+            margin-right: -15px
+    .item3
+        .testimonials__item_icon
+            margin-right: 60px
+        .testimonials__item_photo
+            left: auto
+            right: -20px
+        h5
+            margin-left: -126px
+            
+            

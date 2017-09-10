@@ -1,0 +1,778 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+	display: block
+body
+	line-height: 1
+ol, ul 
+	list-style: none
+blockquote, q 
+	quotes: none
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+table
+	border-collapse: collapse
+	border-spacing: 0
+.container
+    padding-left: 0
+    padding-right: 0
+
+.header
+    background-image: url(../img/header-bg.jpg)
+    background-size: cover
+    background-position: center center
+    padding-top: 32px
+    padding-bottom: 420px
+    position: relative
+    .header_nav
+        margin-top: 8px
+        ul
+            margin-left: 9px
+        li
+            display: inline-block
+            a
+                padding: 7px 11px
+                color: #000
+                font-family: "Montserrat"
+                font-size: 14px
+                text-transform: uppercase
+                text-decoration: none
+                transition: all ease 1s
+                &:hover
+                    background-color: $blue
+                    color: #fff
+    .header_social
+        ul
+            margin-left: 39px
+        li
+            display: inline-block
+            width: 36px
+            height: 36px
+            border-radius: 17px
+            background-color: #000
+            text-align: center
+            line-height: 36px
+            margin-left: 5px
+            &:hover
+                transition: all 1s ease
+                -webkit-transform: scale(1.2,1.2)
+                -webkit-transition-timing-function: ease-out
+                -webkit-transition-duration: 550ms
+                -moz-transform: scale(1.2,1.2)
+                -moz-transition-timing-function: ease-out
+                -moz-transition-duration: 550ms
+            a
+                color: #fff
+    .header_title
+        text-align: center
+        padding-top: 163px
+        h1
+            color: #000
+            font-family: "Playfair Display"
+            font-size: 50px
+            font-style: italic
+        p
+            color: #fff
+            font-family: "Playfair Display"
+            font-size: 24px
+            font-style: italic
+            text-shadow: (0 3px 15px rgba(0,0,0,.64))
+            padding-top: 12px
+.header_slider
+    max-width: 1030px
+    height: 600px
+    background-color: #fff
+    box-shadow: (0 -8px 30px rgba(0,0,0,.34))
+    position: absolute
+    margin-top: 5%
+    left: 0
+    right: 0
+    margin: 0 auto
+    top: 62%
+    .slick-prev, .slick-next
+        top: 10%
+    .slick-prev
+        right: 18px
+        z-index: 100000
+    .slick-prev:before
+        content: url(../img/arrow-left.png)
+        width: 32px
+        height: 32px
+    .slick-next
+        right: -20px
+    .slick-next:before
+        content: url(../img/arrow-right.png)
+        width: 32px
+        height: 32px
+   
+.header_slide
+    background-image: url(../img/corner.png)
+    background-repeat: no-repeat
+    
+    .fotorama__nav__frame
+        display: block
+    .fotorama__nav
+        text-align: right
+        position: absolute
+        top: 15%
+        right: -45%
+    .fotorama__nav--thumbs .fotorama__nav__frame:last-child
+        padding-right: 10px!important
+    .fotorama__thumb-border
+        display: none
+    .fotorama__thumb
+        border: 1px solid rgba(0,0,0,.2)
+        &:hover
+            border: solid 3px $blue
+.slide_foto
+    float: left
+    width: 57%
+    background-image: url(../img/corner.png)
+    background-repeat: no-repeat
+    padding: 75px 0
+    padding-left: 75px
+.slide_info
+    float: left
+    width: 43%
+    padding: 40px 0
+    position: relative
+    h3
+        color: #000
+        font-family: "Montserrat"
+        font-size: 20px
+        font-weight: bold
+        line-height: 26px
+        padding-bottom: 10px
+    span
+        color: #787878
+        font-family: "Montserrat"
+        font-size: 12px
+        font-weight: bold
+        margin-left: 3px
+    .br-wrapper
+        display: inline-block
+    .br-theme-fontawesome-stars .br-widget a
+        font: normal normal normal 13px/1 FontAwesome
+    .br-theme-fontawesome-stars .br-widget a.br-selected:after
+        color: #f2d800
+    #slide_tabs, #slide_tabs1
+        margin-top: 22px
+        padding-right: 50px
+        p
+            color: #777
+            font-family: "Raleway"
+            font-size: 16px
+            line-height: 24px
+
+    .ui-widget-content
+        border: none
+    .ui-widget-header
+        border: none
+        background-color: transparent
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+        border-bottom: 1px solid #9f9f9f
+    .ui-button.ui-state-active:hover, .ui-button:active, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active
+        background-color: transparent
+        
+        border: none
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor
+        padding: 0
+        padding-bottom: 4px
+        margin-right: 30px
+        color: #9f9f9f
+    .ui-tabs
+        padding: 0
+    .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited
+        color: #000!important
+        font-family: "Raleway"
+        font-size: 14px
+        font-weight: bold
+        text-transform: uppercase
+        outline: none
+        border-bottom: 3px solid $blue
+        padding: 10px 0
+    .ui-tabs .ui-tabs-nav
+        padding: 0
+    .ui-button, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, html .ui-button.ui-state-disabled:active, html .ui-button.ui-state-disabled:hover
+        border: none
+        background-color: transparent
+        color: #9f9f9f
+        font-family: "Raleway"
+        font-size: 14px
+        font-weight: bold
+        text-transform: uppercase
+        outline: none
+    .ui-tabs .ui-tabs-panel
+        padding: 21px 0
+    .slide_price
+        margin-bottom: 80px
+        margin-top: 13px
+        h3
+            font-size: 24px
+            display: inline-block
+    .all_boards
+        border-bottom: 2px solid $blue
+        color: #00b0ff
+        font-family: "Montserrat"
+        font-size: 16px
+        padding-bottom: 2px
+        &:hover
+            text-decoration: none
+            color: $grey
+            border-bottom-color: $grey
+.btn
+    width: 137px
+    height: 44px
+    background-color: #00afff
+    color: #fff
+    font-family: "Montserrat"
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing: 1px
+    border: none
+    outline: none
+    margin-left: 23px
+    &:hover
+        background-color: $grey
+        transition: all 1s ease
+.slider_page
+    background-color: #000
+    width: 58px
+    height: 38px
+    color: #fff
+    text-align: center
+    line-height: 38px
+    font-family: "Montserrat"
+    font-size: 14px
+    letter-spacing: .4px
+    position: absolute
+    right: -1px
+    top: 87px
+    z-index: 100
+.slide_info_text
+    position: absolute
+    right: -60%
+    top: 40%
+    color: #000
+    font-family: "Montserrat"
+    font-size: 127px
+    font-weight: bold
+    letter-spacing: 10px
+    -webkit-transform: rotate(-90deg) 
+    transform: rotate(-90deg)
+    opacity: .1
+    z-index: 10
+
+
+    
+.about
+    margin-top: 600px
+    text-align: center
+    h2
+        color: #000
+        font-family: "Montserrat"
+        font-size: 196px
+        font-weight: bold
+        opacity: .1
+        line-height: 90px
+        position: relative
+        z-index: 1
+        letter-spacing: 15px
+    .about_content
+        height: 640px
+        background-image: url(../img/about-img.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        z-index: 10
+        position: relative
+        padding-top: 290px
+        .about-wrap
+            max-width: 570px
+            position: absolute
+            right: 185px
+        .about_info
+            background-color: #fff
+            width: 50%
+            padding: 100px 0
+            position: relative
+            height: 101%
+            .about_info_img
+                position: absolute
+                right: -550px
+                bottom: -220px
+                box-shadow: (20px 25px 50px rgba(0,0,0,.34))
+                
+                a
+                    border: none
+                    padding: 0
+            span
+                display: block
+                color: #000
+                font-family: "Montserrat"
+                font-weight: bold
+                font-size: 18px
+                text-transform: uppercase
+                padding-bottom: 17px
+            p
+                color: #000
+                font-family: "PlayfairDisplay"
+                font-size: 22px
+                font-style: italic
+                line-height: 38px
+                padding-top: 30px
+                padding-bottom: 35px
+            a
+                border-bottom: 2px solid $blue
+                color: #00b0ff
+                font-family: "Montserrat"
+                font-size: 16px
+                padding-bottom: 2px
+                &:hover
+                    text-decoration: none
+                    color: $grey
+                    border-bottom-color: $grey
+
+            .about_info_fix
+                text-align: left
+                padding-left: 100px
+.our_team
+    margin-top: 400px
+    text-align: center
+    .our_team_slider
+        
+        margin: 0 auto
+        z-index: 10000
+    .slick-prev, .slick-next
+        top: 40%
+        
+    .slick-prev
+        left: 0
+        z-index: 100000
+    .slick-prev:before
+        content: url(../img/arrow2-left.png)
+        width: 32px
+        height: 32px
+    .slick-next
+        right: 50px
+    .slick-next:before
+        content: url(../img/arrow2-right.png)
+        width: 32px
+        height: 32px
+            
+    .our_team_photo
+        
+        img
+            border: 2px solid #fff
+            border-radius: 10em
+            margin: 0 auto
+    h2
+        color: #000
+        font-family: "Montserrat"
+        font-size: 196px
+        font-weight: bold
+        opacity: .1
+        line-height: 90px
+        position: relative
+        z-index: 1
+        text-transform: uppercase
+        letter-spacing: 15px
+    .our_team_slide
+        padding-top: 30px
+        max-width: 260px
+        width: 260px
+        height: 278px
+        border-radius: 4px
+        background-color: #fff
+        box-shadow: (10px 17px 50px rgba(0,0,0,.2))
+        z-index: 100
+        position: relative
+        display: inline-block
+        margin-right: -20px
+        cursor: pointer
+        transition: all 2s ease
+        &:hover
+            background-color: $blue
+            z-index: 10000
+            h4, p, .our_team_adr
+                color: #fff
+        h4
+            color: $blue
+            font-family: "Montserrat"
+            font-size: 18px
+            padding-top: 15px
+            padding-bottom: 5px
+        p
+            color: #8b8b8b
+            font-family: "Raleway"
+            font-size: 14px
+            padding-bottom: 15px
+        img
+            margin: 0 auto
+        .our_team_adr
+            color: #8b8b8b
+            margin-top: 15px
+            font-family: "Raleway"
+            font-size: 14px
+            i
+                margin-right: 5px
+    .slide_fix
+        z-index: 1000
+        vertical-align: middle
+        margin-top: -100px
+        
+.our_team_sliders
+    height: 360px
+        
+.updates
+    margin-top: 190px
+    text-align: center
+    h4
+        color: #000
+        font-family: "Montserrat"
+        font-size: 18px
+        text-transform: uppercase
+        margin-bottom: 20px
+    .updates_content
+        margin-top: 40px
+    .btn
+        width: 197px
+        height: 44px
+        margin-top: 40px
+   
+    .updates_item
+        cursor: pointer
+        width: 270px
+        height: 344px
+        padding: 0
+        text-align: left
+        transition: all 1s ease
+        &:hover
+            box-shadow: (0 2px 30px rgba(0,0,0,.2))
+            p
+                color: #0021ff
+            img
+                opacity: 1
+        img
+            width: 100%
+            opacity: .7
+            transition: 1s all ease
+        .update_img
+            background-color: #000
+            height: 203px
+        
+    p
+        padding: 25px
+        color: #777
+        font-family: "Raleway"
+        font-size: 16px
+        line-height: 24px
+.instagram
+    margin-top: 180px
+    
+    .instagram-wrap
+        position: relative
+    h3
+        color: #000
+        font-family: "Montserrat"
+        font-size: 90px
+        font-weight: bold
+        opacity: .1
+        line-height: 85px
+        position: relative
+        z-index: 1
+        letter-spacing: 9px
+        text-transform: uppercase
+        margin-left: 5px
+    .instagram_content
+        max-width: 616px
+        position: absolute
+        top: 67px
+        left: 0
+        z-index: 1000
+        img
+            display: inline-block
+            margin-left: -4px
+            margin-bottom: -4px
+        &_info
+            padding: 20px
+            background-color: #fff
+            margin-left: -4px
+            li
+                display: inline-block
+                margin-right: 20px
+                vertical-align: middle
+                i
+                    color: #00afff
+                    font-size: 24px
+                    font-weight: bold
+                h5
+                    color: #00afff
+                    font-family: "Montserrat"
+                    font-size: 24px
+                    font-weight: bold
+                    text-transform: uppercase
+                p
+                    color: #000
+                    font-family: "Raleway"
+                    font-size: 16px
+                a:hover
+                    text-decoration: none
+    .facebook-content
+        padding: 40px 50px
+        text-align: center
+        background-image: url(../img/facebook-bg.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        margin-top: 50px
+        .facebook_inner
+            max-width: 370px
+            margin-top: 30px
+            background-color: #f6f7f9
+            text-align: left
+            padding-bottom: 1px
+            position: relative
+            .profile
+                position: absolute
+                top: 7px
+                left: 7px
+                &_info
+                    display: inline-block
+                    vertical-align: top
+                    color: #fff
+                    font-family: "HelveticaLTStd"
+                    font-size: 18px
+                    margin-top: 7px
+                    text-shadow: (1px 2px 6px rgba(0,0,0,.62))
+                    p
+                        font-size: 12px
+                        padding-top: 3px
+                .like_page
+                    background-color: #f5f7f9
+                    box-shadow: (0 0 0 1px rgba(0,0,0,.23))
+                    padding: 5px 8px
+                    color: #4b4f55
+                    font-family: "HelveticaLTStd"
+                    font-size: 12px
+                    font-weight: bold
+                    position: absolute
+                    top: 100px
+                    left: 2px
+                    i
+                        color: #3a5897
+                        font-size: 14px
+                    &:hover
+                        text-decoration: none
+                .share
+                    right: -205px
+                    left: auto
+                    i
+                        color: #4b4f55
+        .facebook_inner_faces
+            margin: 10px
+            padding: 8px
+            background-color: #fff
+            border-radius: 2px
+            box-shadow: (0 1px 4px rgba(0,0,0,.13))
+            color: #4b4f55
+            font-family: "HelveticaLTStd"
+            font-size: 12px
+            ul
+                margin-top: 5px
+
+            li
+                display: inline-block
+                margin-right: 1px
+        .inner_img
+            width: 100%
+            
+.footer
+    background-color: #000
+    margin-top: 60px
+    padding-top: 45px
+    ul
+        display: inline-block
+        margin-right: 70px
+        li
+            padding-bottom: 22px
+            &:before
+                content: url(../img/footer-wave.png)
+                margin-right: 10px
+                vertical-align: text-top
+            a
+                color: #fff
+                font-family: "Raleway"
+                font-size: 14px
+                text-decoration: none
+                &:hover
+                    color: #f2d800
+    .footer_bottom_copy
+        ul
+            margin-right: 0
+            
+        li
+            display: inline-block
+            margin-right: 9px
+            color: #4d4d4d
+            font-family: "Raleway"
+            font-size: 12px
+            font-weight: bold
+            &:before
+                display: none
+            
+.toggle-mnu
+    display: block
+    float: right
+    position: absolute
+    right: 20px
+    top: 15px
+    width: 48px
+    height: 48px
+    text-align: center
+    line-height: 48px
+    z-index: 1
+    margin-top: 14px
+    height: 28px
+    width: 28px
+
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: 9px
+
+.toggle-mnu span:after
+	top: 18px
+
+.toggle-mnu span 
+	position: relative
+	display: block
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	width: 100%
+	height: 2px
+	background-color: #000
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+
+.toggle-mnu.on span 
+	background-color: transparent
+
+.toggle-mnu.on span:before 
+	transform: rotate(45deg) translate(-1px, 0px)
+
+.toggle-mnu.on span:after 
+	transform: rotate(-45deg) translate(6px, -7px)
+
+.toggle-mnu.on + #menu 
+	opacity: 1
+	visibility: visible
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+        
+
+
+
+@import "media" // Всегда в конце

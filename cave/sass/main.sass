@@ -1,0 +1,953 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "header"    
+@import "garanti"    
+@import "our-exp" 
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.wrapper
+    width: 960px
+    margin: 0 auto
+    position: relative
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+
+
+//masters
+.masters
+    padding-top: 85px
+    z-index: 100
+    .owl-carousel .owl-item .search
+        width: auto
+        display: inline-block
+    .owl-nav
+        position: absolute
+        top: 251px
+        left: 6%
+    .owl-nav .owl-prev
+        background-image: url(../img/master-arrowleft.png)
+        width: 26px
+        height: 42px
+        display: inline-block
+        opacity: .5
+        &:hover
+            opacity: 1
+    .owl-nav .owl-next
+        background-image: url(../img/master-arrowright.png)
+        width: 26px
+        height: 42px
+        display: inline-block
+        margin-left: 550px
+        opacity: .5
+        &:hover
+            opacity: 1
+    h2
+        margin: 0
+        color: #14233f
+        font-family: "GilroyExtraBold"
+        font-size: 50px
+        line-height: 64px
+        text-transform: uppercase
+        &:before
+            content: url(../img/certificate-marks.png)
+            position: absolute
+            top: -15px
+            left: -120px
+
+    h3
+        margin: 0
+        color: #14233f
+        font-size: 50px
+        line-height: 64px
+        text-transform: uppercase
+        sup
+            font-size: 40px
+    .masters_bg
+        position: absolute
+        top: -85px
+        left: -392px
+        z-index: 0
+.masters_content_top
+    max-width: 1265px
+    margin: 0 auto
+    margin-top: 77px
+    display: flex
+.masters_title
+    position: relative
+.masters_info_image
+    z-index: 111
+    img.masters_info_img
+        width: 542px
+.masters_info
+    background-image: linear-gradient(to right, #005fa9 0%, #00d2ff 100%)
+    width: 720px
+    padding: 60px 0
+    padding-left: 155px
+    z-index: 111
+    h4
+        color: #fff
+        font-family: "GilroyExtraBold"
+        font-size: 35px
+        margin: 0
+        line-height: 30px
+        text-transform: uppercase
+    span
+        font-size: 30px
+        color: #fff
+    p
+        color: #fff
+        font-size: 24px
+        line-height: 30px
+    .masters-btn
+        width: 310px
+        height: 55px
+        color: #fff
+        font-size: 22px
+        background-color: transparent
+        border: 1px solid #fff
+        outline: none
+        box-shadow: none
+        transition: background-color 1s ease
+        &:hover
+            background-color: #fff
+            color: $accent
+        &:active
+            background-color: darken($accent, 5%)
+
+.masters_content_bottom
+    max-width: 1265px
+    margin: 0 auto
+    display: flex
+    z-index: 100
+    figure
+        position: relative
+        img
+            position: relative
+        figcaption
+            top: 11px
+            left: 17px
+            height: 94%
+            width: 91%
+            opacity: 0
+            position: absolute
+            background-color: #002f50
+            transition: opacity 1s ease
+            text-align: center
+            &:hover
+                opacity: .8
+            img
+                margin-top: 125px
+                opacity: 1
+
+
+
+
+//masterpiece
+.masterpiece
+    padding-top: 140px
+    background-image: url(../img/masterpiece-bg.jpg)
+    background-position: center
+    background-size: cover
+    padding-bottom: 360px
+    .owl-nav
+        position: absolute
+        top: 95px
+        left: 32%
+    .owl-nav .owl-prev
+        background-image: url(../img/masterpiece-arrow-left.png)
+        width: 16px
+        height: 24px
+        display: inline-block
+    .owl-nav .owl-next
+        background-image: url(../img/masterpiece-arrow-right.png)
+        width: 16px
+        height: 24px
+        display: inline-block
+        margin-left: 355px
+.masterpiece_content
+    position: relative
+    display: flex
+    h2
+        color: #005fa9
+        font-family: "GilroyExtraBold"
+        font-size: 59px
+        margin: 0
+        line-height: 64px
+        text-transform: uppercase
+    p
+        color: #fff
+        font-size: 24px
+        line-height: 30px
+        margin: 0
+        margin-left: 60px
+    .marks
+        position: absolute
+        top: -50px
+        left: -55px
+    .m-salt1
+        position: absolute
+        top: -44px
+        left: -250px
+    .m-salt2
+        position: absolute
+        top: 55px
+        left: -417px
+.masterpiece-carousel
+    padding-top: 85px
+    position: absolute
+    z-index: 100
+    max-width: 1040px
+    left: 45%
+    transform: translate(-50%, 0)
+.masterpiece-carousel-wrap
+    position: relative
+    .owl-carousel .owl-item img
+        width: auto
+    .m-item-info
+        display: flex
+        justify-content: space-between
+        div
+            color: #585d6e
+            font-size: 24px
+            min-width: 30%
+            text-align: center
+            
+        .m-item-info-active
+            color: #b7cddc
+            
+.m-item-content-left
+    p
+        color: #14233f
+        font-size: 50px
+        line-height: 64px
+        margin: 0
+        margin-left: 38%
+        margin-top: 20px
+        span
+            font-family: "GilroyExtraBold"
+        sup
+            font-size: 30px
+.m-item-content-right
+    margin-left: 5%
+    width: 35%
+    h3
+        color: #005fa9
+        font-family: "GilroyExtraBold"
+        font-size: 35px
+        margin: 0
+        line-height: 42px
+    p
+        color: #0b0f1b
+        font-size: 24px
+        line-height: 27px
+        margin-top: 105px
+.m-item-content
+    display: flex
+    margin-top: 95px
+    justify-content: space-between
+    flex-flow: row nowrap
+.masterpiece-btn
+    width: 335px
+    height: 56px
+    border: 1px solid $accent
+    color: $accent
+    font-size: 22px
+    background-color: transparent
+    transition: all 1s ease
+    margin-top: 5px
+    &:hover
+        background-color: $accent
+        color: #0f1521
+
+
+
+
+
+
+//offer
+.offer
+    margin-top: 650px
+.offer_content
+    z-index: 10
+    position: relative
+.offer_form
+    .success
+        top: 67%
+    h2
+        color: #fff
+        font-family: "GilroyExtraBold"
+        font-size: 50px
+        text-transform: uppercase
+        padding-top: 70px
+        padding-bottom: 25px
+        margin: 0
+    p
+        color: #fff
+        font-size: 35px
+        line-height: 42px
+        margin: 0
+        margin-bottom: 50px
+    input
+        width: 310px
+        height: 55px
+        padding-left: 35px
+        margin-right: 20px
+        margin-bottom: 30px
+    .offer_btn
+        width: 310px
+        height: 55px
+        color: #fff
+        font-size: 22px
+        background-color: transparent
+        border: 1px solid #fff
+        outline: none
+        box-shadow: none
+        transition: background-color 1s ease
+        position: relative
+        z-index: 100
+        &:hover
+            background-color: #fff
+            color: $accent
+        &:active
+            background-color: darken($accent, 5%)
+
+
+.offer-bg
+    position: absolute
+    top: 0
+    left: -13%
+    z-index: -1
+    height: 111%
+    width: 129.5%
+    img
+        height: 100%
+        width: 100%
+.letter
+    position: absolute
+    top: 72%
+    right: -12%
+    .pencil
+        position: absolute
+        top: -25px
+        right: 166px
+
+//map
+.map-sect
+    background-color: #deeaf2
+    padding-top: 154px
+    padding-bottom: 130px
+    position: relative
+    .map
+        max-width: 1200px
+        margin: auto
+        height: 500px
+        margin-top: 50px
+    .cert-marks
+        position: absolute
+        top: 12%
+        left: -12%
+    h2
+        color: #14233f
+        font-family: "GilroyExtraBold"
+        font-size: 50px
+        text-transform: uppercase
+        margin: 0
+        line-height: 60px
+
+    .map_content
+    .map-img
+        max-width: 1380px
+        margin: auto
+        img
+            width: 100%
+
+
+//reviews
+.reviews
+    background-color: #111825
+    padding-top: 160px
+    padding-bottom: 170px
+    position: relative
+    .item-figure
+        position: absolute
+        top: 160px
+        left: -94px
+        z-index: 100
+    .item-figure2
+        position: absolute
+        bottom: 0
+        right: 0
+    .carousel-reviews-item
+        display: flex
+        justify-content: space-between
+        margin-top: 130px
+        position: relative
+        .item-info
+            margin-left: 40px
+    &_content
+        position: relative
+        .marks
+            position: absolute
+            top: -45px
+            left: -55px
+    h2
+        margin: 0
+        color: #005fa9
+        font-family: "GilroyExtraBold"
+        font-size: 59px
+        line-height: 64px
+        text-transform: uppercase
+    .owl-carousel .owl-item img
+        width: auto
+        
+    .owl-nav
+        position: absolute
+        top: 0
+        right: 0
+    .owl-nav .owl-prev
+        background-image: url(../img/white-arrow-left.png)
+        width: 44px
+        height: 19px
+        display: inline-block
+        &:hover
+            background-image: url(../img/cert-arrow-left-hover.png)
+    .owl-nav .owl-next
+        background-image: url(../img/white-arrow-right.png)
+        width: 44px
+        height: 19px
+        display: inline-block
+        margin-left: 30px
+        &:hover
+            background-image: url(../img/cert-arrow-right-hover.png)
+    h3
+        color: #fff
+        font-family: "GilroyExtraBold"
+        font-size: 35px
+        margin: 0
+    span
+        color: cornflowerblue
+        font-size: 30px
+    p
+        color: #fff
+        font-size: 24px
+        line-height: 30px
+.carousel-reviews-fix
+    justify-content: center
+    flex-flow: row wrap
+    text-align: center
+    .item-img
+        margin: auto
+
+
+        
+
+//Questions
+.questions
+    padding-top: 155px
+    padding-bottom: 37px
+    position: relative
+    &_content
+        position: relative
+    .questions_image
+        z-index: 1
+        position: absolute
+        top: -154px
+        left: -432px
+        img
+            
+    .questions_form
+        text-align: right
+        z-index: 1000
+        position: relative
+        .success
+            top: 50%
+            left: 30%
+            span
+                color: #000
+        h2
+            margin: 0
+            padding: 0
+            color: #15233f
+            font-family: "GilroyExtraBold"
+            font-size: 50px
+            font-weight: bold
+            text-transform: uppercase
+        p
+            color: #15233f
+            font-size: 35px
+            line-height: 42px
+            margin: 0
+            padding-top: 40px
+            padding-bottom: 55px
+
+        input
+            width: 308px
+            height: 56px
+            border: 1px solid #000
+            background-color: #fff
+            margin-bottom: 22px
+            padding-left: 35px
+        textarea
+            width: 487px
+            height: 152px
+            border: 1px solid #000
+            background-color: #fff
+            padding-left: 35px
+            margin-bottom: 40px
+            padding-top: 10px
+        .questions_2-btn
+            width: 215px
+            height: 56px
+            border: 1px solid $accent
+            color: $accent
+            font-size: 22px
+            background-color: transparent
+            transition: all 1s ease
+            &:hover
+                background-color: $accent
+                color: #0f1521
+
+
+
+//QUESTIONS 2
+.questions2
+    padding-bottom: 100px
+    
+    &_content
+        position: relative
+        z-index: 100
+    &_man
+        position: absolute
+        bottom: -100px
+        right: -40px
+        z-index: -1
+    &_form
+        text-align: right
+        max-width: 555px
+        .success
+            top: 55%
+        h2
+            margin: 0
+            padding: 0
+            color: $accent
+            font-family: "GilroyExtraBold"
+            font-size: 50px
+            font-weight: bold
+            text-transform: uppercase
+        p
+            color: #fff
+            font-size: 35px
+            line-height: 42px
+        input
+            width: 308px
+            height: 56px
+            border: 1px solid #000
+            background-color: #fff
+            margin-bottom: 22px
+            padding-left: 35px
+        textarea
+            width: 487px
+            height: 152px
+            border: 1px solid #000
+            background-color: #fff
+            padding-left: 35px
+            margin-bottom: 40px
+            padding-top: 10px
+        .questions_2-btn
+            width: 215px
+            height: 56px
+            border: 1px solid $accent
+            color: $accent
+            font-size: 22px
+            background-color: transparent
+            transition: all 1s ease
+            &:hover
+                background-color: $accent
+                color: #0f1521
+
+
+
+//certificate
+.certificate
+    position: relative
+    background-color: #deeaf2
+    padding-top: 100px
+    padding-bottom: 170px
+    z-index: 100
+    &_title
+        position: relative
+    h2
+        margin: 0
+        color: #14233f
+        font-family: "GilroyExtraBold"
+        font-size: 50px
+        text-transform: uppercase
+    p
+        margin: 0
+        color: #15233f
+        line-height: 30px
+        font-size: 24px
+        padding-left: 95px
+
+    .cert-marks
+        position: absolute
+        top: 15%
+        left: -11%
+    .owl-carousel .owl-item img
+        width: auto
+        box-shadow: (28px 29px 40px rgba(0,0,0,.14))
+        margin-bottom: 45px
+    .carousel-certificate
+        margin-left: 10%
+        margin-top: 140px
+        z-index: 1
+    .owl-nav
+        position: absolute
+        top: -70px
+    .owl-nav .owl-prev
+        background-image: url(../img/cert-arrow-left.png)
+        width: 44px
+        height: 19px
+        display: inline-block
+        &:hover
+            background-image: url(../img/cert-arrow-left-hover.png)
+    .owl-nav .owl-next
+        background-image: url(../img/cert-arrow-right.png)
+        width: 44px
+        height: 19px
+        display: inline-block
+        margin-left: 30px
+        &:hover
+            background-image: url(../img/cert-arrow-right-hover.png)
+
+//Equipment
+.equipment
+    h3
+        color: #14233f
+        font-size: 40px
+        margin-left: -130px
+        margin-bottom: 120px
+        span
+            font-family: "GilroyExtraBold"
+
+    &_content
+        display: flex
+        &_images
+            display: flex
+            margin-left: -121px
+            figure
+                position: relative
+                img
+                    position: relative
+                figcaption
+                    top: 11px
+                    left: 17px
+                    height: 94%
+                    width: 91%
+                    opacity: 0
+                    position: absolute
+                    background-color: #002f50
+                    transition: opacity 1s ease
+                    text-align: center
+                    &:hover
+                        opacity: .8
+                    img
+                        margin-top: 125px
+                        opacity: 1
+    h2
+        color: #005fa9
+        font-family: "GilroyExtraBold"
+        font-size: 59px
+        text-transform: uppercase
+        line-height: 64px
+    &_content_title
+        position: relative
+        padding-top: 170px
+        z-index: 10
+        .marks
+            position: absolute
+            top: 30%
+            left: -60px
+        .backgr
+            position: absolute
+            top: 0
+            right: -1px
+            z-index: -1
+            height: 100%
+    &_content_info
+        padding-top: 40px
+        position: relative
+        figure
+            position: relative
+            img
+                position: relative
+            figcaption
+                top: 48px
+                left: 17px
+                height: 85%
+                width: 91%
+                opacity: 0
+                position: absolute
+                background-color: #002f50
+                transition: opacity 1s ease
+                text-align: center
+                &:hover
+                    opacity: .8
+                img
+                    margin-top: 125px
+                    opacity: 1
+                a.fancybox
+                    background-color: #002f50
+                    &:focus
+                         outline: none
+                    
+        p
+            margin: 0
+            padding-left: 104px
+            color: #14233f
+            font-size: 26px
+            line-height: 33px
+        img
+            margin-top: 38px
+
+            
+
+
+//DOUBT
+.doubt
+    position: relative
+    &_content
+        background-image: url(../img/doubt-bg.jpg)
+        background-size: cover
+        min-height: 1011px
+        max-width: 50%
+    &_content_right
+        position: absolute
+        right: 0
+        top: 23.1%
+        background-image: url(../img/doubt-bg.jpg)
+        min-height: 1046px
+        min-width: 50%
+        z-index: 1
+    .b-popup
+        background-color: transparent
+    .b-popup-content a
+        float: none
+        color: #fff
+        text-decoration: none
+.doubt_form
+    background-color: transparent
+    .success
+        width: 60%
+    input
+        width: 310px
+        height: 40px
+        padding-left: 35px
+        margin-bottom: 10px
+    .offer_btn
+        width: 310px
+        height: 40px
+        color: #fff
+        font-size: 22px
+        background-color: transparent
+        border: 1px solid #fff
+        outline: none
+        box-shadow: none
+        transition: background-color 1s ease
+        position: relative
+        z-index: 100
+        &:hover
+            background-color: #fff
+            color: $accent
+        &:active
+            background-color: darken($accent, 5%)
+        
+.doubt_calc
+    width: 756px
+    height: 1280px
+    background: linear-gradient(to left, #00d0fe, #0061aa)
+    padding-left: 125px
+    padding-right: 152px
+    padding-top: 125px
+    z-index: 2
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    .start
+        position: absolute
+        top: 25px
+        left: -10px
+        color: #fff
+    #end, #end2, #end3
+        position: absolute
+        top: 25px
+        right: -44px
+        color: #fff
+        background-color: transparent
+        width: 55px
+        border: none
+    #result
+        background-color: transparent
+        border: none
+        color: #fff
+        font-family: "GilroyExtraBold"
+        font-size: 60px
+        width: 100%
+        padding-left: 80px
+    .doubt_btn
+        width: 310px
+        height: 55px
+        color: #fff
+        font-size: 22px
+        background-color: transparent
+        border: 1px solid #fff
+        outline: none
+        box-shadow: none
+        margin-top: 40px
+        transition: background-color 1s ease
+        &:hover
+            background-color: #fff
+            color: $accent
+        &:active
+            background-color: darken($accent, 5%)
+
+
+    h2
+        color: #fff
+        font-family: "GilroyExtraBold"
+        font-size: 50px
+        line-height: 64px
+        text-transform: uppercase
+    h3
+        color: #fff
+        font-size: 30px
+        sup
+            font-size: 18px
+
+    p
+        color: #fff
+        font-size: 35px
+        line-height: 42px
+    &_content
+        text-align: center
+
+
+.ui-button, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, html .ui-button.ui-state-disabled:active, html .ui-button.ui-state-disabled:hover
+    background: #0d131f
+    width: 20px
+    height: 20px
+    border-radius: 10em
+    border-color: #0d131f
+    outline: none
+    top: -8px
+    cursor: pointer
+.ui-widget.ui-widget-content
+    width: 473px
+    height: 4px
+    background-color: #dde9f1
+    border: none
+.ui-slider-range.ui-corner-all.ui-widget-header.ui-slider-range-min
+    background-color: #0e1420
+
+
+//FOOTER
+
+.footer
+    padding-top: 340px
+    background-image: url(../img/footer-bg3.jpg)
+    background-position: center center
+    background-size: cover
+    position: relative
+    background-attachment: fixed
+
+.footer-bottom
+    border-top: 2px solid #0072b7
+    padding-top: 55px
+    padding-bottom: 50px
+.footer_content
+    display: flex
+    justify-content: space-between
+    &_addr
+        color: #fff
+        font-size: 30px
+        img
+            margin-right: 25px
+            margin-top: -5px
+    &_social
+        ul
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li
+                display: inline-block
+                margin-right: 15px
+                img
+                    transition: all 1s ease
+                    &:hover
+                        transform: scale(.9)
+a:focus
+    outline: none
+
+#lptrack_banner_pr_line_wrapper
+    display: none!important
+.success
+    display: none
+    text-align: center
+    width: 88%
+    position: absolute
+    text-transform: uppercase
+    z-index: 100
+    font-family: "GilroyExtraBold"
+    color: #fff
+    font-size: 30px
+    span
+        margin: auto
+    & ~ *
+        transition: all .5s ease
+    &.active
+        & ~ *
+            opacity: .5
+            filter: blur(10px)
+
+                     
+@import "media" // Всегда в конце

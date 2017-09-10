@@ -1,0 +1,311 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	body
+        .header__nav
+            display: none
+            float: right
+            ul
+                margin-top: 50px
+            li
+                display: block
+                background-color: $green
+                padding-left: 20px
+                padding-right: 20px
+                
+                a:hover
+                    color: $white
+                    border-bottom: 1px solid $white
+        .header__phone
+            margin-left: 191px
+        .special
+            text-align: center
+        .special__form
+            position: relative
+            left: auto
+            margin: 0 auto
+        .special__info
+            margin: 0 auto
+        .special__content .border
+            height: 121%
+        .faq__tabs
+            display: inline-block
+        .faq__tab
+            width: 700px
+        .scheme__item
+            &:after
+                display: none
+        .prices__content .block2, .prices__content .block4
+            margin: 0 auto
+        .prices__block
+            float: none
+            margin: 0 auto
+            margin-bottom: 25px!important
+        .prices__btn
+            margin: 0 auto
+            display: block
+            &:before, &:after
+                display: none
+        .prices__content .border
+            border-bottom: 2px solid $green
+        .testimonials__content h2
+            &:before, &:after
+                display: none
+        .testimonials__content .border
+            border-top: 2px solid $green
+            top: -80px
+            height: 115%
+        .testimonials__content
+            height: auto
+        .testimonials__content
+            padding-bottom: 32px
+        .prices__content .border
+            height: 97%
+        .prices__content .prices__block .border
+            height: 85%
+        .footer
+            text-align: center
+            p, a
+                display: block
+                margin-bottom: 10px
+            a
+                margin-left: 0
+            p:last-child
+                float: none
+        
+        
+                    
+        
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	body
+        .benefits__item
+            width: 50%
+            border: 1px solid $grey
+            &:last-child
+                border-right: 1px solid $grey
+        .benefits__items_row2
+            .benefits__item
+                border-bottom: 1px solid $grey
+        .prices__content .block2, .prices__content .block3
+            width: 100%
+        .prices__content .prices__block_title
+            position: relative
+            left: 0
+            top: 0
+            width: 100%!important
+        .prices__block
+            height: 300px
+        
+            
+
+@media only screen and (max-width : 824px)
+    body
+        .special h2
+            &:before, &:after
+                width: 45px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	body
+        .header__phone
+            position: absolute
+            top: 75px
+            left: 0
+            margin-left: 45px
+        h2
+            font-size: 26px
+        .special h2
+            &:before, &:after
+                top: 10px
+        .faq__tabs, .faq__tab
+            width: 100%
+        .faq .ui-widget-header
+            width: 100%
+        .faq__tabs a
+            font-size: 13px
+        .ui-tabs .ui-tabs-nav li
+            &:before, &:after
+                display: none
+        .faq p
+            display: block
+        .interest__content span
+            font-size: 77px
+        .interest__content
+            width: 100%
+
+@media only screen and (max-width : 570px)
+    body
+        .header__content_img
+            img
+                width: 100%
+        .special h2
+            &:before, &:after
+                width: 12px
+        .special__form
+            width: 100%
+            h3
+                font-size: 27px
+        .special__form_btn
+            margin-left: 0
+        .special__info
+            width: 100%
+        .special__info_item_img
+            left: 2px
+        .special__info_item_time
+            margin-left: 20px
+        .special__info_item
+            height: auto
+            &:after
+                content: ""
+                display: table
+                clear: both
+        
+        .scheme__item
+            width: 100%
+            padding: 0 25px
+        .scheme__row
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+        .scheme__row_fix
+            flex-wrap: wrap-reverse
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            .scheme__item
+                flex-wrap: wrap-reverse
+        .interest__content span
+            font-size: 40px
+            letter-spacing: initial
+        .interest__content p
+            font-size: 14px
+                    
+        
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	body
+        h2:before, h2:after
+            display: none
+        .toggle-mnu
+            top: 67px
+        .header__nav
+            width: 100%
+            
+            ul
+                margin-top: 100px
+                li
+                    margin-right: 0
+                    text-align: center
+                    background-color: transparent
+        .header__logo
+            float: none
+            text-align: center
+        .header__content_img
+            padding-left: 0
+            img
+                width: 100%
+        .header__content_info
+            position: relative
+            padding: 0
+            right: auto
+            top: auto
+            padding-top: 35px
+            h1
+                font-size: 35px
+                margin-bottom: 30px
+            p
+                font-size: 15px
+                padding-bottom: 45px
+                margin-bottom: 0
+            &:before, &:after
+                display: none
+        .border
+            display: none
+        .header__content
+            padding-top: 125px
+            text-align: center
+        .header
+            padding-bottom: 0
+        .benefits__item
+            width: 100%
+        .special__content
+            padding-top: 0
+        .special__info_item h4
+            font-size: 14px
+        .faq .ui-tabs .ui-tabs-panel
+            margin-top: 0
+            padding-left: 30px
+            font-size: 13px
+        .prices__content .block1, .prices__content .block4
+            width: 100%
+        .prices__block
+            height: 325px
+        .prices__btn
+            width: 100%
+        .testimonials__row
+            padding: 0 50px
+        .testimonials__item, .testimonials .item2, .testimonials .item3
+            width: 100%
+            height: auto
+            padding-bottom: 10px
+            p
+                font-size: 14px
+            .testimonials__item_photo
+                position: absolute
+                top: -26px
+                left: 50%
+                transform: translate(-50%, 0)
+                text-align: center
+            h5
+                margin: 0 auto
+                margin-top: 80px
+                margin-bottom: 6px
+            .testimonials__item_icon
+                display: none
+        .testimonials__content h2
+            top: -81px
+            
+            
+            
+            
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1210px)
+	body
+        .header__nav
+            display: block!important
+

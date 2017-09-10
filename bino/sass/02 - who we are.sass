@@ -1,0 +1,47 @@
+@import "vars"
+.who
+    text-align: center
+    margin-top: 120px
+    position: relative
+    z-index: 100
+    padding-bottom: 110px
+    border-bottom: 1px solid $light-grey
+    .header__down
+        position: absolute
+        top: -160px
+        left: 50%
+        transform: translate(-50%, 0)
+    &__item
+        cursor: pointer
+        &_icon
+            width: 73px
+            height: 73px
+            border: 1px solid #e5e5e5
+            margin: 0 auto
+            margin-bottom: 25px
+            line-height: 73px
+            transition: .6s all ease-in-out
+            &_fix
+                line-height: 84px
+        &:hover .who__item_icon
+            border-color: $red
+            transform: rotate(45deg)
+        &:hover .who__item_icon img
+            transform: rotate(315deg)
+        &:hover span
+            color: $red
+        span
+            color: $dark-grey
+            font-family: "OpenSansBold", sans-serif
+            font-size: 18px
+            text-transform: uppercase
+        &_devider
+            margin-top: 7px
+            margin-bottom: 15px
+        p
+            color: #999
+            font-family: "SourceSansPro", sans-serif
+            font-size: 12px
+            line-height: 20px
+
+            

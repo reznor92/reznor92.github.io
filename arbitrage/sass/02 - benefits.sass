@@ -1,0 +1,47 @@
+@import "vars"
+
+.benefits
+    text-align: center
+    background-color: $white
+    padding-top: 65px
+    padding-bottom: 70px
+    &:after
+        content: ""
+        display: table
+        clear: both
+    h2
+        margin-bottom: 60px
+    h2:before
+        top: 15px
+        left: 0px
+    h2:after
+        top: 15px
+        right: 0px
+    &__content
+        position: relative
+    &__item
+        text-align: center
+        width: 25%
+        height: 170px
+        padding: 0 40px    
+        padding-top: 28px
+        border-bottom: 2px solid $grey
+        border-right: 2px solid $grey
+        cursor: pointer
+        float: left
+        &:hover
+            border: 2px solid $green
+        &:last-child
+            border-right: none
+            &:hover
+                border: 2px solid $green
+        p
+            color: $black
+            font-family: "HelveticaNeueCyrLight"
+            margin-top: 15px
+    &__items_row2
+        .benefits__item
+            border-bottom: none
+            &:hover
+                border: 2px solid $green
+        

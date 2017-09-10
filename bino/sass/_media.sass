@@ -1,0 +1,176 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	body
+        .header__nav
+            float: right
+            display: none
+            li
+                display: block
+                padding: 10px 0
+                &:last-child
+                    margin-right: 53px
+        .header__menu_fixed
+            .toggle-mnu
+                top: 0
+        .who__item
+            margin-bottom: 30px
+        .study
+            .study__pic
+                position: relative
+                top: 0
+        .team
+            &__member
+                margin-top: 25px!important
+                float: none
+                display: inline-block
+                &__info
+                    display: block
+        .clients
+            &__content
+                text-align: center
+            &__item
+                float: none
+                display: inline-block
+                margin-right: 0
+        .blog
+            &__item
+                width: 50%
+            &__img
+                img
+                    width: 100%
+                    height: 480px
+                
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	body
+        .slick-prev
+            left: 0
+        .slick-next
+            right: 26px
+        .stats
+            &__content
+                text-align: center
+            &__item
+                float: none
+                display: inline-block
+                margin-right: 0
+                margin-bottom: 30px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 800px)
+    body
+        .about
+            text-align: center
+            &__info
+                margin-top: 30px
+
+@media only screen and (max-width : 768px)
+	body
+        .services
+            &__slider
+                width: 100%
+                float: none
+                height: auto
+                padding-bottom: 40px
+            &__pic
+                display: none
+            &__img
+                position: relative
+            &__slide
+                float: none
+        .team
+            padding-bottom: 100px
+@media only screen and (max-width : 600px)
+    body
+        .header__slider .header__slide p
+            font-size: 11px
+        .header__slider .header__btn
+            margin-bottom: 15px
+        .slick-prev, .slick-next
+            top: 42%
+        .header__slider
+            margin-top: 105px
+        .portfolio .item
+            width: 50%
+        .study
+            .study__pic
+                img
+                    width: 100%
+        .blog
+            &__item
+                width: 100%
+                height: 415px
+            &__info
+                padding-top: 30px
+            &__img
+                img
+                    height: 415px
+            &__arrow_left:before, &__arrow_right:before
+                display: none
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	body
+        .header__slider .header__slide span
+            font-size: 20px
+        .header__slider .header__slide h1
+            font-size: 55px
+        .slick-prev, .slick-next
+            top: 34%
+        .about
+            img
+                width: 100%
+        .contact
+            &__form, &__info
+                padding: 20px
+        .promo
+            h3
+                font-size: 32px
+        .footer
+            text-align: center
+            &__icons
+                margin-bottom: 10px
+                li
+                    margin-right: 5px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1201px)
+	body
+        .header__nav
+            display: block!important
+

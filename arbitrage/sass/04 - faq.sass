@@ -1,0 +1,110 @@
+@import "vars"
+.faq
+    padding-top: 138px
+    padding-bottom: 50px
+    background-image: url(../img/faq-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    text-align: center
+    color: $white
+    .ui-tabs .ui-tabs-panel
+        padding-top: 70px
+        padding-left: 50px
+        margin-top: 20px
+    &__tab
+        height: 385px
+        background: #2c3033!important
+        width: 500px
+        text-align: left
+        font-family: "HelveticaNeueCyrLight"
+        font-size: 16px
+        color: $white
+        line-height: 20px
+    h2:before, h2:after
+        display: none
+    &__tabs
+        margin-top: 57px
+        margin-bottom: 40px
+        display: flex
+        &__content
+            
+            margin-top: 20px
+        li
+            width: 100%
+            height: auto
+            text-align: left
+            background: $white
+            &:after
+                content: ''
+                position: absolute
+                border-right: 2px solid $grey
+                top: 0
+                right: 50px
+                height: 100%
+        a
+            font-family: 'Georgia'
+            font-size: 17px
+            color: $black
+    h3
+        font-family: 'Georgia'
+        font-size: 24px
+        margin-bottom: 15px
+    p
+        font-family: "HelveticaNeueCyrBold"
+        font-size: 36px
+        display: inline-block
+        color: $grey
+    span
+        display: inline-block
+        margin: 0 20px
+    .ui-tabs .ui-tabs-nav
+        padding: 0
+    .ui-widget-header
+        border: 0
+        background: none
+        width: 700px
+    .ui-widget-content
+        border: none
+        background: none
+    .ui-tabs .ui-tabs-nav li
+        white-space: inherit
+        padding: 15px 30px
+        outline: none
+        margin: 0!important
+        &:last-child
+            padding: 5px 30px
+        &:before
+            content: ''
+            background-image: url(../img/faq-arrow-grey.png)
+            background-repeat: no-repeat
+            background-position: right
+            top: 15px
+            right: 19px
+            width: 11px
+            height: 23px
+            position: absolute
+        &:hover
+            &:before
+                background-image: url(../img/faq-arrow-green.png)
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor
+        padding: 0
+        outline: none
+    .ui-corner-all, .ui-corner-right, .ui-corner-top, .ui-corner-tr
+        border-radius: 0
+    .ui-button, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+        background: $white
+        border: none
+        border-bottom: 2px solid $grey
+        &:last-child
+            border-bottom: none
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active
+        background: $green
+    .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited
+        color: $white
+    .ui-state-hover a
+        color: $green
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active
+        &:after
+            display: none
+        

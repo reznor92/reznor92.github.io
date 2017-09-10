@@ -1,0 +1,87 @@
+@import "vars"
+
+.team
+    text-align: center
+    padding-top: 150px
+    min-height: 745px
+    background-image: url(../img/team-bg.jpg)
+    background-size: cover
+    background-position: center
+    position: relative
+    width: 100%
+    &:before
+        content: ''
+        background-image: url(../img/team-bg2.png)
+        width: 100%
+        bottom: 0
+        left: 0
+        position: absolute
+        height: 80%
+        background-position: center
+        background-size: cover
+    h2
+        color: #fff
+        font-family: "SourceSansProBold", sans-serif
+        font-size: 36px
+        text-transform: uppercase
+        letter-spacing: 2px
+    p
+        font-family: "OpenSansLight", sans-serif
+        font-size: 14px
+        color: $very-light-grey
+        margin: 30px 0
+    &__content
+        margin-top: 125px
+    &__member
+        width: 228px
+        float: left
+        text-align: center
+        cursor: pointer
+        position: relative
+        &:hover .team__member__pic
+            transform: scale(1.2)
+        &:hover .team__member__info
+            display: block
+        &__pic
+            width: 50px
+            height: 50px
+            display: inline-block
+            border-radius: 10em
+            overflow: hidden
+            border: 2px solid #e74c3c
+            position: relative
+            z-index: 1000
+            transition: all .6s ease-in-out
+            img
+                width: 100%
+                height: 100%
+        &__info
+            position: relative
+            display: none
+            transition: all 1s ease
+            
+            &_line
+                position: absolute
+                top: -131px
+                left: 50%
+                transform: translate(-50%,0)
+            h4
+                font-family: "OpenSansBold", sans-serif
+                font-size: 24px
+                color: $red
+                margin-top: 80px
+                margin-bottom: 20px
+            span
+                color: #fff
+                font-family: "SourceSansPro", sans-serif
+                font-size: 14px
+    .member1
+        margin-top: 60px
+    .member2
+        margin-top: 15px
+    .member3
+        margin-top: 13px
+    .member4
+        margin-top: 50px
+    .member5
+        margin-top: 30px

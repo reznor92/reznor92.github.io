@@ -1,0 +1,60 @@
+@import "vars"
+
+.scheme
+    text-align: center
+    background-color: $white
+    padding: 70px 0
+    &:after
+        content: ""
+        display: table
+        clear: both
+    &__content
+        h2:before, h2:after
+            display: none
+    &__item
+        width: 25%
+        float: left
+        margin-top: 60px
+        
+        position: relative
+        cursor: pointer
+        &:hover p
+            color: $green
+            transform: scale(1.1)
+            
+        &:after
+            content: url(../img/scheme-arrow.png)
+            position: absolute
+            top: 44px
+            right: -90px
+            width: 190px
+            height: 35px
+        &:last-child
+            &:after
+                content: url(../img/scheme-arrow2.png)
+                position: absolute
+                top: 88px
+                right: -50px
+        p
+            margin-top: 24px
+            transition: .5s all ease-in-out
+            font-family: "HelveticaNeueCyrLight"
+            font-size: 15px
+            color: $black
+    &__row_fix
+        .scheme__item
+            &:after
+                content: url(../img/scheme-arrow3.png)
+                position: absolute
+                top: 18px
+                right: -88px
+                width: 190px
+                height: 35px
+            img
+                margin-right: 22px
+            &:last-child
+                &:after
+                    display: none
+            
+        
+    

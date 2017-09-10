@@ -1,0 +1,37 @@
+@import "vars"
+
+.stats
+    padding-top: 153px
+    padding-bottom: 133px
+    background-image: url(../img/stats-bg.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &__content
+        -vendor-animation-duration: 3s
+    &__item
+        width: 200px
+        text-align: center
+        float: left
+        margin-right: 42px
+        &:last-child
+            margin-right: 0
+        &__icon
+            border-radius: 50%
+            height: 100px
+            width: 100px
+            line-height: 115px
+            text-align: center
+            border: 1px solid #fff
+            display: inline-block
+        h3
+            font-family: "SourceSansProBold", sans-serif
+            font-size: 30px
+            color: $very-light-grey
+            margin-top: 45px
+            text-transform: uppercase
+        p
+            font-family: "SourceSansPro", sans-serif
+            font-size: 18px
+            color: $very-light-grey
+            margin-top: 10px
