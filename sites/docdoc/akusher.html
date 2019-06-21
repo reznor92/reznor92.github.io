@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>DOCDOC - Найдите провереного врача и запишитесь на прием</title>
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/nice-date-picker.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="main list">
+
+        <!-- HEADER SECTION -->
+
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header_logo col-md-2">
+                        <img src="./img/Medical.png" alt="docdoc">
+                    </div>
+                    <div class="header_select-city col-md-2 col-md-offset-1">
+                        <div class="select-city_inner">
+                            <i class="fas fa-globe-asia"></i>
+                            <select class="select-city">
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Волгоград">Волгоград</option>
+                                <option value="Воронеж">Воронеж</option>
+                                <option value="Екатеринбург">Екатеринбург</option>
+                                <option value="Ижевск">Ижевск</option>
+                                <option value="Казань">Казань</option>
+                                <option value="Краснодар">Краснодар</option>
+                                <option value="Красноярск">Красноярск</option>
+                                <option value="Нижний Новгород">Нижний Новгород</option>
+                                <option value="Новосибирск">Новосибирск</option>
+                                <option value="Пермь">Пермь</option>
+                                <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                                <option value="Самара">Самара</option>
+                                <option value="Сочи">Сочи</option>
+                                <option value="Тюмень">Тюмень</option>
+                                <option value="Уфа">Уфа</option>
+                                <option value="Челябинск">Челябинск</option>
+                                <option value="Ярославль">Ярославль</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="header_phone_area col-md-4 col-md-offset-3">
+                        <div class="header_phone_text">Нужна помощь! <span>Звоните!</span></div>
+                        <span class="header_phone">8 (499) 116-81-78</span>
+                        <div class="personal_area">
+                            <div class="personal_area_title">Личный кабинет</div>
+                            <div class="personal_area_list">
+                                <ul>
+                                    <li><a href="#">Вход</a></li>
+                                    <li><a href="#">Регистрация</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list_header_content">
+                <div class="container">
+                    <div class="row">
+                        <img src="img/conversio1.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="list_header_form">
+                <h2>Запишитесь на приём к врачу онлайн</h2>
+                <div class="container">
+                    <div class="row">
+                        <form class="header_content_form">
+                            <div class="input-container input-container1">
+                                <select class="header_content_form_select" required>
+                                    <option value="">Врач, клиника, услуга</option>
+                                    <option value="Акушер">Акушер</option>
+                                    <option value="Аллерголог">Аллерголог</option>
+                                    <option value="Андролог">Андролог</option>
+                                    <option value="Анестезиолог">Анестезиолог</option>
+                                    <option value="Венеролог">Венеролог</option>
+                                    <option value="Врач функциональной диагностики">Врач функциональной диагностики
+                                    </option>
+                                    <option value="Гастроэнтеролог">Гастроэнтеролог</option>
+                                </select>
+                            </div>
+                            <div class="input-container input-container2">
+                                <select class="header_content_form_select2" required>
+                                    <option value="">Метро, город МО</option>
+                                    <option value="Дёмский">Дёмский</option>
+                                    <option value="Калининский">Калининский</option>
+                                    <option value="Кировский">Кировский</option>
+                                    <option value="Лениниский">Лениниский</option>
+                                    <option value="Октябрьский">Октябрьский</option>
+                                    <option value="Орджоникидзевский">Орджоникидзевский</option>
+                                    <option value="Гастроэнтеролог">Советский</option>
+                                </select>
+                            </div>
+                            <div class="list_header_form_checkboxes">
+                                <p>
+                                    <input type="checkbox" id="home" />
+                                    <label for="home">Выезд на дом</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="polisDMC" checked />
+                                    <label for="polisDMC">По полису ДМС</label>
+                                </p>
+                            </div>
+                            <button type="submit" class="btn">Найти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- HEADER SECTION END -->
+
+        <!-- LIST SECTION -->
+
+        <div class="list_page">
+            <div class="container">
+                <div class="row">
+                    <div class="list_page_wrapper">
+                        <div class="list_page_breadcrumb">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Акушеры</a></li>
+                                <li><a href="#">Выезд на дом</a></li>
+                            </ul>
+                        </div>
+                        <div class="list_page_content">
+                            <h3 class="list_page_content_title">Вызов акушера на дом <span>33</span></h3>
+                            <div class="list_page_info">
+                                <div class="list_page_content_subtitle">
+                                    <i class="fas fa-arrow-right"></i> На DocDoc вы сможете выбрать акушера, который
+                                    приедет к вам на дом круглосуточно
+                                    <i class="fas fa-star-of-life"></i> проверенные отзывы <i
+                                        class="fas fa-star-of-life"></i> любой район Москвы
+                                </div>
+                                <p>В анкете врача Вы найдете подробную информацию о его профессиональной деятельности, а
+                                    также отзывы пациентов. Если необходимо вызвать акушера на дом взрослому или
+                                    ребенку,
+                                    просто отправьте электронную заявку или позвоните в наш контактный центр, и
+                                    консультант
+                                    подберет специалиста с учетом Ваших требований.</p>
+                                <p><span>Обратите внимание, в анкетах врачей указана стоимость приема в клинике.</span>
+                                    Стоимость выезда на дом будет отличаться от указанной стоимости приема. Для того
+                                    чтобы
+                                    узнать, сколько стоит выезд на дом конкретного врача, позвоните в наш контактный
+                                    центр,
+                                    и консультант сообщит Вам всю необходимую информацию. Цена платного вызова акушера
+                                    на
+                                    дом может меняться в зависимости от степени удаленности конечного пункта назначения.
+                                </p>
+                            </div>
+                            <a href="#" class="list_page_info_close">Свернуть</a>
+
+                            <div class="filters">
+                                <div class="list_page_content_filter">
+                                    <ul>
+                                        <li class="active"><a href="#">Популярные</a></li>
+                                        <li><a href="#">Рейтинг</a></li>
+                                        <li><a href="#">Стаж</a></li>
+                                        <li><a href="#">Стоимость</a></li>
+                                        <li><a href="#">Отзывы</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list_page_content_filter_days">
+                                    <button class="list_page_content_filter_days_btn" type="button" data-toggle="list_page_content_filter_days">
+                                        Расписание на <span class="value">Все дни</span>
+                                    </button>
+                                    <select class="list_page_content_filter_days_select">
+                                        <option value="Сегодня">Сегодня</option>
+                                        <option value="Завтра, 27 апр">Завтра, 27 апр</option>
+                                        <option value="Воскресенье,  28 апр">Воскресенье,  28 апр</option>
+                                        <option value="Понедельник, 29 апр">Понедельник, 29 апр</option>
+                                        <option value="Выбрать другой день" class="alldays" disabled>Выбрать другой день</option>
+                                        <option value="Все дни" selected="selected">Все дни</option>
+                                    </select>
+                                    <div class="list_page_content_filter_calendar">
+                                            <div id="calendar-demo-wrapper"></div>
+                                            <span class="calendar-online">Онлайн-запись доступна только
+                                                    на ближайшие две недели</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- LIST SECTION END -->
+
+        <!-- LIST DOCTORS SECTION -->
+        <div class="list_page_doctors">
+            <div class="container">
+                <div class="row">
+                    <div class="list_page_doctors_card list_page_doctors_card_blue">
+                        <div class="card_recomendation">
+                            <img src="img/logo.png" alt="">
+                            <span>Рекомендует</span>
+                        </div>
+                        <div class="card_column1">
+                            <div class="card_photo">
+                                <img src="img/38745.162x162.jpg" alt="">
+                                <a href="#" class="card_photo_like"><img src="img/hert-icon.svg" alt=""></a>
+                            </div>
+                            <div class="card_rating">
+                                <ul>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                </ul>
+                                <p><span>Превосходный</span> врач<br> на основе 45 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="card_column2">
+                            <div class="card_prof">Акушер</div>
+                            <div class="card_name">Водка Ольга Владимировна</div>
+                            <div class="card_experience">Стаж 31 год</div>
+                            <div class="card_category">Врач высшей Категории</div>
+                            <div class="card_price">
+                                <span>2700 <i class="fas fa-ruble-sign"></i></span>
+                                <a href="#" class="card_price_info">
+                                    <img src="img/data_image_svg+xml_….svg" alt="">
+                                    <div class="card_price_info_detail">
+                                        <span>Акушер</span>
+                                        <span class="card_price_info_detail_price">1800 <i
+                                                class="fas fa-ruble-sign"></i></span>
+                                        <span class="card_price_info_detail_address">г. Москва, 6-й Монетчиковский пер.,
+                                            д.
+                                            19</span>
+                                        <p>Стоимость указана за первичный приём.</p>
+                                        <p>В неё не входит стоимость дополнительных исследований и выезда на дом.</p>
+                                    </div>
+                                </a>
+                                <span class="card_price_add">Цена приема в клинике</span>
+
+                            </div>
+                            <div class="card_phone">
+                                <span>Телефон для записи:</span>
+                                8 (499) 519-34-07
+                            </div>
+                            <div class="card_peoples">
+                                <span>Всего записалось 295 человек</span>
+                            </div>
+                        </div>
+                        <div class="card_column3">
+                            <div class="card_month">Апрель</div>
+                            <div class="card_tabs">
+                                <ul class="tabs_caption">
+                                    <li class="card_tab active">четверг, 25</li>
+                                    <li class="card_tab">пятница, 26</li>
+                                    <li class="card_tab">суббота, 27</li>
+                                </ul>
+                                <div class="card_tab_content active">
+                                    <p>
+                                        Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                                <div class="card_tab_content">
+                                    <p>
+                                        2Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                                <div class="card_tab_content">
+                                    <p>
+                                        3Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card_address">
+                                <span>ABC медицина на Бауманской</span>
+                                г. Москва, Плетешковский пер., д. 4
+                            </div>
+                            <div class="card_address_streets">
+                                <ul>
+                                    <li>
+                                        <span>Бауманская</span>
+                                        <p>350 м</p>
+                                    </li>
+                                    <li>
+                                        <span>Красносельская</span>
+                                        <p>1.2км</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_page_doctors_card">
+                        <div class="card_column1">
+                            <div class="card_photo">
+                                <img src="img/49705.162x162.jpg" alt="">
+                                <a href="#" class="card_photo_like"><img src="img/hert-icon.svg" alt=""></a>
+                            </div>
+                            <div class="card_rating">
+                                <ul>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-gray.svg" alt=""></li>
+                                </ul>
+                                <p><span>Превосходный</span> врач<br> на основе 56 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="card_column2">
+                            <div class="card_prof">Акушер</div>
+                            <div class="card_name">Икрянникова Елена Сергеевна</div>
+                            <div class="card_experience">Стаж 41 год</div>
+                            <div class="card_category">Врач высшей Категории</div>
+                            <div class="card_price">
+                                <span>1800 <i class="fas fa-ruble-sign"></i></span>
+                                <a href="#" class="card_price_info">
+                                    <img src="img/data_image_svg+xml_….svg" alt="">
+                                    <div class="card_price_info_detail">
+                                        <span>Акушер</span>
+                                        <span class="card_price_info_detail_price">1800 <i
+                                                class="fas fa-ruble-sign"></i></span>
+                                        <span class="card_price_info_detail_address">г. Москва, 6-й Монетчиковский пер.,
+                                            д.
+                                            19</span>
+                                        <p>Стоимость указана за первичный приём.</p>
+                                        <p>В неё не входит стоимость дополнительных исследований и выезда на дом.</p>
+                                    </div>
+                                </a>
+                                <span class="card_price_add">Цена приема в клинике</span>
+
+                            </div>
+                            <div class="card_phone">
+                                <span>Телефон для записи:</span>
+                                8 (499) 519-36-05
+                            </div>
+                            <div class="card_peoples">
+
+                                <span>Последняя запись к этому врачу была 1 час назад</span>
+                            </div>
+                        </div>
+                        <div class="card_column3">
+                            <div class="card_month">Апрель</div>
+                            <div class="card_tabs">
+                                <ul class="tabs_caption">
+                                    <li class="card_tab active">четверг, 25</li>
+                                    <li class="card_tab">пятница, 26</li>
+                                    <li class="card_tab">суббота, 27</li>
+                                </ul>
+                                <div class="card_tab_content active">
+                                    <p>
+                                        Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                                <div class="card_tab_content">
+                                    <p>
+                                        2Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                                <div class="card_tab_content">
+                                    <p>
+                                        3Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card_address">
+                                <span>ABC медицина на Чистых Прудах</span>
+                                г. Москва, Чистопрудный б-р, д. 12, стр. 2
+                            </div>
+                            <div class="card_address_streets">
+                                <ul>
+                                    <li>
+                                        <span>Чистые пруды</span>
+                                        <p>610 м</p>
+                                    </li>
+                                    <li>
+                                        <span>Тургеневская</span>
+                                        <p>740 м</p>
+                                    </li>
+                                    <li>
+                                        <span>Сретенский бульвар</span>
+                                        <p>890 м</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_page_doctors_card">
+                        <div class="card_recomendation">
+                            <img src="img/logo.png" alt="">
+                            <span>Рекомендует</span>
+                        </div>
+                        <div class="card_column1">
+                            <div class="card_photo">
+                                <img src="img/49743.162x162.jpg" alt="">
+                                <a href="#" class="card_photo_like"><img src="img/hert-icon.svg" alt=""></a>
+                            </div>
+                            <div class="card_rating">
+                                <ul>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                </ul>
+                                <p><span>Превосходный</span> врач<br> на основе 20 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="card_column2">
+                            <div class="card_prof">Акушер</div>
+                            <div class="card_name">Паршина Юлия Алексеевна</div>
+                            <div class="card_experience">Стаж 10 год</div>
+                            <div class="card_category">Врач высшей Категории</div>
+                            <div class="card_price">
+                                <span>1440 <i class="fas fa-ruble-sign"></i><span
+                                        class="card_price_old">1800</span></span>
+
+                                <a href="#" class="card_price_info">
+                                    <img src="img/data_image_svg+xml_….svg" alt="">
+                                    <div class="card_price_info_detail">
+                                        <span>Акушер</span>
+                                        <span class="card_price_info_detail_price">1800 <i
+                                                class="fas fa-ruble-sign"></i></span>
+                                        <span class="card_price_info_detail_address">г. Москва, 6-й Монетчиковский пер.,
+                                            д.
+                                            19</span>
+                                        <p>Стоимость указана за первичный приём.</p>
+                                        <p>В неё не входит стоимость дополнительных исследований и выезда на дом.</p>
+                                    </div>
+                                </a>
+                                <div class="card_price_discount">20%</div>
+                                <span class="card_price_add">На первый прием только на DocDoc</span>
+
+                            </div>
+                            <div class="card_phone">
+                                <span>Телефон для записи:</span>
+                                8 (499) 116-76-64
+                            </div>
+                            <div class="card_peoples">
+
+                                <span>За последний месяц опубликовано 2 отзыва</span>
+                            </div>
+                        </div>
+                        <div class="card_column3">
+                            <div class="card_month">Апрель</div>
+                            <div class="card_tabs">
+                                <ul class="tabs_caption">
+                                    <li class="card_tab active">четверг, 25</li>
+                                    <li class="card_tab">пятница, 26</li>
+                                    <li class="card_tab">суббота, 27</li>
+                                </ul>
+                                <div class="card_tab_content active">
+                                    <p>
+                                        Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                                <div class="card_tab_content">
+                                    <p>
+                                        2Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                                <div class="card_tab_content">
+                                    <p>
+                                        3Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card_address">
+                                <span>Открытая клиника Куркино</span>
+                                г. Москва, Плетешковский пер., д. 4
+                            </div>
+                            <div class="card_address_streets">
+                                <ul>
+                                    <li>
+                                        <span>Парк культуры</span>
+                                        <p>590 м</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_page_doctors_card">
+
+                        <div class="card_column1">
+                            <div class="card_photo">
+                                <img src="img/49457.162x162.jpg" alt="">
+                                <a href="#" class="card_photo_like"><img src="img/hert-icon.svg" alt=""></a>
+                            </div>
+                            <div class="card_rating">
+                                <ul>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-gray.svg" alt=""></li>
+                                </ul>
+                                <p><span>Превосходный</span> врач<br> на основе 26 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="card_column2">
+                            <div class="card_prof">Акушер</div>
+                            <div class="card_name">Агаян Лилит Генриевна</div>
+                            <div class="card_experience">Стаж 31 год</div>
+                            <div class="card_category">Врач высшей Категории</div>
+                            <div class="card_price">
+                                <span>2700 <i class="fas fa-ruble-sign"></i></span>
+                                <a href="#" class="card_price_info">
+                                    <img src="img/data_image_svg+xml_….svg" alt="">
+                                    <div class="card_price_info_detail">
+                                        <span>Акушер</span>
+                                        <span class="card_price_info_detail_price">1800 <i
+                                                class="fas fa-ruble-sign"></i></span>
+                                        <span class="card_price_info_detail_address">г. Москва, 6-й Монетчиковский пер.,
+                                            д.
+                                            19</span>
+                                        <p>Стоимость указана за первичный приём.</p>
+                                        <p>В неё не входит стоимость дополнительных исследований и выезда на дом.</p>
+                                    </div>
+                                </a>
+                                <span class="card_price_add">Цена приема в клинике</span>
+
+                            </div>
+                            <div class="card_phone">
+                                <span>Телефон для записи:</span>
+                                8 (499) 519-36-05
+                            </div>
+                            <div class="card_peoples">
+
+                                <span>Последняя запись к этому врачу была 1 час назад</span>
+                            </div>
+                        </div>
+                        <div class="card_column3">
+                            <div class="card_month">Апрель</div>
+                            <div class="card_tabs">
+                                <ul class="tabs_caption">
+                                    <li class="card_tab active">четверг, 25</li>
+                                    <li class="card_tab">пятница, 26</li>
+                                    <li class="card_tab">суббота, 27</li>
+                                </ul>
+                                <div class="card_tab_content active">
+                                    <p>
+                                        Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                                <div class="card_tab_content">
+                                    <p>
+                                        2Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                                <div class="card_tab_content">
+                                    <p>
+                                        3Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card_address">
+                                <span>ABC медицина на Чистых Прудах</span>
+                                г. Москва, Чистопрудный б-р, д. 12, стр. 2
+                            </div>
+                            <div class="card_address_streets">
+                                <ul>
+                                    <li>
+                                        <span>Чистые пруды</span>
+                                        <p>610 м</p>
+                                    </li>
+                                    <li>
+                                        <span>Тургеневская</span>
+                                        <p>740м</p>
+                                    </li>
+                                    <li>
+                                        <span>Сретенский бульвар</span>
+                                        <p>890м</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_page_doctors_card">
+
+                        <div class="card_column1">
+                            <div class="card_photo">
+                                <img src="img/7252.162x162.jpg" alt="">
+                                <a href="#" class="card_photo_like"><img src="img/hert-icon.svg" alt=""></a>
+                            </div>
+                            <div class="card_rating">
+                                <ul>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    <li> <img src="img/hert-gray.svg" alt=""></li>
+                                </ul>
+                                <p><span>Превосходный</span> врач<br> на основе 9 отзывов</p>
+                            </div>
+                        </div>
+                        <div class="card_column2">
+                            <div class="card_prof">Акушер</div>
+                            <div class="card_name">Кадохова Вера Валерьевна</div>
+                            <div class="card_experience">Стаж 31 год</div>
+                            <div class="card_category">Врач высшей Категории</div>
+                            <div class="card_price">
+                                <span>2800 <i class="fas fa-ruble-sign"></i></span>
+                                <a href="#" class="card_price_info">
+                                    <img src="img/data_image_svg+xml_….svg" alt="">
+                                    <div class="card_price_info_detail">
+                                        <span>Акушер</span>
+                                        <span class="card_price_info_detail_price">1800 <i
+                                                class="fas fa-ruble-sign"></i></span>
+                                        <span class="card_price_info_detail_address">г. Москва, 6-й Монетчиковский пер.,
+                                            д.
+                                            19</span>
+                                        <p>Стоимость указана за первичный приём.</p>
+                                        <p>В неё не входит стоимость дополнительных исследований и выезда на дом.</p>
+                                    </div>
+                                </a>
+                                <span class="card_price_add">Цена приема в клинике</span>
+
+                            </div>
+                            <div class="card_phone">
+                                <span>Телефон для записи:</span>
+                                8 (499) 519-36-05
+                            </div>
+                            <div class="card_peoples">
+
+                                <span>Последняя запись к этому врачу была 1 час назад</span>
+                            </div>
+                        </div>
+                        <div class="card_column3">
+                            <div class="card_month">Апрель</div>
+                            <div class="card_tabs">
+                                <ul class="tabs_caption">
+                                    <li class="card_tab active">четверг, 25</li>
+                                    <li class="card_tab">пятница, 26</li>
+                                    <li class="card_tab">суббота, 27</li>
+                                </ul>
+                                <div class="card_tab_content active">
+                                    <p>
+                                        Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                                <div class="card_tab_content">
+                                    <p>
+                                        2Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                                <div class="card_tab_content">
+                                    <p>
+                                        3Сегодня у врача всё занято. <br>
+                                        Ближайшая запись на ср, 24 апр
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card_address">
+                                <span>Чудо Доктор на Школьной 49</span>
+                                г. Москва, Чистопрудный б-р, д. 12, стр. 2
+                            </div>
+                            <div class="card_address_streets">
+                                <ul>
+                                    <li>
+                                        <span>Чистые пруды</span>
+                                        <p>610 м</p>
+                                    </li>
+                                    <li>
+                                        <span>Тургеневская</span>
+                                        <p>740м</p>
+                                    </li>
+                                    <li>
+                                        <span>Сретенский бульвар</span>
+                                        <p>890м</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list_pagination">
+                <ul>
+                    <li><a href="#" class="arrow_fade"><img src="img/arrow-icin.svg" alt=""></a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li class="list_pagination_last_page"><a href="#">56</a></li>
+                    <li><a href="#"><img src="img/arrow-icin.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- LIST DOCTORS SECTION END -->
+
+        <!-- LIST QUESTIONS SECTION -->
+
+        <div class="list_page_questions">
+            <div class="container">
+                <div class="row">
+                    <div class="list_page_questions_content">
+
+
+                        <span class="list_page_questions_title">Часто задаваемые вопросы:</span>
+                        <div class="list_page_questions_item">
+                            <span>Возможно ли узнать рейтинг акушеров-гинекологов?</span>
+                            <p>Да, возможно. На нашем портале у каждого акушера-гинеколога свой рейтинг, который
+                                рассчитывается по специально разработанной системе DocDoc и учитывает множество важных
+                                профессиональных показателей.</p>
+                        </div>
+                        <div class="list_page_questions_item">
+                            <span>Ищу акушера, посоветуйте кого-нибудь.</span>
+                            <p>Вы можете посмотреть отзывы пациентов о врачах-акушерах или акушерах-гинекологах и
+                                выбрать
+                                подходящего доктора. Также стоит обратить внимание на образование и опыт работы
+                                специалиста,
+                                указанные в анкете.</p>
+                        </div>
+                        <div class="list_page_questions_item">
+                            <span>В какой центр акушерства и гинекологии обратиться?</span>
+                            <p>Поиск клиники - не менее важная задача, чем выбор специалиста. На нашем сайте вы сможете
+                                найти <a href="#">лучшие отделения акушерства и гинекологии</a> по отзывам пациентов и
+                                рейтингу клиник.</p>
+                        </div>
+                        <div class="list_page_questions_item">
+                            <span>Чем отличается акушер от гинеколога?</span>
+                            <p>Акушер - это врач-гинеколог, получивший специальную подготовку по оказанию помощи во
+                                время
+                                ведения беременности, родов и послеродовом процессе.</p>
+                        </div>
+                        <div class="list_page_questions_alarm">
+                            <img src="img/alarm.svg" alt="">
+                            <span>ОБРАТИТЕ ВНИМАНИЕ!</span>
+                            <p>Информация на странице представлена для ознакомления. Для назначения лечения обратитесь к
+                                врачу.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LIST QUESTIONS SECTION END -->
+
+        <!-- LIST REVIEWS SECTION -->
+
+        <div class="list_page_reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="list_page_reviews_content">
+                        <span>Акушеры Москвы - последние отзывы</span>
+                        <div class="list_page_reviews_row">
+                            <div class="list_page_reviews_item">
+                                <div class="list_page_reviews_item_header">
+                                    <div class="list_page_reviews_item_img">
+                                        <img src="img/foto-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="list_page_reviews_item_name">
+                                        <span>Травкова Людмила</span>
+                                        <p>50 отзывов</p>
+                                    </div>
+                                </div>
+                                <div class="list_page_reviews_item_info">
+                                    <p>Самый лучший врач. Уже на протяжении долгих лет хожу только к ней,где бы она не
+                                        работала. И все женщины нашей семьи меня поддерживают в этом выборе и доверяют
+                                        только ей.</p>
+                                    <span>На модерации, 24 апреля 2019</span>
+                                </div>
+                            </div>
+                            <div class="list_page_reviews_item">
+                                <div class="list_page_reviews_item_header">
+                                    <div class="list_page_reviews_item_img">
+                                        <img src="img/foto-thumb-3.jpg" alt="">
+                                    </div>
+                                    <div class="list_page_reviews_item_name">
+                                        <span>Суханова Анастасия Олеговна</span>
+                                        <p>10 отзывов</p>
+                                    </div>
+                                </div>
+                                <div class="list_page_reviews_item_info">
+                                    <p>Врач очень доброжелательно и профессионально отнеслась к моей проблеме, назначила
+                                        все
+                                        необходимые анализы, подробно ответила на все мои вопросы и назначила повторный
+                                        приём, буду обращаться теперь</p>
+                                    <a href="#">еще</a>
+                                    <span>На модерации, 24 апреля 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_page_reviews_row">
+                            <div class="list_page_reviews_item">
+                                <div class="list_page_reviews_item_header">
+                                    <div class="list_page_reviews_item_img">
+                                        <img src="img/foto-thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="list_page_reviews_item_name">
+                                        <span>Любимова Наталья Алексеевна</span>
+                                        <p>44 отзыва</p>
+                                    </div>
+                                </div>
+                                <div class="list_page_reviews_item_info">
+                                    <p>Приём прошёл в комфортной обстановке. Все рассказали, всё объяснили. Про все
+                                        дополнительные анализы заранее предупредили, чек на выходе не оказался
+                                        неожиданностью.</p>
+                                    <span>На модерации, 24 апреля 2019</span>
+                                </div>
+                            </div>
+                            <div class="list_page_reviews_item">
+                                <div class="list_page_reviews_item_header">
+                                    <div class="list_page_reviews_item_img">
+                                        <img src="img/foto-thumb-4.jpg" alt="">
+                                    </div>
+                                    <div class="list_page_reviews_item_name">
+                                        <span>Милько Елена Юрьевна</span>
+                                        <p>13 отзывов</p>
+                                    </div>
+                                </div>
+                                <div class="list_page_reviews_item_info">
+                                    <p>Хочу сказать огромное спасибо. Я много лет не могла забеременеть, врачи назначали
+                                        кучу разных препаратов, но я встретила ее в 2016 году и очень благодарна судьбе,
+                                        что
+                                        она нас свела. Первый малыш родился уже в 2017 </p>
+                                    <a href="#">еще</a>
+                                    <span>На модерации, 24 апреля 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_page_reviews_row">
+                            <div class="list_page_reviews_item">
+                                <div class="list_page_reviews_item_header">
+                                    <div class="list_page_reviews_item_img">
+                                        <img src="img/foto-thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="list_page_reviews_item_name">
+                                        <span>Любимова Наталья Алексеевна</span>
+                                        <p>44 отзыва</p>
+                                    </div>
+                                </div>
+                                <div class="list_page_reviews_item_info">
+                                    <p>Приём прошёл в комфортной обстановке. Все рассказали, всё объяснили. Про все
+                                        дополнительные анализы заранее предупредили, чек на выходе не оказался
+                                        неожиданностью.</p>
+                                    <span>На модерации, 24 апреля 2019</span>
+                                </div>
+                            </div>
+                            <div class="list_page_reviews_item">
+                                <div class="list_page_reviews_item_header">
+                                    <div class="list_page_reviews_item_img">
+                                        <img src="img/foto-thumb-4.jpg" alt="">
+                                    </div>
+                                    <div class="list_page_reviews_item_name">
+                                        <span>Милько Елена Юрьевна</span>
+                                        <p>13 отзывов</p>
+                                    </div>
+                                </div>
+                                <div class="list_page_reviews_item_info">
+                                    <p>Хочу сказать огромное спасибо. Я много лет не могла забеременеть, врачи назначали
+                                        кучу разных препаратов, но я встретила ее в 2016 году и очень благодарна судьбе,
+                                        что
+                                        она нас свела. Первый малыш родился уже в 2017 </p>
+                                    <a href="#">еще</a>
+                                    <span>На модерации, 24 апреля 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_page_reviews_row">
+                            <div class="list_page_reviews_item">
+                                <div class="list_page_reviews_item_header">
+                                    <div class="list_page_reviews_item_img">
+                                        <img src="img/foto-thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="list_page_reviews_item_name">
+                                        <span>Любимова Наталья Алексеевна</span>
+                                        <p>44 отзыва</p>
+                                    </div>
+                                </div>
+                                <div class="list_page_reviews_item_info">
+                                    <p>Приём прошёл в комфортной обстановке. Все рассказали, всё объяснили. Про все
+                                        дополнительные анализы заранее предупредили, чек на выходе не оказался
+                                        неожиданностью.</p>
+                                    <span>На модерации, 24 апреля 2019</span>
+                                </div>
+                            </div>
+                            <div class="list_page_reviews_item">
+                                <div class="list_page_reviews_item_header">
+                                    <div class="list_page_reviews_item_img">
+                                        <img src="img/foto-thumb-4.jpg" alt="">
+                                    </div>
+                                    <div class="list_page_reviews_item_name">
+                                        <span>Милько Елена Юрьевна</span>
+                                        <p>13 отзывов</p>
+                                    </div>
+                                </div>
+                                <div class="list_page_reviews_item_info">
+                                    <p>Хочу сказать огромное спасибо. Я много лет не могла забеременеть, врачи назначали
+                                        кучу разных препаратов, но я встретила ее в 2016 году и очень благодарна судьбе,
+                                        что
+                                        она нас свела. Первый малыш родился уже в 2017 </p>
+                                    <a href="#">еще</a>
+                                    <span>На модерации, 24 апреля 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_page_reviews_row">
+                            <div class="list_page_reviews_item">
+                                <div class="list_page_reviews_item_header">
+                                    <div class="list_page_reviews_item_img">
+                                        <img src="img/foto-thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="list_page_reviews_item_name">
+                                        <span>Любимова Наталья Алексеевна</span>
+                                        <p>44 отзыва</p>
+                                    </div>
+                                </div>
+                                <div class="list_page_reviews_item_info">
+                                    <p>Приём прошёл в комфортной обстановке. Все рассказали, всё объяснили. Про все
+                                        дополнительные анализы заранее предупредили, чек на выходе не оказался
+                                        неожиданностью.</p>
+                                    <span>На модерации, 24 апреля 2019</span>
+                                </div>
+                            </div>
+                            <div class="list_page_reviews_item">
+                                <div class="list_page_reviews_item_header">
+                                    <div class="list_page_reviews_item_img">
+                                        <img src="img/foto-thumb-4.jpg" alt="">
+                                    </div>
+                                    <div class="list_page_reviews_item_name">
+                                        <span>Милько Елена Юрьевна</span>
+                                        <p>13 отзывов</p>
+                                    </div>
+                                </div>
+                                <div class="list_page_reviews_item_info">
+                                    <p>Хочу сказать огромное спасибо. Я много лет не могла забеременеть, врачи назначали
+                                        кучу разных препаратов, но я встретила ее в 2016 году и очень благодарна судьбе,
+                                        что
+                                        она нас свела. Первый малыш родился уже в 2017 </p>
+                                    <a href="#">еще</a>
+                                    <span>На модерации, 24 апреля 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="showMoreReviews">Показать 10 отзывов из 9289</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LIST REVIEWS SECTION END -->
+
+        <!-- LIST ALL SECTION -->
+
+        <div class="list_page_all">
+            <div class="container">
+                <div class="row">
+                    <div class="list_page_all_content">
+                        <div class="list_page_all_akushers">
+                            <span>Все частные акушеры </span>
+                            <ul>
+                                <li>- Все врачи рядом с вами — 572 анкеты в вашем городе.</li>
+                                <li>- Честные мнения пользователей: 9289 проверенных отзывов.</li>
+                                <li>- Только опытные специалисты: средний рейтинг врача — 4.4.</li>
+                            </ul>
+                        </div>
+                        <div class="list_page_all_specializations">
+                            <span>Все специализации</span>
+                            <div class="list_page_all_specializations_content">
+
+                                <ul>
+                                    <li class="letter">А</li>
+                                    <li><a href="#">Акушер</a></li>
+                                    <li><a href="#">Аллерголог</a></li>
+                                    <li><a href="#">Андролог</a></li>
+                                    <li><a href="#">Анестезиолог</a></li>
+                                    <li><a href="#">Артролог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">В</li>
+                                    <li><a href="#">Вегетолог</a></li>
+                                    <li><a href="#">Вертебролог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">Г</li>
+                                    <li><a href="#">Гастроэнтеролог</a></li>
+                                    <li><a href="#">Гематолог</a></li>
+                                    <li><a href="#">Генетик</a></li>
+                                    <li><a href="#">Гепатолог</a></li>
+                                    <li><a href="#">Гинеколог</a></li>
+                                    <li><a href="#">Гомеопат</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">Д</li>
+                                    <li><a href="#">Дерматолог</a></li>
+                                    <li><a href="#">Диабетолог</a></li>
+                                    <li><a href="#">Диетолог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">И</li>
+                                    <li><a href="#">Иммунолог</a></li>
+                                    <li><a href="#">Инфекционист</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">К</li>
+                                    <li><a href="#">Кардиолог</a></li>
+                                    <li><a href="#">Колопроктолог</a></li>
+                                    <li><a href="#">Косметолог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">Л</li>
+                                    <li><a href="#">Логопед</a></li>
+                                    <li><a href="#">Лор</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">М</li>
+                                    <li><a href="#">Маммолог</a></li>
+                                    <li><a href="#">Мануальный терапевт</a></li>
+                                    <li><a href="#">Массажист</a></li>
+                                    <li><a href="#">Миколог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">Н</li>
+                                    <li><a href="#">Нарколог</a></li>
+                                    <li><a href="#">Невролог</a></li>
+                                    <li><a href="#">Нейропсихолог</a></li>
+                                    <li><a href="#">Нейрохирург</a></li>
+                                    <li><a href="#">Неонатолог</a></li>
+                                    <li><a href="#">Нефролог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">О</li>
+                                    <li><a href="#">Окулист</a></li>
+                                    <li><a href="#">Онколог</a></li>
+                                    <li><a href="#">Ортопед</a></li>
+                                    <li><a href="#">Остеопат</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">П</li>
+                                    <li><a href="#">Педиатр</a></li>
+                                    <li><a href="#">Пластический хирург</a></li>
+                                    <li><a href="#">Психиатр</a></li>
+                                    <li><a href="#">Психолог</a></li>
+                                    <li><a href="#">Психотерапевт</a></li>
+                                    <li><a href="#">Пульмонолог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">Р</li>
+                                    <li><a href="#">Ревматолог</a></li>
+                                    <li><a href="#">Репродуктолог</a></li>
+                                    <li><a href="#">Рефлексотерапевт</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">С</li>
+                                    <li><a href="#">Стоматолог</a></li>
+                                    <li><a href="#">Сексолог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">Т</li>
+                                    <li><a href="#">Терапевт</a></li>
+                                    <li><a href="#">Травматолог</a></li>
+                                    <li><a href="#">Трихолог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">У</li>
+                                    <li><a href="#">УЗИ-специалист</a></li>
+                                    <li><a href="#">Уролог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">Ф</li>
+                                    <li><a href="#">Физиотерапевт</a></li>
+                                    <li><a href="#">Флеболог</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">Х</li>
+                                    <li><a href="#">Хирург</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li class="letter">Э</li>
+                                    <li><a href="#">Эндокринолог</a></li>
+                                </ul>
+                            </div>
+                            <a class="list_page_all_specializations_showMore">Показать еще</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LIST ALL SECTION END -->
+
+
+
+        <!-- FOOTER SECTION -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_list col-md-2">
+                        <span>Сервис</span>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Пресса</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-3">
+                        <span>Пациенту</span>
+                        <ul>
+                            <li><a href="#">Врачи</a></li>
+                            <li><a href="#">Клиники</a></li>
+                            <li><a href="#">Диагностика</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Медицинская библиотека</a></li>
+                            <li><a href="#">Справочник заболеваний</a></li>
+                            <li><a href="#">Условия акции “Врачи со скидкой”</a></li>
+                            <li><a href="#">Конфиденциальность</a></li>
+                            <li><a href="#">Согласие на обработку персональных данных</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-2 col-md-offset-1">
+                        <span>ВРАЧУ И КЛИНИКЕ</span>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                        <span>ПАРТНЁРАМ</span>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Партнёрская программа</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-3 col-md-offset-1 footer_copy">
+                        <div class="footer_logo"><img src="./img/logo.png" alt="docdoc"></div>
+                        <img src="./img/data_image_png_base.png" alt="docdoc" class="footer_logo_list">
+                        <ul>
+                            <li>Пишите нам: <span>info@docdoc.ru</span></li>
+                            <li>Звоните нам: 8 (499) 116-81-78</li>
+                            <li>© DOCDOC.RU 2018</li>
+                        </ul>
+                        <ul class="footer_social">
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <div class="footer_company">
+                            <span>Входит в группу компаний</span>
+                            <img src="./img/sberbank.svg" alt="sberbank">
+                            <ul>
+                                <li>ООО «ДОКДОК»</li>
+                                <li>ОГРН 1167746446780</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_info">
+                        <img src="./img/footer-icon.svg" alt="0+">
+                        <span>Информация, представленная на сайте, не может быть использована для постановки диагноза,
+                            назначения лечения и не заменяет прием врача.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- FOOTER SECTION END -->
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/nice-date-picker.js"></script>
+    <script src="js/akusher.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,711 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+	display: block
+
+body
+	line-height: 1
+
+ol, ul 
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: Geometria
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.wrapper
+	margin: 0 auto
+	width: 1170px
+	position: relative
+
+h1 
+	color: white
+	font-size: 40px
+	font-weight: 700
+	line-height: 30px
+
+h2
+	color: black
+	font-size: 36px
+	font-weight: 700
+
+h3 
+	color: black
+	font-size: 30px
+	font-weight: 700
+
+h4 
+	color: black
+	font-size: 24px
+	font-weight: 700
+	line-height: 14px
+
+p 
+	color: black
+	font-size: 18px
+	font-weight: 400
+	line-height: 18px
+
+a 
+	text-decoration: none
+
+.btn 
+	width: 300px
+	height: 65px
+	line-height: 65px
+	background-color: #3379be
+	border-radius: 3px
+	box-shadow: 0 2px 6px rgba(12, 12, 12, 0.26)
+	display: block
+	color: white
+	font-size: 14px
+	font-weight: 700
+	transition: .5 all linear
+	text-align: center
+	cursor: pointer
+	&:hover
+		background-color: #296199
+
+.open_nav 
+	display: none
+	position: fixed
+	left: 15px
+	top: 20px
+	z-index: 9999
+	cursor: pointer
+	transition: left 1s ease-in-out
+
+.modal
+	display: none
+	position: fixed
+	overflow-x: hidden
+    overflow-y: auto
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	-webkit-overflow-scrolling: touch
+	outline: 0
+	z-index: 998
+	.modal-overlay 
+		z-index: 999
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		position: fixed
+		transition: .5
+	.modal-dialog
+		margin: 100px auto
+		border: none
+		width: 450px
+		height: 530px
+		background-color: white
+		transition: .5s
+		z-index: 9999
+		position: relative
+		border-radius: 5px
+		form 
+			padding: 0 50px
+		.modal_logo 
+			margin-bottom: 30px
+		.btn
+			width: 100%
+			height: 70px
+			border: none
+			font-size: 24px
+			margin-top: 20px
+		input
+			width: 100%
+			outline: none
+			font-size: 20px
+			color: #000000
+			padding: 12px
+			border: none
+			margin-bottom: 30px
+			border-bottom: 2px solid rgba(0,0,0, .75)
+
+
+// HEADER
+.header
+	background-image: url(../img/header_bgr.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	position: relative
+	&_top 
+		padding-top: 16px
+		padding-bottom: 10px
+		border-bottom: 2px solid rgba(255, 255, 255, .52)
+		
+		&.fixed 
+			position: fixed
+			width: 100%
+			background-color: rgba(0, 0, 0, .5)
+			z-index: 999
+			transition: 1s ease all
+		.wrapper
+			display: flex
+			flex-flow: row nowrap
+			flex-direction: row
+			justify-content: space-between
+		.header_nav
+			padding-left: 202px
+			padding-top: 8px
+			li 
+				display: inline-block
+				margin-right: 25px
+				a 
+					color: white
+					font-size: 16px
+					font-weight: 700
+					transition: .5s all linear
+					&:hover
+						color: #bdbdbd	
+		&_phone 
+			padding-top: 6px
+			font-size: 18px
+			font-weight: 700
+			line-height: 30px
+			color: #ffffff
+			transition: .5s all linear
+			&:hover 
+				color: #bdbdbd	
+	&_content
+		padding-top: 200px
+		padding-bottom: 245px
+		span 
+			color: white
+			font-size: 24px
+			font-weight: 400
+			line-height: 30px
+			margin-top: 23px
+			margin-bottom: 35px
+			display: block
+		.btn
+			text-transform: uppercase
+		.profits
+			position: absolute
+			right: 4px
+			bottom: -230px
+			color: white
+			font-size: 24px
+			span 
+				font-weight: 700
+				margin: 0
+				display: inline-block
+
+// TECHNOLOGY
+.technology
+	background-color: #f7f7f7
+	padding-top: 42px
+	padding-bottom: 68px
+	.wrapper
+		display: flex
+		justify-content: space-between
+	&_info
+		max-width: 600px
+		margin-left: 14px
+		h2 
+			margin-bottom: 25px
+		p 
+			margin-bottom: 10px
+			line-height: 19px
+	&_img 
+		margin-top: 67px
+		margin-right: 45px
+
+// INVEST
+.invest
+	padding-top: 33px
+	padding-bottom: 138px
+	&_content
+		display: flex
+		justify-content: space-around
+		margin-top: 19px
+		position: relative
+		&_devider
+			position: absolute
+			left: 50%
+			transform: translate(-50%, 0)
+			width: 2px
+			height: 370px
+			opacity: 0.3
+			background-color: black
+			top: 12px
+		h4 
+			margin-top: 33px
+			margin-bottom: 25px
+		span 
+			display: block
+			font-size: 18px
+			margin-bottom: 15px
+			padding-left: 33px
+			position: relative
+			&:before 
+				position: absolute
+				left: 5px
+				top: 4px
+				content: url(../img/close_btn.png)
+		.invest_left, .invest_right 
+			max-width: 440px
+			margin-left: 85px
+		.invest_right
+			span
+				&:before 
+					content: url(../img/icon_1.png)	
+
+// PROFIT
+.profit 
+	background-image: url(../img/section_bgr.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding-top: 69px
+	padding-bottom: 98px
+	.wrapper 
+		display: flex
+		justify-content: space-between
+	&_numbers 
+		width: 300px
+		height: 331px
+		background-color: rgba(255, 255, 255, .47)
+		box-shadow: 0 2px 8px rgba(0, 1, 5, 0.25)
+		text-align: center
+		padding: 25px
+		&_item 
+			padding: 15px 20px
+			border-bottom: 2px solid rgba(0, 0, 0, .2)
+			&:last-child 
+				border-bottom: none
+			span 
+				font-size: 24px
+				font-weight: 700
+				line-height: 24px
+				display: block
+			p 
+				font-size: 16px
+				line-height: 24px
+	&_info 
+		max-width: 801px
+		height: 330px
+		background-color: rgba(247, 247, 247, .8)
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.23)
+		padding-top: 13px
+		padding-left: 20px
+		padding-right: 25px
+		h2 
+			border-bottom: 2px solid rgba(0, 0, 0, .2)
+			margin-bottom: 20px
+			display: inline-block
+		p 
+			margin-bottom: 20px
+			line-height: 20px
+
+// FORECAST
+.forecast 
+	background-image: url(../img/section_bgr-1.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding-top: 69px
+	padding-bottom: 61px
+	.wrapper 
+		display: flex
+		justify-content: space-between
+	&_numbers 
+		width: 300px
+		height: 370px
+		background-color: rgba(255, 255, 255, .47)
+		box-shadow: 0 2px 8px rgba(0, 1, 5, 0.25)
+		text-align: center
+		padding: 25px
+		padding-top: 6px
+		&_item 
+			padding: 25px 20px
+			border-bottom: 2px solid rgba(0, 0, 0, .2)
+			&:last-child 
+				border-bottom: none
+			span 
+				font-size: 24px
+				font-weight: 700
+				line-height: 24px
+				display: block
+			p 
+				font-size: 16px
+				line-height: 24px
+	&_info 
+		max-width: 801px
+		height: 370px
+		background-color: rgba(255, 255, 255, .8)
+		padding-top: 20px
+		padding-left: 20px
+		padding-right: 86px
+		h2 
+			border-bottom: 2px solid rgba(0, 0, 0, .2)
+			margin-bottom: 20px
+			display: inline-block
+		p 
+			margin-bottom: 20px
+			line-height: 20px
+		.btn 
+			width: 220px
+			height: 53px
+			line-height: 53px
+			background-color: #3379be
+			border-radius: 2px
+			box-shadow: 0 2px 4px rgba(12, 12, 12, 0.26)
+			font-size: 18px
+			&:hover 
+				background-color: #296199
+
+// WORK
+
+.work 
+	padding-top: 44px
+	padding-bottom: 90px
+	text-align: center
+	&_slider
+		padding-left: 140px
+		margin-top: 30px
+		padding-right: 128px
+		.slick-arrow
+			position: absolute
+			left: 64px
+			top: 41%
+			border: none
+			background-color: transparent
+			background-image: url(../img/slider_arrow.png)
+			width: 38px
+			height: 64px
+			background-repeat: no-repeat
+			font-size: 0
+			opacity: 1
+			cursor: pointer
+			&:focus
+    			outline: none
+			&:hover 
+				opacity: .5
+		.slick-next
+			left: auto
+			right: 47px
+			transform: rotate(180deg)
+		img 
+			width: 100%
+		span 
+			opacity: .8
+			color: black
+			font-size: 18px
+			font-weight: 700
+			display: block
+			margin-top: 17px
+.slick-list 
+    outline: none !important
+.slick-slide 
+  &:focus, a 
+    outline: none
+
+// leaders
+
+.leaders
+	h2 
+		margin-bottom: 30px
+	.wrapper
+		display: flex
+		flex-flow: row nowrap
+		justify-content: center
+		margin-bottom: 55px
+		.leader	
+			flex: 350px
+			box-shadow: 0 2px 8px rgba(0, 1, 5, 0.25)
+			margin-right: 53px
+			text-align: center
+			height: 500px
+			padding: 0 26px
+			img 
+				margin: 29px 0 14px 0
+			h5 
+				font-weight: bold
+				font-size: 18px
+				line-height: 19px
+				color: #4c4c4c
+				margin: 12px 0 27px 0
+			p 
+				font-size: 16px
+				line-height: 19px
+				text-align: left
+			 
+			 
+
+		.leader:last-child
+			margin-right: 0	
+
+// point
+
+.point
+	background: #f7f7f7
+	text-align: center
+	h2 
+		padding: 85px 0 
+		font-weight: bold
+	img
+		width: 70.9%
+		text-align: center
+		margin-bottom: 100px
+	.wrapper
+		position: relative
+		.point-info
+			font-size: 14px
+			position: absolute
+			line-height: 14px
+			text-align: left
+		.point-info-1
+			top: 18.5%
+			left: 15%
+			.dowload-sample 
+				color: #000
+				font-weight: bold
+
+		.point-info-2
+			top: 18.5%
+			left: 49%
+
+		.point-info-3
+			top: 18.5%
+			left: 81.5%
+
+		.point-info-6
+			top: 49%
+			left: 18%
+		
+		.point-info-5
+			top: 49%
+			left: 49%
+		
+		.point-info-4
+			top: 49%
+			left: 81.5%
+
+		.point-info-7
+			top: 68%
+			left: 15%
+
+		.point-info-8
+			top: 68%
+			left: 49%
+
+		.point-info-9
+			top: 68%
+			left: 68%
+
+		.point-info-10
+			top: 90%
+			left: 81.5%
+
+		.btn
+			height: 55px
+			line-height: 50px
+			font-size: 17px
+			width: 265px
+			position: absolute
+			bottom: 10.5%
+			left: 39%
+
+// tariffs
+
+.tariffs 
+	h2 
+		margin: 29px 0 32px 0
+	.remark
+		font-size: 12px
+		font-weight: bold
+		margin-bottom: 50px
+
+.tariffs-block
+	display: flex
+	flex-flow: row nowrap
+	justify-content: center
+	&_item
+		text-align: center
+		box-shadow: 0 2px 8px rgba(0, 1, 5, 0.25)
+		display: block
+		margin-right: 39px
+		margin-bottom: 25px
+		font-size: 18px
+		width: 27.5%
+		&-head
+			background: #01648b;
+			span 
+				font-size: 30px
+				font-weight: bold
+				color: #fff
+				height: 111px
+				line-height: 113px
+				display: block
+		&-content
+			padding: 0 15px
+			p 
+				font-size: 20px
+				line-height: 26px
+			.payment
+				margin: 42px 0 20px 0
+				padding-bottom: 25px
+				border-bottom: 2px solid #ccc
+			.fond
+				padding-bottom: 25px
+				border-bottom: 2px solid #ccc
+				margin-top: 20px
+			.sum
+			    margin-top: 20px
+    			padding-bottom: 47px
+				
+		
+
+	&_item:last-child
+		margin-right: 0	
+
+// map
+
+.map 
+	background: #333
+	padding: 42px 0 39px 0
+	position: relative
+.map-form
+	margin-left: 4%
+	display: flex
+	flex-flow: column nowrap
+	align-items: center
+	max-width: 450px
+	background-color: #fff
+	h3
+		padding-top: 67px
+	input
+		outline: none
+		font-weight: bold
+		font-size: 18px
+		padding-left: 9px
+		padding-bottom: 4px
+		width: 325px
+		border: none
+		border-bottom: 2px solid #000
+		margin: 49px 0 26px 0
+	input:last-of-type
+		margin: 0  0 40px 0
+
+	::-webkit-input-placeholder 
+		color: #000
+
+	::-moz-placeholder 
+		color: #000
+
+	:-ms-input-placeholder
+		color: #000
+
+	:-moz-placeholder
+		color: #000
+
+	.btn
+		width: 300px
+		margin-bottom: 50px
+		font-size: 18px
+		height: 45px
+		line-height: 45px
+	.map-info
+		margin-bottom: 60px
+		p
+			font-size: 16px
+
+
+
+
+// footer
+
+.footer
+	background-color: #fefefe
+	display: flex
+	flex-flow: row nowrap
+	align-items: center
+	justify-content: center
+	&_logo
+		padding: 17px 0 12px
+
+#map 
+	position: absolute
+	width: 100%
+	left: 0
+	top: 0
+	height: 100%
+
+
+
+
+@import "media" // Всегда в конце

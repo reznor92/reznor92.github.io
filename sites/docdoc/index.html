@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>DOCDOC - Найдите провереного врача и запишитесь на прием</title>
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- HEADER SECTION -->
+
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header_logo col-md-2">
+                        <img src="./img/Medical.png" alt="docdoc">
+                    </div>
+                    <div class="header_select-city col-md-2 col-md-offset-1">
+                        <div class="select-city_inner">
+                            <i class="fas fa-globe-asia"></i>
+                            <select class="select-city">
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Волгоград">Волгоград</option>
+                                <option value="Воронеж">Воронеж</option>
+                                <option value="Екатеринбург">Екатеринбург</option>
+                                <option value="Ижевск">Ижевск</option>
+                                <option value="Казань">Казань</option>
+                                <option value="Краснодар">Краснодар</option>
+                                <option value="Красноярск">Красноярск</option>
+                                <option value="Нижний Новгород">Нижний Новгород</option>
+                                <option value="Новосибирск">Новосибирск</option>
+                                <option value="Пермь">Пермь</option>
+                                <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                                <option value="Самара">Самара</option>
+                                <option value="Сочи">Сочи</option>
+                                <option value="Тюмень">Тюмень</option>
+                                <option value="Уфа">Уфа</option>
+                                <option value="Челябинск">Челябинск</option>
+                                <option value="Ярославль">Ярославль</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="header_phone_area col-md-4 col-md-offset-3">
+                        <div class="header_phone_text">Нужна помощь! <span>Звоните!</span></div>
+                        <span class="header_phone">8 (499) 116-81-78</span>
+                        <div class="personal_area">
+                            <div class="personal_area_title">Личный кабинет</div>
+                            <div class="personal_area_list">
+                                <ul>
+                                    <li><a href="#">Вход</a></li>
+                                    <li><a href="#">Регистрация</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_content">
+                <div class="container">
+                    <div class="row">
+                        <h1>Найдите провереного врача и запишитесь на прием</h1>
+                        <form class="header_content_form">
+                            <div class="input-container input-container1">
+                                <select class="header_content_form_select" required>
+                                    <option value="">Врач, клиника, услуга</option>
+                                    <option value="Акушер">Акушер</option>
+                                    <option value="Аллерголог">Аллерголог</option>
+                                    <option value="Андролог">Андролог</option>
+                                    <option value="Анестезиолог">Анестезиолог</option>
+                                    <option value="Венеролог">Венеролог</option>
+                                    <option value="Врач функциональной диагностики">Врач функциональной диагностики</option>
+                                    <option value="Гастроэнтеролог">Гастроэнтеролог</option>
+                                </select>
+                            </div>
+                            <div class="input-container input-container2">
+                                <select class="header_content_form_select2" required>
+                                        <option value="">Метро, город МО</option>
+                                        <option value="Дёмский">Дёмский</option>
+                                        <option value="Калининский">Калининский</option>
+                                        <option value="Кировский">Кировский</option>
+                                        <option value="Лениниский">Лениниский</option>
+                                        <option value="Октябрьский">Октябрьский</option>
+                                        <option value="Орджоникидзевский">Орджоникидзевский</option>
+                                        <option value="Гастроэнтеролог">Советский</option>
+                                    </select>
+                            </div>
+                            <button type="submit" class="btn">Найти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header_subcontent">
+                <div class="container">
+                    <div class="row">
+                        <div class="header_subcontent_title">
+                            Ещё на DocDoc можно
+                        </div>
+                        <div class="header_subcontent_items">
+                            <div class="header_subcontent_item">
+                                <img src="./img/header_item_pic1.png" alt="docdoc">
+                                <div class="header_subcontent_item_text">
+                                    Записаться <br> <a href="#">к врачу на приём</a>    
+                                </div>
+                            </div>
+                            <div class="header_subcontent_item">
+                                <img src="./img/header_item_pic2.png" alt="docdoc">
+                                <div class="header_subcontent_item_text">
+                                    Записаться <br><a href="#">на диагностику</a>
+                                </div>
+                            </div>
+                            <div class="header_subcontent_item">
+                                <img src="./img/header_item_pic3.png" alt="docdoc">
+                                <div class="header_subcontent_item_text">
+                                    Получить <a href="#">онлайн- консультацию (телемедицина)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_subcontent_items">
+                            <div class="header_subcontent_item">
+                                <img src="./img/header_item_pic4.png" alt="docdoc">
+                                <div class="header_subcontent_item_text">
+                                    Пройти <a href="#">комплексное обследование</a>
+                                </div>
+                            </div>
+                            <div class="header_subcontent_item">
+                                <img src="./img/header_item_pic5.png" alt="docdoc">
+                                <div class="header_subcontent_item_text">
+                                    Записаться <br><a href="#">по полису ДМС</a>
+                                </div>
+                            </div>
+                            <div class="header_subcontent_item">
+                                <img src="./img/header_item_pic6.png" alt="docdoc">
+                                <div class="header_subcontent_item_text">
+                                    Скачать <a href="#">мобильное приложение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- HEADER SECTION END -->
+
+        <!-- ADVANTAGES SECTION -->
+
+        <section class="advantages">
+            <div class="container">
+                <div class="row">
+                    <h2>Почему пользоваться docdoc так здорово?</h2>
+                    <div class="advantages_content">
+                        <div class="advantages_tabs">
+                            <div class="advantages_tab" onclick="opentab(0)">
+                                Настоящие отзывы
+                            </div>
+                            <div class="advantages_tab" onclick="opentab(1)">
+                                Запись на удобное время
+                            </div>
+                            <div class="advantages_tab" onclick="opentab(2)">
+                                Врачи рядом с вами
+                            </div>
+                        </div>
+                        <div class="advantages_tabs_content">
+                            <div class="advantages_tabs_content1_card">
+                                <div class="card_name">
+                                    Румянцев <br>
+                                    Виталий Григорьевич
+                                </div>
+                                <div class="card_specialization">Гастроэнтеролог</div>
+                                <div class="card_photo">
+                                    <img src="./img/advan_card_photo.png" alt="Doctor">
+                                </div>
+                                <div class="card_stars">
+                                    <img src="./img/advan_card_stars.png" alt="Doctor">
+                                    <span>132 отзыва</span>
+                                </div>
+                                <div class="card_review">
+                                    <div class="card_review_title">Хорошо</div>
+                                    <p>Мне все понравилось, доктор профессиональный. Мне помогли все рекомендации.
+                                        Доктор помог решить мою проблему.</p>
+                                </div>
+                            </div>
+                            <div class="card_info">
+                                Рейтинг врача основан на проверенных отзывах его пациентов
+                            </div>
+                            <div class="card_info">
+                                Мы публикуем отзывы о враче только от его пациентов, побывавших на приеме.
+                            </div>
+                        </div>
+                        <div class="advantages_tabs_content">
+                            <img src="./img/advan_card2.jpg" alt="docdoc">
+                            <div class="card_info card_info2">
+                                Записывайтесь на свободное время в два клика
+                            </div>
+                            <div class="card_info card_info2">
+                                Выбирайте удобный день и время приема
+                            </div>
+                        </div>
+                        <div class="advantages_tabs_content">
+                            <img src="./img/advan_card3.jpg" alt="docdoc">
+                            <div class="card_info card_info3">
+                                Поиск врачей поблизости от вашего местоположения
+                            </div>
+                            <div class="card_info card_info3">
+                                Тысячи клиник в Уфе и в других регионах
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADVANTAGES SECTION END -->
+
+        <!-- THANKS SECTION -->
+
+        <section class="thanks">
+            <div class="container">
+                <div class="row">
+                    <h2>Мы говорим спасибо всем, кто с нами!</h2>
+                    <div class="thanks_heart">
+                        <div class="thanks_heart_img">
+                            <img src="./img/heart.png" alt="docdoc">
+                        </div>
+                        <div class="thanks_heart_text">
+                            <span class="heart_title">Уже</span>
+                            <span class="heart_count">1 906 392</span>
+                            <span>пациента записались<br> к врачу через docdoc</span>
+                        </div>
+                    </div>
+                    <div class="thanks_counts">
+                        <div class="thanks_count">
+                            <span>244 240</span>
+                            <p>отзывов о врачах от их пациентов</p>
+                        </div>
+                        <div class="thanks_count">
+                            <span>53 692</span>
+                            <p>врача работают по записи с docdoc</p>
+                        </div>
+                        <div class="thanks_count">
+                            <span>3 465</span>
+                            <p>клиник принимает пациентов с docdoc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THANKS SECTION END -->
+
+        <!-- PHONE SECTION -->
+
+        <section class="phone">
+            <div class="container">
+                <div class="row">
+                    <div class="phone_content">
+                        <div class="phone_img col-md-5 col-md-offset-2">
+                            <img src="./img/apps.png" alt="docdoc">
+                        </div>
+                        <div class="phone_info col-md-5">
+                            <h2>Проверенные врачи у вас в телефоне</h2>
+                            <ul>
+                                <li>- Легко найти врача неподалёку от вас</li>
+                                <li>- Удобное приложение, всегда под рукой</li>
+                                <li>- Записывайтесь к врачу в одно касание</li>
+                            </ul>
+                            <form class="phone_info_form">
+                                <span class="phone_info_form_title">Отправить вам ссылку?</span>
+                                <input type="tel" required id="phone" placeholder="+7 (___) __-__-__">
+                                <button type="submit" class="btn" id="modalBtn">Получить</button>
+                            </form>
+                            <div class="phone_info_apps">
+                                <a href="#"><img src="./img/Googleplay.png" alt="googleplay"></a>
+                                <a href="#"><img src="./img/appstore.png" alt="appstore"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PHONE SECTION END -->
+
+        <!-- POLIS SECTION -->
+
+        <section class="polis">
+            <div class="container">
+                <div class="row">
+                    <div class="polis_info col-md-5 col-md-offset-2">
+                        <h2>Есть страховой полис ДМС A llianz?</h2>
+                        <p>Теперь на DocDoc можно выбирать среди врачей, входящих в вашу программу страхования.</p>
+                    </div>
+                    <div class="polis_form col-md-4">
+                        <form>
+                            <input type="text" placeholder="Страховая компания" required>
+                            <input type="text" placeholder="Номер полиса" required>
+                            <input type="text" placeholder="Фамилия застрахованого" required>
+                            <button type="submit" class="btn">Найти врача по <span>ДМС</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POLIS SECTION END -->
+
+        <!-- ABOUT SECTION -->
+
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <h2>О нашем проекте пишут</h2>
+                    <div class="about_content">
+                        <img src="./img/logo5.png" alt="КоммерсантFM">
+                        <img src="./img/logo1.png" alt="Секрет фирмы">
+                        <img src="./img/logo2.png" alt="Forbes">
+                        <img src="./img/logo3.png" alt="РБК">
+                        <img src="./img/logo4.png" alt="Эксперт">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION END -->
+
+        <!-- QUESTION SECTION -->
+
+        <section class="question">
+            <div class="container">
+                <div class="row">
+                    <h2>Ответы на частые вопросы</h2>
+                    <div class="question_content">
+                        <div class="question_img">
+                            <img src="./img/ask.png" alt="docdoc">
+                        </div>
+                        <div class="question_info">
+                            <div class="question_item">
+                                <div class="question_item_title">Записываться на DocDoc дороже, чем в клинике?</div>
+                                <div class="question_item_text">Нет, цены на DocDoc не отличаются от цен в клиниках.
+                                    Более того, во многие клиники записаться через DocDoc даже дешевле, чем по телефону
+                                    медицинского центра. Максимальная скидка до 50%!</div>
+                            </div>
+                            <div class="question_item">
+                                <div class="question_item_title">Как записаться на прием?</div>
+                                <div class="question_item_text">Нет, цены на DocDoc не отличаются от цен в клиниках.
+                                    Более того, во многие клиники записаться через DocDoc даже дешевле, чем по телефону
+                                    медицинского центра. Максимальная скидка до 50%!</div>
+                            </div>
+                            <div class="question_item">
+                                <div class="question_item_title">Сколько стоят услуги сервиса DocDoc?</div>
+                                <div class="question_item_text">Нет, цены на DocDoc не отличаются от цен в клиниках.
+                                    Более того, во многие клиники записаться через DocDoc даже дешевле, чем по телефону
+                                    медицинского центра. Максимальная скидка до 50%!</div>
+                            </div>
+                            <div class="question_item">
+                                <div class="question_item_title">Как оплачивается прием врача?</div>
+                                <div class="question_item_text">Нет, цены на DocDoc не отличаются от цен в клиниках.
+                                    Более того, во многие клиники записаться через DocDoc даже дешевле, чем по телефону
+                                    медицинского центра. Максимальная скидка до 50%!</div>
+                            </div>
+                            <div class="question_item">
+                                <div class="question_item_title">DocDoc это — клиника?</div>
+                                <div class="question_item_text">Нет, цены на DocDoc не отличаются от цен в клиниках.
+                                    Более того, во многие клиники записаться через DocDoc даже дешевле, чем по телефону
+                                    медицинского центра. Максимальная скидка до 50%!</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- QUESTION SECTION END -->
+
+        <!-- SPECIALIZATION SECTION -->
+
+        <section class="specialization">
+            <div class="container">
+                <div class="row">
+                    <h2>Cпециальности врачей</h2>
+                    <div class="specialization_content">
+                        <ul>
+                            <li><span>553</span><a href="#">Акушер</a></li>
+                            <li><span>176</span><a href="#">Андролог</a></li>
+                            <li><span>85</span><a href="#">Анестезиолог</a></li>
+                            <li><span>10</span><a href="#">Артиолог</a></li>
+                            <li><span>192</span><a href="#">Венеролог</a></li>
+                            <li><span>62</span><a href="#">Вертебролог</a></li>
+                            <li><span>210</span><a href="#">Гастроэнтеролог</a></li>
+                            <li><span>27</span><a href="#">Гематолог</a></li>
+                            <li><span>21</span><a href="#">Генетик</a></li>
+                            <li><span>45</span><a href="#">Гепатолог</a></li>
+                            <li><span>782</span><a href="#">Гинеколог</a></li>
+                            <li><span>35</span><a href="#">Гомеопат</a></li>
+                            <li><span>418</span><a href="#">Дерматолог</a></li>
+                            <li><span>71</span><a href="#">Диетолог</a></li>
+                            <li><span>107</span><a href="#">Иммунолог</a></li>
+                            <li><span>28</span><a href="#">Инфекционист</a></li>
+                            <li><span>282</span><a href="#">Кардиолог</a></li>
+                            <li><span>57</span><a href="#">Колопроктолог</a></li>
+                            <li><span>406</span><a href="#">Косметолог</a></li>
+                        </ul>
+                        <ul>
+                            <li><span>47</span><a href="#">Логопед</a></li>
+                            <li><span>327</span><a href="#">Лор</a></li>
+                            <li><span>116</span><a href="#">Маммолог</a></li>
+                            <li><span>249</span><a href="#">Мануальный терапевт</a></li>
+                            <li><span>190</span><a href="#">Массажист</a></li>
+                            <li><span>26</span><a href="#">Миколог</a></li>
+                            <li><span>137</span><a href="#">Нарколог</a></li>
+                            <li><span>504</span><a href="#">Невролог</a></li>
+                            <li><span>16</span><a href="#">Нейропсихолог</a></li>
+                            <li><span>31</span><a href="#">Нейрохирург</a></li>
+                            <li><span>16</span><a href="#">Неонатолог</a></li>
+                            <li><span>36</span><a href="#">Нефролог</a></li>
+                            <li><span>265</span><a href="#">Окулист</a></li>
+                            <li><span>138</span><a href="#">Онколог</a></li>
+                            <li><span>299</span><a href="#">Ортопед</a></li>
+                            <li><span>118</span><a href="#">Остеопат</a></li>
+                            <li><span>296</span><a href="#">Педиатр</a></li>
+                            <li><span>97</span><a href="#">Пластический хирург</a></li>
+                            <li><span>98</span><a href="#">Психиатр</a></li>
+                        </ul>
+                        <ul>
+                            <li><span>357</span><a href="#">Психолог</a></li>
+                            <li><span>261</span><a href="#">Психотерапевт</a></li>
+                            <li><span>63</span><a href="#">Пульмонолог</a></li>
+                            <li><span>63</span><a href="#">Ревматолог</a></li>
+                            <li><span>175</span><a href="#">Репродуктолог</a></li>
+                            <li><span>28</span><a href="#">Рефлексотерапевт</a></li>
+                            <li><span>948</span><a href="#">Стоматолог</a></li>
+                            <li><span>524</span><a href="#">Сексолог</a></li>
+                            <li><span>186</span><a href="#">Терапевт</a></li>
+                            <li><span>90</span><a href="#">Травматолог</a></li>
+                            <li><span>628</span><a href="#">Трихолог</a></li>
+                            <li><span>362</span><a href="#">УЗИ-специалист</a></li>
+                            <li><span>139</span><a href="#">Уролог</a></li>
+                            <li><span>128</span><a href="#">Физиотерапевт</a></li>
+                            <li><span>455</span><a href="#">Флеболог</a></li>
+                            <li><span>220</span><a href="#">Хирург</a></li>
+                            <li><span>131</span><a href="#">Эндокринолог</a></li>
+                        </ul>
+                        <div class="specialization_img">
+                            <img src="./img/svg.png" alt="docdoc">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPECIALIZATION SECTION END -->
+
+        <!-- HELPING SECTION -->
+
+        <section class="helping">
+            <div class="container">
+                <div class="row">
+                    <h2>Поможем найти врача</h2>
+                    <div class="helping_subtitle">Cвяжитесь с нами по телефону <span>8 (499) 116-81-78</span><br>
+                        или оставьте свой номер и мы вам перезвоним в течение 10 минут
+                    </div>
+                    <div class="helping_form">
+                        <form>
+                            <input type="tel" required id="phone2" placeholder="+7 (___) __-__-__">
+                            <button type="submit" class="btn">Позвоните мне</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HELPING SECTION END -->
+
+        <!-- FOOTER SECTION -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_list col-md-2">
+                        <span>Сервис</span>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Пресса</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-3">
+                        <span>Пациенту</span>
+                        <ul>
+                            <li><a href="#">Врачи</a></li>
+                            <li><a href="#">Клиники</a></li>
+                            <li><a href="#">Диагностика</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Медицинская библиотека</a></li>
+                            <li><a href="#">Справочник заболеваний</a></li>
+                            <li><a href="#">Условия акции “Врачи со скидкой”</a></li>
+                            <li><a href="#">Конфиденциальность</a></li>
+                            <li><a href="#">Согласие на обработку персональных данных</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-2 col-md-offset-1">
+                        <span>ВРАЧУ И КЛИНИКЕ</span>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                        <span>ПАРТНЁРАМ</span>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Партнёрская программа</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-3 col-md-offset-1 footer_copy">
+                        <div class="footer_logo"><img src="./img/logo.png" alt="docdoc"></div>
+                        <img src="./img/data_image_png_base.png" alt="docdoc" class="footer_logo_list">
+                        <ul>
+                            <li>Пишите нам: <span>info@docdoc.ru</span></li>
+                            <li>Звоните нам: 8 (499) 116-81-78</li>
+                            <li>© DOCDOC.RU 2018</li>
+                        </ul>
+                        <ul class="footer_social">
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <div class="footer_company">
+                            <span>Входит в группу компаний</span>
+                            <img src="./img/sberbank.svg" alt="sberbank">
+                            <ul>
+                                <li>ООО «ДОКДОК»</li>
+                                <li>ОГРН 1167746446780</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_info">
+                        <img src="./img/footer-icon.svg" alt="0+">
+                        <span>Информация, представленная на сайте, не может быть использована для постановки диагноза,
+                            назначения лечения и не заменяет прием врача.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- FOOTER SECTION END -->
+
+        <!-- MODAL -->
+        <div id="simpleModal" class="modal">
+            <div class="modal-content">
+                <div class="modal_close closeBtn"><img src="./img/close_icon.png" alt="docdoc"></div>
+                <div class="modal_img">
+                    <img src="./img/modal_img.png" alt="docdoc">
+                </div>
+                <span>SMS отправлено</span>
+                <p>На указанный номер было отправленно SMS со ссылкой на приложение. Обратите внимание, иногда SMS
+                    приходят с задержкой до 5 минут
+                </p>
+            </div>
+        </div>
+        <!-- MODAL END -->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>DOCDOC - Найдите провереного врача и запишитесь на прием</title>
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="main doctor">
+
+        <!-- HEADER SECTION -->
+
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header_logo col-md-2">
+                        <img src="./img/Medical.png" alt="docdoc">
+                    </div>
+                    <div class="header_select-city col-md-2 col-md-offset-1">
+                        <div class="select-city_inner">
+                            <i class="fas fa-globe-asia"></i>
+                            <select class="select-city">
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Волгоград">Волгоград</option>
+                                <option value="Воронеж">Воронеж</option>
+                                <option value="Екатеринбург">Екатеринбург</option>
+                                <option value="Ижевск">Ижевск</option>
+                                <option value="Казань">Казань</option>
+                                <option value="Краснодар">Краснодар</option>
+                                <option value="Красноярск">Красноярск</option>
+                                <option value="Нижний Новгород">Нижний Новгород</option>
+                                <option value="Новосибирск">Новосибирск</option>
+                                <option value="Пермь">Пермь</option>
+                                <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                                <option value="Самара">Самара</option>
+                                <option value="Сочи">Сочи</option>
+                                <option value="Тюмень">Тюмень</option>
+                                <option value="Уфа">Уфа</option>
+                                <option value="Челябинск">Челябинск</option>
+                                <option value="Ярославль">Ярославль</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="header_phone_area col-md-4 col-md-offset-3">
+                        <div class="header_phone_text">Нужна помощь! <span>Звоните!</span></div>
+                        <span class="header_phone">8 (499) 116-81-78</span>
+                        <div class="personal_area">
+                            <div class="personal_area_title">Личный кабинет</div>
+                            <div class="personal_area_list">
+                                <ul>
+                                    <li><a href="#">Вход</a></li>
+                                    <li><a href="#">Регистрация</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- doctor page start -->
+
+            <div class="doctor_header_content">
+                <h2>Найдите проверенного врача и запишитесь на прием</h2>
+                <div class="container">
+                    <div class="row">
+                        <form class="header_content_form">
+                            <div class="input-container input-container1">
+                                <select class="header_content_form_select" required>
+                                    <option value="">Врач, клиника, услуга</option>
+                                    <option value="Акушер">Акушер</option>
+                                    <option value="Аллерголог">Аллерголог</option>
+                                    <option value="Андролог">Андролог</option>
+                                    <option value="Анестезиолог">Анестезиолог</option>
+                                    <option value="Венеролог">Венеролог</option>
+                                    <option value="Врач функциональной диагностики">Врач функциональной диагностики
+                                    </option>
+                                    <option value="Гастроэнтеролог">Гастроэнтеролог</option>
+                                </select>
+                            </div>
+                            <div class="input-container input-container2">
+                                <select class="header_content_form_select2" required>
+                                    <option value="">Метро, город МО</option>
+                                    <option value="Дёмский">Дёмский</option>
+                                    <option value="Калининский">Калининский</option>
+                                    <option value="Кировский">Кировский</option>
+                                    <option value="Лениниский">Лениниский</option>
+                                    <option value="Октябрьский">Октябрьский</option>
+                                    <option value="Орджоникидзевский">Орджоникидзевский</option>
+                                    <option value="Гастроэнтеролог">Советский</option>
+                                </select>
+                            </div>
+                            <div class="doctor_form_example">
+                                <span>Например:</span>
+                                <p>Акушер, Гинеколог, Гинеколог-эндокринолог</p>
+                            </div>
+                            <button type="submit" class="btn">Найти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="list_header_content">
+                <div class="container">
+                    <div class="row">
+                        <img src="img/doctor/adwords_doctor.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- HEADER SECTION END -->
+
+
+
+        <!-- DOCTOR DETAIL SECTION -->
+
+        <section class="doctor_detail">
+            <div class="container">
+                <div class="row">
+                    <div class="doctor_detail_top_content">
+                        <div class="doctor_detail_header">
+                            <div class="doctor_detail_photo">
+                                <img src="img/doctor/32587.162x162.jpg" alt="" class="doctor_detail_ava">
+                                <a href="#" class="doctor_detail_photo_like">
+                                    <img src="img/doctor/like.png" alt="">
+                                </a>
+                                <div class="doctor_detail_stars">
+                                    <ul>
+                                        <li> <img src="img/hert-pink.svg" alt=""></li>
+                                        <li> <img src="img/hert-pink.svg" alt=""></li>
+                                        <li> <img src="img/hert-pink.svg" alt=""></li>
+                                        <li> <img src="img/hert-pink.svg" alt=""></li>
+                                        <li> <img src="img/hert-pink.svg" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="doctor_detail_photo_info">
+                                    <span>Превосходный</span> врач на основе 126
+                                </div>
+                            </div>
+                            <div class="doctor_detail_header_info">
+                                <div class="doctor_detail_header_breadcrumb">
+                                    <ul>
+                                        <li><a href="#">Главная</a></li>
+                                        <li><a href="#">Врачи</a></li>
+                                        <li><a href="#">Харитонова Юлия Васильевна</a></li>
+                                    </ul>
+                                </div>
+                                <div class="doctor_detail_header_name">
+                                    Харитонова<br> Юлия Васильевна
+                                </div>
+                                <div class="doctor_detail_header_prof">
+                                    <span>Акушер, Гинеколог, Гинеколог-эндокринолог</span>
+                                    <span>Стаж 28 лет / Врач высшей категории</span>
+                                </div>
+                                <div class="doctor_detail_header_price">
+                                    <p>Приём от <span class="old_price">1800</span> <span class="new_price">1400
+                                            руб.</span></p>
+                                    <img src="img/doctor/data_image_png_base….png" alt="">
+                                    <div class="doctor_detail_header_price_discount">-20%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor_detail_map">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOCTOR DETAIL SECTION END -->
+
+        <!-- DOCTOR INFORMATION SECTION -->
+
+        <section class="doctor_information">
+            <div class="container">
+                <div class="row">
+                    <div class="doctor_information_detail">
+                        <div class="doctor_information_detail_content">
+                            <h3>Информация о враче</h3>
+                            <span class="doctor_information_detail_content_subtitle">Харитонова Юлия Васильевна - врач
+                                акушер, стаж 28 лет. Скидка на прием врача!</span>
+                            <p class="doctor_information_detail_content_more">Все отзывы о враче. Запись онлайн или по
+                                телефону.</p>
+                            <p>Проводит диагностику и лечение патологии шейки матки, новообразований придатков матки,
+                                миом, эндометриоза, бесплодия, эндокринной патологии в гинекологии, занимается ведением
+                                беременности, в том числе у пациенток с высоким риском невынашивания беременности.
+                                Занимается вопросами планирования семьи (обследование и подготовка к беременности,
+                                проведение необходимого лечения). Владеет современными методами лечения гинекологических
+                                заболеваний, в т.ч. лазеро- и радиохирургией. Автор 15 статей. <a href="#">подробная
+                                    информация о враче.</a></p>
+                            <div class="doctor_information_detail_content_reviews">
+                                <div class="doctor_information_detail_content_reviews_header">
+                                    <h3>Проверенные отзывы о враче</h3>
+                                    <a href="#">как мы собираем отзывы</a>
+                                </div>
+                                <div class="doctor_information_detail_content_reviews_item">
+                                    <div class="doctor_information_detail_content_reviews_item_title">
+                                        <ul>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                        </ul>
+                                        <span>Отлично</span>
+                                    </div>
+                                    <p>Я пришла раньше, и доктор приняла меня пораньше, то есть уделила мне внимание.
+                                        Отличный, компетентный доктор, разбирается в своём деле. У меня было первое
+                                        посещение и врач пыталась узнать причину и как то её решить, назначила мне
+                                        анализы и обследование, и всё рассказала и объяснила.</p>
+                                    <span>Виктория, 24 апреля 2019, приём в клинике <a href="#">"Медицинский центр
+                                            Трастмед на Таганке"</a></span>
+                                </div>
+                                <div class="doctor_information_detail_content_reviews_item">
+                                    <div class="doctor_information_detail_content_reviews_item_title">
+                                        <ul>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                        </ul>
+                                        <span>Отлично</span>
+                                    </div>
+                                    <p>Очень хорошая женщина. Доктор внимательно выслушала меня, подробно рассказала и
+                                        объяснила по поводу моей проблемы, расписала все на листочке, помогла мне,
+                                        сейчас жду результаты анализов и еще раз приду.</p>
+                                    <span>Анастасия, 13 апреля 2019, приём в клинике <a href="#">"Медицинский центр
+                                            Трастмед на Таганке"</a></span>
+                                </div>
+                                <div class="doctor_information_detail_content_reviews_item">
+                                    <div class="doctor_information_detail_content_reviews_item_title">
+                                        <ul>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                            <li> <img src="img/hert-pink.svg" alt=""></li>
+                                        </ul>
+                                        <span>Отлично</span>
+                                    </div>
+                                    <p>Дружелюбная, спокойная и профессиональная доктор. Она очень подробно все
+                                        рассказала, собственно, с чем я обратилась, как лучше за своим здоровьем
+                                        сделать, когда и как часто обращаться к врачу, на что обратить внимание, какие
+                                        анализы лучше раз в год сдавать для поддержания женского здоровья, очень приятно
+                                        было с ней общаться, все четко и по делу.</p>
+                                    <span>Мария, 13 апреля 2019, приём в клинике <a href="#">"Медицинский центр
+                                            Трастмед на Таганке"</a></span>
+                                </div>
+                                <div class="doctor_information_detail_content_reviews_buttons">
+                                    <a href="#" class="show_more_reviews">Показать eщё 5 отзывов</a>
+                                    <a href="#" class="add_review">Оставить отзыв</a>
+                                </div>
+                            </div>
+
+                            <div class="doctor_information_detail_content_specialization">
+                                <h3>Специализируется на лечении</h3>
+                                <span>Акушер</span>
+                                <ul>
+                                    <li>Акушерские кровотечения</li>
+                                    <li>Маловодие</li>
+                                    <li>Отслойка плаценты</li>
+                                    <li>Переношенная беременность</li>
+                                    <li>Токсикоз беременных</li>
+                                    <li>Цитомегаловирусная инфекция у беременных</li>
+                                </ul>
+                                <span>Гинеколог</span>
+                                <ul>
+                                    <li>Аденомиоз</li>
+                                    <li>Аднексит</li>
+                                    <li>Акушерские кровотечения</li>
+                                    <li>Альгодисменорея</li>
+                                    <li>Альгодисменорея вторичная</li>
+                                    <li>Альгоменорея</li>
+                                    <li>Аменорея</li>
+                                    <li>Бартолинит Бели</li>
+                                    <li>Бесплодие</li>
+                                    <li>Бесплодие у женщин</li>
+                                    <li>Вагинит</li>
+                                    <li>Внутреннее кровотечение</li>
+                                    <li>Вульвит</li>
+                                    <li>Вульвовагинит</li>
+                                    <li>Выкидыш</li>
+                                    <li>Генитальный герпес</li>
+                                    <li>Герминогенные опухоли</li>
+                                    <li>Гинекологические заболевания</li>
+                                    <li>Гиперплазия эндометрия</li>
+                                    <li>Гипертрофия малых половых губ</li>
+                                    <li>Двурогая матка</li>
+                                    <li>Дисбактериоз влагалища</li>
+                                    <li>Дисплазия шейки матки</li>
+                                    <li>Дисфункциональное маточное кровотечение</li>
+                                    <li>Дисфункциональные маточные кровотечения</li>
+                                    <li>Дисфункция яичников ЗППП</li>
+                                    <li>Задержка месячных</li>
+                                    <li>Киста бартолиновой железы</li>
+                                    <li>Киста в малом тазу у женщин</li>
+                                    <li>Киста желтого тела яичника</li>
+                                    <li>Киста яичника</li>
+                                    <li>Климакс</li>
+                                    <li>Крауроз вульвы</li>
+                                    <li>Ложная беременность Маловодие</li>
+                                    <li>Метаплазия</li>
+                                    <li>Миома матки</li>
+                                    <li>Молочница</li>
+                                    <li>Нарушение менструального цикла</li>
+                                    <li>Невынашивание беременности</li>
+                                    <li>Оофорит</li>
+                                    <li>Опущение матки</li>
+                                    <li>Острый живот в гинекологии</li>
+                                    <li>ПМС</li>
+                                    <li>Папиллома</li>
+                                    <li>Поликистоз яичников</li>
+                                    <li>Полипы матки</li>
+                                    <li>Постменопауза</li>
+                                    <li>Разрыв кисты яичника</li>
+                                    <li>Сальпингит</li>
+                                    <li>Сальпингоофорит Сертоли</li>
+                                    <li>Синдром истощения яичников</li>
+                                    <li>Синехия</li>
+                                    <li>Стрептококк</li>
+                                    <li>Токсикоз беременных</li>
+                                    <li>Трихомониаз</li>
+                                    <li>Фиброма матки</li>
+                                    <li>Фолликулярная киста яичника</li>
+                                    <li>Хламидиоз</li>
+                                    <li>Хламидиоз при беременности</li>
+                                    <li>Хламидиоз у женщин</li>
+                                    <li>Хронический бартолинит</li>
+                                    <li>Цервицит</li>
+                                    <li>Цитомегаловирус</li>
+                                    <li>Цитомегаловирусная инфекция у беременных</li>
+                                    <li>Эндометриоз</li>
+                                    <li>Эндометриоз 3 степени</li>
+                                    <li>Эндометриоз у женщин</li>
+                                    <li>Эндометриоз у женщин после 40 лет</li>
+                                    <li>Эндометриоидная киста яичника</li>
+                                    <li>Эндоцервицит</li>
+                                    <li>Эрозия</li>
+                                    <li>Эрозия шейки матки</li>
+                                    <li>Ювенильные маточные кровотечения</li>
+                                </ul>
+                                <span>Гинеколог-эндокринолог</span>
+                                <ul>
+                                    <li>Дисфункциональные маточные кровотечения</li>
+                                    <li>Климакс</li>
+                                </ul>
+                            </div>
+                            <div class="doctor_information_detail_content_specialist">
+                                <h3>Подробная информация о специалисте</h3>
+                                <span>Образование</span>
+                                <ul>
+                                    <li>- Диплом по специальности "Лечебное дело", Чувашский государственный университет
+                                        им. И.Н. Ульянова (1990 г.)</li>
+                                    <li>- Интернатура по специальности "Акушер-гинеколог", Медсанчасть ЧЗПТ (1991 г.)
+                                    </li>
+                                </ul>
+                                <span>Курсы повышения квалификации</span>
+                                <ul>
+                                    <li>- "Современные методы диагностики и лечения злокачественных опухолей",
+                                        Российская медицинская академия последипломного образования (1994 г.)</li>
+                                    <li>- "Современные методы диагностики и лечения доброкачественных заболеваний шейки
+                                        матки", Научный центр акушерства, гинекологии и перинатологии им. В.И. Кулакова
+                                        Росмедтехнологий (2009 г.)</li>
+                                    <li>- "Патологии вульвы, влагалища и шейки матки. Кольпоскопия", Казанская
+                                        государственная медицинская академияя академия (2012 г.)</li>
+                                    <li>- "Эндокринные аспекты репродуктивного здоровья", Российский университет дружбы
+                                        народов (2013 г.)</li>
+                                    <li>- "Акушерство и гинекология", АУ Чувашии "Институт усовершенствования" (2014 г.)
+                                    </li>
+                                    <li>- "Ультразвуковая диагностика", Нижегородская государственная медицинская
+                                        академия (2014 г.)</li>
+                                    <li>- "Шейка матки и вульвовагинальные болезни", Российский университет дружбы
+                                        народов (2014 г.)</li>
+                                    <li>- "Актуальные вопросы репродуктивной медицины: профилактика, обследование и
+                                        лечение бесплодия в женской консультации", Самарский государственный медицинский
+                                        университет (2016 г.)</li>
+                                </ul>
+                                <span>Опыт работы</span>
+                                <ul>
+                                    <li>- Врач акушер-гинеколог, врач онкогинеколог, Новочебоксарский городской
+                                        перинатальный центр, город Новочебоксарск (1991-2015 гг.)</li>
+                                    <li>- Врач акушер-гинеколог, врач онкогинеколог, Коммерческий медицинский центр,
+                                        город Новочебоксарск (2004-2015 гг.)</li>
+                                    <li>- Врач в гинеколог, Логон-клиника, город Москва (2015 г.)</li>
+                                </ul>
+                                <span>Специализация<br>
+                                    Проводит диагностику и лечение в сложных случаях акушерско-гинекологической
+                                    практики, таких как:
+                                </span>
+                                <ul>
+                                    <li>- Выявление и лечение патологии шейки матки (эрозия, полипы, папилломатоз,
+                                        лейкоплакия, дисплазия);</li>
+                                    <li>- Диагностика и лечение новообразований придатков матки, миом, эндометриоза;
+                                    </li>
+                                    <li>- Лечение эндокринной патологии в гинекологии (дисфункция яичников, заболевания
+                                        климактерического периода, гиперандрогения, нейро-эндокринные синдромы и пр.);
+                                    </li>
+                                    <li>- Ведение беременности, в том числе у пациенток с высоким риском невынашивания
+                                        беременности, проблемы привычного невынашивания беременности;</li>
+                                    <li>- Лечение бесплодия;</li>
+                                    <li>- Выявление и лечение воспалительных заболеваний органов малого таза.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="doctor_information_detail_sidebar">
+                            <div class="doctor_information_detail_sidebar_title">
+                                Запишитесь на приём
+                            </div>
+                            <div class="doctor_information_detail_sidebar_item">
+                                <div class="doctor_information_detail_sidebar_item_header">
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Сегодня</span>
+                                        26 апр.
+                                    </a>
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Завтра</span>
+                                        27 апр.
+                                    </a>
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Воскрес.</span>
+                                        29 апр.
+                                    </a>
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Понедел.</span>
+                                        30 апр.
+                                    </a>
+                                    <div
+                                        class="doctor_information_detail_sidebar_item_header_nav_left doctor_information_detail_sidebar_item_header_nav">
+                                    </div>
+                                    <div
+                                        class="doctor_information_detail_sidebar_item_header_nav_right doctor_information_detail_sidebar_item_header_nav">
+                                    </div>
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_content">
+                                    <span>Выберите время приема для записи онлайн</span>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li>15:30</li>
+                                    </ul>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li>16:30</li>
+                                    </ul>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li>17:00</li>
+                                    </ul>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li><i class="fas fa-arrow-down"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_address">
+                                    <span>Принимает взрослых в «Логон на Таганской»</span>
+                                    <p>Москва, ул. Солженицына, д. 14, стр. 1</p>
+                                    <ul>
+                                        <li>Марксистская (510 м)</li>
+                                        <li>Таганская (700 м)</li>
+                                    </ul>
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_price">
+                                    Стоимость приёма: 1500 руб.
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_phone">8 (499) 519-36-48</div>
+                            </div>
+                            <div class="doctor_information_detail_sidebar_item">
+                                <div class="doctor_information_detail_sidebar_item_header">
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Сегодня</span>
+                                        26 апр.
+                                    </a>
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Завтра</span>
+                                        27 апр.
+                                    </a>
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Воскрес.</span>
+                                        29 апр.
+                                    </a>
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Понедел.</span>
+                                        30 апр.
+                                    </a>
+                                    <div
+                                        class="doctor_information_detail_sidebar_item_header_nav_left doctor_information_detail_sidebar_item_header_nav">
+                                    </div>
+                                    <div
+                                        class="doctor_information_detail_sidebar_item_header_nav_right doctor_information_detail_sidebar_item_header_nav">
+                                    </div>
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_content">
+                                    <span>Выберите время приема для записи онлайн</span>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li>15:30</li>
+                                    </ul>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li>16:30</li>
+                                    </ul>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li>17:00</li>
+                                    </ul>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li><i class="fas fa-arrow-down"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_address">
+                                    <span>Принимает взрослых в «Логон на Таганской»</span>
+                                    <p>Москва, ул. Солженицына, д. 5, стр. 1</p>
+                                    <ul>
+                                        <li>Таганская (490 м)</li>
+                                        <li>Марксистская (580 м)</li>
+                                    </ul>
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_price">
+                                    Стоимость приёма: 1600 руб.
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_phone">8 (499) 116-81-39</div>
+                            </div>
+                            <div class="doctor_information_detail_sidebar_item">
+                                <div class="doctor_information_detail_sidebar_item_header">
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Сегодня</span>
+                                        26 апр.
+                                    </a>
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Завтра</span>
+                                        27 апр.
+                                    </a>
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Воскрес.</span>
+                                        29 апр.
+                                    </a>
+                                    <a href="#" class="doctor_information_detail_sidebar_item_header_day">
+                                        <span>Понедел.</span>
+                                        30 апр.
+                                    </a>
+                                    <div
+                                        class="doctor_information_detail_sidebar_item_header_nav_left doctor_information_detail_sidebar_item_header_nav">
+                                    </div>
+                                    <div
+                                        class="doctor_information_detail_sidebar_item_header_nav_right doctor_information_detail_sidebar_item_header_nav">
+                                    </div>
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_content">
+                                    <span>Выберите время приема для записи онлайн</span>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li>15:30</li>
+                                    </ul>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li>16:30</li>
+                                    </ul>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li>17:00</li>
+                                    </ul>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li><i class="fas fa-arrow-down"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_address">
+                                    <span>Принимает взрослых в «Медео»</span>
+                                    <p>Москва, ул. Машиностроения 1-я, д. 2/7, корп. 1 </p>
+                                    <ul>
+                                        <li>Дубровка(510 м)</li>
+                                        <li>Автозаводская(700 м)</li>
+                                    </ul>
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_price">
+                                    Стоимость приёма: 2500 руб.
+                                </div>
+                                <div class="doctor_information_detail_sidebar_item_phone">8 (495) 185-01-01</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOCTOR INFORMATION SECTION END -->
+
+        <!-- DOCTOR NEAR SECTION -->
+
+        <section class="doctor_near">
+            <div class="container">
+                <div class="row">
+                    <h3>Врачи поблизости</h3>
+                    <div class="doctor_near_slider">
+                        <a href="#" class="doctor_near_slider_item">
+                            <div class="doctor_near_slider_item_header">
+                                <div class="doctor_near_slider_item_header_photo">
+                                    <img src="img/doctor/101_small.jpg" alt="">
+                                </div>
+                                <div class="doctor_near_slider_item_header_info">
+                                    <span class="doctor_near_slider_item_header_info_name">Формесин Инна
+                                        Валериевна
+                                    </span>
+                                    <p>Гинеколог</p>
+                                    <p>Стаж 25 лет</p>
+                                    <span class="doctor_near_slider_item_header_info_price">от 1890 руб.</span>
+                                    <p>51 отзыв</p>
+                                </div>
+                            </div>
+                            <div class="doctor_near_slider_item_address">
+                                <ul>
+                                    <li>Цветной бульвар,</li>
+                                    <li>Трубная,</li>
+                                    <li>Сухаревская</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="doctor_near_slider_item">
+                            <div class="doctor_near_slider_item_header">
+                                <div class="doctor_near_slider_item_header_photo">
+                                    <img src="img/doctor/3022_small.jpg" alt="">
+                                </div>
+                                <div class="doctor_near_slider_item_header_info">
+                                    <span class="doctor_near_slider_item_header_info_name">Попова Виктория Леонидовна
+                                    </span>
+                                    <p>Гинеколог</p>
+                                    <p>Стаж 10 лет</p>
+                                    <span class="doctor_near_slider_item_header_info_price">от 1890 руб.</span>
+                                    <p>11 отзыв</p>
+                                </div>
+                            </div>
+                            <div class="doctor_near_slider_item_address">
+                                <ul>
+                                    <li>Цветной бульвар,</li>
+                                    <li>Трубная,</li>
+                                    <li>Сухаревская</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="doctor_near_slider_item">
+                            <div class="doctor_near_slider_item_header">
+                                <div class="doctor_near_slider_item_header_photo">
+                                    <img src="img/doctor/111_small.jpg" alt="">
+                                </div>
+                                <div class="doctor_near_slider_item_header_info">
+                                    <span class="doctor_near_slider_item_header_info_name">Герасимова Екатерина
+                                        Владимировна
+                                    </span>
+                                    <p>Гинеколог</p>
+                                    <p>Стаж 20 лет</p>
+                                    <span class="doctor_near_slider_item_header_info_price">от 1890 руб.</span>
+                                    <p>31 отзыв</p>
+                                </div>
+                            </div>
+                            <div class="doctor_near_slider_item_address">
+                                <ul>
+                                    <li>Цветной бульвар,</li>
+                                    <li>Трубная,</li>
+                                    <li>Сухаревская</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="doctor_near_slider_item">
+                            <div class="doctor_near_slider_item_header">
+                                <div class="doctor_near_slider_item_header_photo">
+                                    <img src="img/doctor/111_small.jpg" alt="">
+                                </div>
+                                <div class="doctor_near_slider_item_header_info">
+                                    <span class="doctor_near_slider_item_header_info_name">Герасимова Екатерина
+                                        Владимировна
+                                    </span>
+                                    <p>Гинеколог</p>
+                                    <p>Стаж 20 лет</p>
+                                    <span class="doctor_near_slider_item_header_info_price">от 1890 руб.</span>
+                                    <p>31 отзыв</p>
+                                </div>
+                            </div>
+                            <div class="doctor_near_slider_item_address">
+                                <ul>
+                                    <li>Цветной бульвар,</li>
+                                    <li>Трубная,</li>
+                                    <li>Сухаревская</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOCTOR NEAR SECTION END -->
+
+
+
+        <!-- FOOTER SECTION -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_list col-md-2">
+                        <span>Сервис</span>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Пресса</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-3">
+                        <span>Пациенту</span>
+                        <ul>
+                            <li><a href="#">Врачи</a></li>
+                            <li><a href="#">Клиники</a></li>
+                            <li><a href="#">Диагностика</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Медицинская библиотека</a></li>
+                            <li><a href="#">Справочник заболеваний</a></li>
+                            <li><a href="#">Условия акции “Врачи со скидкой”</a></li>
+                            <li><a href="#">Конфиденциальность</a></li>
+                            <li><a href="#">Согласие на обработку персональных данных</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-2 col-md-offset-1">
+                        <span>ВРАЧУ И КЛИНИКЕ</span>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                        <span>ПАРТНЁРАМ</span>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Партнёрская программа</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-3 col-md-offset-1 footer_copy">
+                        <div class="footer_logo"><img src="./img/logo.png" alt="docdoc"></div>
+                        <img src="./img/data_image_png_base.png" alt="docdoc" class="footer_logo_list">
+                        <ul>
+                            <li>Пишите нам: <span>info@docdoc.ru</span></li>
+                            <li>Звоните нам: 8 (499) 116-81-78</li>
+                            <li>© DOCDOC.RU 2018</li>
+                        </ul>
+                        <ul class="footer_social">
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <div class="footer_company">
+                            <span>Входит в группу компаний</span>
+                            <img src="./img/sberbank.svg" alt="sberbank">
+                            <ul>
+                                <li>ООО «ДОКДОК»</li>
+                                <li>ОГРН 1167746446780</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_info">
+                        <img src="./img/footer-icon.svg" alt="0+">
+                        <span>Информация, представленная на сайте, не может быть использована для постановки диагноза,
+                            назначения лечения и не заменяет прием врача.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- FOOTER SECTION END -->
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcEqcdVdCGVDIOolwc5b5IT5TKUdidTRk&callback=initMap"
+    async defer></script>
+    <script src="js/doctor.js"></script>
+</body>
+
+</html>

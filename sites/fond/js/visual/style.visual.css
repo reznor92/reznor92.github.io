@@ -1,0 +1,114 @@
+
+
+#schemasBlock {
+    z-index: 999;
+}
+#schemasInner {
+}
+.font2Menu {
+    font-size: 22px!important;
+}
+#font1Schema {
+    font-size: 18px;
+}
+#font2Schema {
+    font-size: 24px;
+}
+#font3Schema {
+    font-size: 28px;
+}
+a.whiteSchema {
+    color: #777777!important;
+    text-decoration: underline!important;
+}
+a.whiteSchema:hover {
+    color: #41aeab!important;
+    text-decoration: none!important;
+}
+a.blackSchema  {
+    color: #41aeab!important;
+    text-decoration: underline!important;
+}
+a.blackSchema:hover {
+    color: #50f7f2!important;
+    text-decoration: none!important;
+}
+img.whiteSchema, img.blackSchema {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+.whiteSchema {
+    background: #ffffff!important;
+    background-image: none!important;
+    color: #000000!important;
+}
+.whiteSchema:before {
+    background: #ffffff!important;
+    background-image: none!important;
+    color: #000000!important;
+}
+.whiteSchema:after {
+    background: #ffffff!important;
+    background-image: none!important;
+    color: #000000!important;
+}
+.blackSchema {
+    background: #000000!important;
+    background-image: none!important;
+    color: #ffffff!important;
+}
+.blackSchema:before {
+    background: #000000!important;
+    background-image: none!important;
+    color: #ffffff!important;
+}
+.blackSchema:after {
+    background: #000000!important;
+    background-image: none!important;
+    color: #ffffff!important;
+}
+.font1Schema {
+    font-size: 16px!important;
+    line-height: 22px!important;
+}
+.font2Schema {
+    font-size: 22px!important;
+    font-weight: 500!important;
+    line-height: 28px!important;
+}
+.font3Schema {
+    font-size: 24px!important;
+    font-weight: 500!important;
+    line-height: 30px!important;
+}
+
+.whiteSchema .header_slider, .whiteSchema .business_pic, .whiteSchema .feedback_img,
+.blackSchema .header_slider, .blackSchema .business_pic, .blackSchema .feedback_img{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+
+.whiteSchema .header_slider:after, .whiteSchema .business_pic:after, .whiteSchema .feedback_img:after,
+.blackSchema .header_slider:after, .blackSchema .business_pic:after, .blackSchema .feedback_img:after {
+    position: absolute;
+    content: url(../../img/header/header_slider_bg.jpg);
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.whiteSchema .business_pic:after, .blackSchema .business_pic:after {
+    content: url(../../img/business/business_img_bg.jpg);
+}
+
+.whiteSchema .feedback_img:after, .blackSchema .feedback_img:after {
+    content: url(../../img/feedback/feedback_img.jpg);
+}

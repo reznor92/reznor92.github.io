@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>МКК ФППРМ</title>
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="16x16" href="img/favicon/16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="js/lightgallery/lightgallery.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/page.css">
+
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="load-inner">
+        <div class="showbox">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+                </svg>
+                <span class="logo">
+                    <img src="./img/header/header_logo2.png" alt="logo">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="modal_over"></div>
+        <!-- Header -->
+        <header class="header" id="header-section">
+            <div class="wrapper">
+                <div class="header_nav">
+                    <img src="./img/header/header_logo.png" alt="мой бизнес" class="logo1">
+                    <img src="./img/header/header_logo2.png" alt="мкк фппрм" class="logo2">
+                    <span class="open-slide">
+                        <a>
+                            <svg width="30" height="30">
+                                <path d="M0,5 30,5" stroke="#000" stroke-width="4" />
+                                <path d="M0,14 30,14" stroke="#000" stroke-width="4" />
+                                <path d="M0,23 30,23" stroke="#000" stroke-width="4" />
+                            </svg>
+                        </a>
+                    </span>
+                    <nav class="nav" id="menu">
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#">О Фонде
+                                    <a class="arrow arrow1">
+                                        <img src="./img/header/arrow-bottom.png" alt="">
+                                    </a>
+                                    <ul class="dropdown_items drop1">
+
+                                        <li>
+                                            <a href="#">Стр 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Стр 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Стр 3</a>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Получить микрозайм
+                                    <a class="arrow arrow2">
+                                        <img src="./img/header/arrow-bottom.png" alt="">
+                                    </a>
+                                    <ul class="dropdown_items drop2">
+                                        <li>
+                                            <a href="#">Стр 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Стр 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Стр 3</a>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Полезная информация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header_phone">
+                        <a href="#">
+                            <img src="./img/header/phone-icon.png" alt="">
+                            <span> 8 (8342) 24-00-35</span>
+                        </a>
+
+                    </div>
+                    <div class="header_glasses btn-version-eye visual-toggle">
+                        <a href="#">
+                            <img src="./img/header/glasses-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="block-version-eye">
+                <div class="wrapper">
+                    <div id="schemasBlock">
+                        <div class="block-fonts">
+                            <span class="name">Шрифт:</span>
+                            <button id="font1Schema" class="schemaButton">A</button>
+                            <button id="font2Schema" class="schemaButton">A</button>
+                            <button id="font3Schema" class="schemaButton">A</button>
+                        </div>
+                        <div class="block-colorBg">
+                            <span class="name">Цветовая схема:</span>
+                            <button id="whiteSchema" class="schemaButton">Белая схема</button>
+                            <button id="blackSchema" class="schemaButton">Черная схема</button>
+                        </div>
+                        <button id="schema2" class="schemaButton">Обычный сайт</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- HEADER END -->
+
+        <!-- Breadcrump -->
+        <section class="breadCrumps">
+            <div class="wrapper">
+
+                <ul class="list-breadCrumps">
+                    <li>
+                        <a href="index.html">Главная</a>
+                        <i>|</i>
+                    </li>
+                    <li>
+                        <span>Новости</span>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <!-- Breadcrump END-->
+
+        <!-- CONTENT SECTION -->
+        <section class="content">
+            <div class="wrapper">
+                <ul class="content_nav">
+                    <li style="color: #1d1d1d;">
+                        <a style="color: #1d1d1d;" href="o-fonde/sotrudniki.html">
+                            <b>Сотрудники организации</b>
+                        </a>
+                    </li>
+                    <li style="color: #1d1d1d;">
+                        <a style="color: #1d1d1d;" href="o-fonde/norm-docs.html">
+                            <b>Нормативные документы</b>
+                        </a>
+                    </li>
+                    <li style="color: #1d1d1d;">
+                        <a style="color: #1d1d1d;" href="o-fonde/reestr.html">
+                            <b>Реестр СМСП</b>
+                        </a>
+                    </li>
+                    <li style="color: #1d1d1d;">
+                        <a style="color: #1d1d1d;" href="o-fonde/prav-infa.html">
+                            <b>Правовая информация</b>
+                        </a>
+                    </li>
+                    <li style="color: #1d1d1d;">
+                        <a style="color: #1d1d1d;" href="o-fonde/torg-imushestvo.html">
+                            <b>Информация о залоговом имуществе</b>
+                        </a>
+                    </li>
+                    <li style="color: #1d1d1d;">
+                        <a style="color: #1d1d1d;" href="o-fonde/contacts.html">
+                            <b>Контакты</b>
+                        </a>
+                    </li>
+                </ul>
+
+                <h1>header1</h1>
+                <h2>header2</h2>
+                <h3>header3</h3>
+                <h4>header4</h4>
+                <h5>header5</h5>
+
+
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ol>
+
+                <p>Lorem
+                    <a href="#">ipsum dolor sit amet, consectetur adipisicing elit.</a> Sunt, nesciunt unde exercitationem enim ab soluta
+                    alias explicabo sed quisquam velit totam quod magnam, dignissimos, adipisci tenetur minus, repellat debitis
+                    quis necessitatibus quibusdam? Magni amet fuga, reprehenderit nesciunt quibusdam nemo vel
+                    <b>doloremque consectetur
+                        <em>nostrum quis ullam cumque provident</em> excepturi</b> itaque praesentium unde, maiores iusto repellat
+                    voluptate consequuntur consequatur non eaque repudiandae dolor. Quibusdam officia impedit enim nostrum
+                    blanditiis sunt aliquid vel tempora. Unde totam possimus ratione, praesentium omnis eum temporibus. Iusto
+                    voluptates voluptas sunt ad maiores iure repellat fuga excepturi labore nostrum facere ipsum laudantium,
+                    provident impedit est tempore corporis ipsa commodi, laborum praesentium. Neque tempore expedita distinctio
+                    similique id ipsum quo quidem! Possimus aut pariatur, molestiae debitis voluptatem laborum fuga cumque,
+                    sequi sunt quos fugiat laboriosam minima ab amet porro molestias tempora hic, iste est incidunt iure!
+                    Maxime, aperiam maiores veniam ratione, fugit rerum ad similique possimus consectetur sit delectus suscipit
+                    molestiae. Perferendis ipsum, nulla reprehenderit soluta necessitatibus consectetur nemo maiores voluptatem
+                    quaerat blanditiis nisi voluptatibus vel facilis aspernatur neque, a iure! Blanditiis doloribus est possimus
+                    delectus laboriosam. Animi at deserunt beatae magnam laboriosam quasi neque dolores illum repudiandae
+                    maxime.
+                </p>
+
+
+
+                <div class="block-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>name</td>
+                                <td>number</td>
+                                <td>Action</td>
+                                <td>price</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>24</td>
+                                <td>5%</td>
+                                <td>333
+                                    <i class="fa fa-rub" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>24</td>
+                                <td>5%</td>
+                                <td>333
+                                    <i class="fa fa-rub" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>24</td>
+                                <td>5%</td>
+                                <td>333
+                                    <i class="fa fa-rub" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>24</td>
+                                <td>5%</td>
+                                <td>333
+                                    <i class="fa fa-rub" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>24</td>
+                                <td>5%</td>
+                                <td>333
+                                    <i class="fa fa-rub" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- NEWS SECTION -->
+                <div class="news">
+                    <h2>Новости</h1>
+                        <div class="news_content">
+                            <a href="#" class="news_item">
+                                <div class="news_img_wrap">
+                                    <img src="./img/header/news_pic1.jpg" alt="">
+                                </div>
+                                <div class="news_item_info">
+                                    <span>
+                                        Германия вынуждена увеличить расходы
+                                    </span>
+                                </div>
+                                <div class="news_date">
+                                    15.05.2018
+                                </div>
+                            </a>
+                            <a href="#" class="news_item">
+                                <div class="news_img_wrap">
+                                    <img src="./img/header/news_pic2.jpg" alt="">
+                                </div>
+                                <div class="news_item_info">
+                                    <span>
+                                        Норвегия выделит России 4,6 млн евро на реформы
+                                    </span>
+                                </div>
+                                <div class="news_date">
+                                    10.05.2018
+                                </div>
+                            </a>
+                            <a href="#" class="news_item">
+                                <div class="news_img_wrap">
+                                    <img src="./img/header/news_pic3.jpg" alt="">
+                                </div>
+                                <div class="news_item_info">
+                                    <span>
+                                        Увеличить расходы на оборону Меркель
+                                    </span>
+                                </div>
+                                <div class="news_date">
+                                    09.05.2018
+                                </div>
+                            </a>
+
+
+                            <a href="#" class="news_item">
+                                <div class="news_img_wrap">
+                                    <img src="./img/news/news1.jpg" alt="">
+                                </div>
+                                <div class="news_item_info">
+                                    <span>
+                                        Совещание "Демонстрация возможностей кредитно-гарантийной поддержки субъектов МСП в Республике Мордовия"
+                                    </span>
+                                </div>
+                                <div class="news_date">
+                                    15.05.2018
+                                </div>
+                            </a>
+                            <a href="#" class="news_item">
+                                <div class="news_img_wrap">
+                                    <img src="./img/news/news4.jpg" alt="">
+                                </div>
+                                <div class="news_item_info">
+                                    <span>
+                                        Норвегия выделит России 4,6 млн евро на реформы
+                                    </span>
+                                </div>
+                                <div class="news_date">
+                                    10.05.2018
+                                </div>
+                            </a>
+                            <a href="#" class="news_item">
+                                <div class="news_img_wrap">
+                                    <img src="./img/news/news3.jpg" alt="">
+                                </div>
+                                <div class="news_item_info">
+                                    <span>
+                                        Увеличить расходы на оборону Меркель
+                                    </span>
+                                </div>
+                                <div class="news_date">
+                                    09.05.2018
+                                </div>
+                            </a>
+
+
+
+
+                        </div>
+
+
+                        <!-- NEWS SECTION END -->
+
+                        <!-- GALLERY SECTION -->
+                        <div class="gallery">
+                            <h2>Фотогалерея</h1>
+                                <a href="./img/header/news_pic1.jpg">
+                                    <img src="./img/header/news_pic1.jpg">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <a href="./img/header/news_pic1.jpg">
+                                    <img src="./img/header/news_pic1.jpg">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <a href="./img/header/news_pic1.jpg">
+                                    <img src="./img/header/news_pic1.jpg">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <a href="./img/header/news_pic1.jpg">
+                                    <img src="./img/header/news_pic1.jpg">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <a href="./img/header/news_pic1.jpg">
+                                    <img src="./img/header/news_pic1.jpg">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <a href="./img/header/news_pic1.jpg">
+                                    <img src="./img/header/news_pic1.jpg">
+                                    <i class="fas fa-search"></i>
+                                </a>
+
+                        </div>
+                </div>
+
+                <!-- GALLERY SECTION END -->
+
+                <!-- HISTORY SECTION -->
+                <section class="history">
+                    <div class="wrapper">
+                        <h3>наша история</h3>
+                        <div class="history_content">
+                            <div class="history_item">
+                                <img src="./img/history/history_pic1.png" alt="">
+                                <span>Создан в 2011 году Правительством Республики Мордовия</span>
+                            </div>
+                            <div class="history_item">
+                                <img src="./img/history/history_pic2.png" alt="">
+                                <span>С ноября 2011 года в государственном реестре микрофинансовых организаций</span>
+                            </div>
+                            <div class="history_item">
+                                <img src="./img/history/history_pic3.png" alt="">
+                                <span>С сентября 2015 года является членом СРО «Микрофинансовый Альянс»</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- HISTORY SECTION END -->
+
+
+                <!-- ADVANTAGE SECTION -->
+                <section class="advan">
+                    <div class="wrapper">
+                        <h3>наши преимущества</h3>
+                        <p>Возможность получить микрозайм в размере до 3 000 000 рублей, что практически невозможно в коммерческих
+                            банках из-за незначительной с точки зрения банка суммы.</p>
+                        <div class="advan_content">
+                            <div class="advan_item">
+                                <div class="advan_item_img">
+                                    <img src="./img/advantage/advan_icon1.png" alt="">
+                                </div>
+                                <span class="advan_item_title">Выгодные ставки – 8%</span>
+                                <ul>
+                                    <li>Отсрочка возврата основной суммы – не более 6 месяцев.</li>
+                                    <li>Индивидуальный подход к каждому заемщику.</li>
+                                    <li>Досрочное погашение в любое время, без комиссий и переплат.</li>
+                                    <li>Отсутствие ежемесячных комиссий и дополнительных затрат на банковские услуги.</li>
+                                    <li>Возможность получить микрозайм при отсутствии кредитной истории.</li>
+                                    <li>Погашение равными платежами ежемесячно.</li>
+                                </ul>
+                            </div>
+                            <div class="advan_item">
+                                <div class="advan_item_img">
+                                    <img src="./img/advantage/advan_icon2.png" alt="">
+                                </div>
+                                <span class="advan_item_title">Низкая стоимость займа</span>
+                                <ul>
+                                    <li>Отсутствие комиссий за предоставление и сопровождение микрозайма.</li>
+                                    <li>Отсутствие дополнительных затрат на открытие и ведение счета.</li>
+                                    <li>Полная прозрачность процедуры выдачи микрозайма, никаких скрытых комиссий и платежей.</li>
+                                    <li>Отсутствие дополнительных затрат на оценку залога, страхование залога (требуется только
+                                        в особых случаях).</li>
+                                </ul>
+                            </div>
+                            <div class="advan_item">
+                                <div class="advan_item_img">
+                                    <img src="./img/advantage/advan_icon3.png" alt="">
+                                </div>
+                                <span class="advan_item_title">Эффект займа</span>
+                                <ul>
+                                    <li class="advan_item_list_title">При сумме займа 1 000 000 рублей и сроке займа
+                                        <br> 24 месяца:</li>
+                                    <li>переплата за 2 года составит – 83 412,47 рублей</li>
+                                    <li>полная стоимость микрозайма – 5,12%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ADVANTAGE SECTION END -->
+
+                <!-- BANKS SECTION -->
+
+                <section class="banks">
+                    <div class="wrapper">
+                        <h3>Наши банки</h3>
+                        <div class="banks_content">
+                            <a href="http://www.vbank.ru/" class="banks_item">
+                                <div class="banks_img_wrap">
+                                    <img src="./img/banks/bank_logo1.png" alt="">
+                                </div>
+                                <div class="banks_item_info">
+                                    <span>
+                                        Банк "Возрождение"
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="http://www.ks-bank.ru" class="banks_item">
+                                <div class="banks_img_wrap">
+                                    <img src="./img/banks/bank_logo2.png" alt="">
+                                </div>
+                                <div class="banks_item_info">
+                                    <span>
+                                        КС Банк
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="http://aktivbank.ru/" class="banks_item">
+                                <div class="banks_img_wrap">
+                                    <img src="./img/banks/bank_logo3.png" alt="">
+                                </div>
+                                <div class="banks_item_info">
+                                    <span>
+                                        АКБ "Актив Банк"
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BANKS SECTION END -->
+
+                <!-- LAW SECTION -->
+
+                <section class="law">
+                    <div class="wrapper">
+
+                        <h1 class="wow zoomIn animated" style="visibility: visible; animation-name: zoomIn;">Правовая информация</h1>
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/pdf_icon.png" alt="">
+                            <em>1.
+                                <a href="files/pravila-23.01.2018.pdf">Правила предоставления микрозаймов</a>
+                            </em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                             
+                            </span>
+
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/pdf_icon.png" alt="">
+                            <em>2.
+                                <a href="files/sv_bank.pdf">Свидетельство Банка России</a>
+                            </em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                               
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/pdf_icon.png" alt="">
+                            <em>3.
+                                <a href="files/sv_sro.pdf">Свидетельство СРО</a>
+                            </em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                                
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/word_icon.png" alt="">
+                            <em>4. Памятка заемщику</em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                                
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/word_icon.png" alt="">
+                            <em>5. Информация, предоставляемая получателю фин. поддержки</em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                                
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/word_icon.png" alt="">
+                            <em>6. Микрозаем бля бизнеса</em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                                
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/word_icon.png" alt="">
+                            <em>7. Микрофинансовая организация</em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                               
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/pdf_icon.png" alt="">
+                            <em>8.
+                                <a href="files/osago++.pdf">Виды страхования транспортных средств</a>
+                            </em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                                
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/pdf_icon.png" alt="">
+                            <em>9.
+                                <a href="files/ustav-2018.pdf">Устав</a>
+                            </em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle"  style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                                
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/word_icon.png" alt="">
+                            <em>10. Список лиц, влияющих на принятие решений</em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a  class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                                
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/word_icon.png" alt="">
+                            <em>11. Политика в отношении обработки ПД</em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content animated">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                                
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/word_icon.png" alt="">
+                            <em>12. Положение об обработке и защите ПД</em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content animated">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                                
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/pdf_icon.png" alt="">
+                            <em>13.
+                                <a href="files/baz-standart.pdf">Базовый стандарт защиты прав потребителей услуг МФО</a>
+                            </em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content animated">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                                
+                            </span>
+                        </p>
+
+                        <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                            <img src="./img/law/word_icon.png" alt="">
+                            <em>14. Антикоррупционная политика</em>
+                            <span class="attachment">
+                                <i class="fa fa-download" style="color:#A1282B;font-size:15px;"></i>
+                                <a href="#">Скачать</a>
+                                <br>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-eye" style="color:#A1282B;font-size:15px;"></i> Посмотреть</a>
+                                    <br>
+                                <a class="add_info">
+                                    <i class="fa fa-info-circle" style="color:#A1282B;font-size:15px;"></i> Доп. информация
+                                    <span class="add_info_content animated">
+                                        <span>В целях повышения прозрачности и эффективности деятельности МКК ФППРМ, а также совершенствования платежной дисциплины Заемщиков Фонда принят порядок реструктуризации задолженности в МКК ФППРМ.</span>
+                                      
+                                        <span>Микрозаем признается реструктурированным, если по нему заключено и вступило в силу дополнительное соглашение, изменяющее существенные условия первоначального договора микрозайма (срок микрозайма не превышает 36 месяцев) на основании которого Заемщик получает право исполнять обязательства по микрозайму в более благоприятном режиме (например, изменен срок погашения микрозайма,  изменен график платежей).</span>
+                                    </span>
+                                </a>
+                               
+                            </span>
+                        </p>
+
+
+                    </div>
+
+
+
+
+                </section>
+
+
+                <!-- LAW SECTION END -->
+
+                <!-- STAGE SECTION -->
+                <section class="stage">
+                    <div class="wrapper">
+
+                        <h1 class="wow zoomIn animated" style="visibility: visible; animation-name: zoomIn;">Получить микрозайм</h1>
+                        <h3>Этапы прохождения заявления</h3>
+                        <div class="stage_item tab1 active">
+                            <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <em>
+                                    <strong>Предоставление документов в Фонд</strong>
+                                </em>
+                            </p>
+
+                        </div>
+                        <div class="stage_item tab2">
+                            <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <em>
+                                    <strong>Анализ заявки и оценка бизнеса</strong>
+                                </em>
+                            </p>
+
+                        </div>
+                        <div class="stage_item tab3">
+                            <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <em>
+                                    <strong>Принятие решения</strong>
+                                </em>
+                            </p>
+
+
+                        </div>
+
+                        <div class="stage_item tab4">
+                            <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <em>
+                                    <strong>Заключение договора</strong>
+                                </em>
+                            </p>
+
+
+                        </div>
+
+                        <div class="stage_item tab5">
+                            <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <em>
+                                    <strong>Мониторинг целевого использования займа</strong>
+                                </em>
+                            </p>
+
+
+                        </div>
+
+                        <div class="stage_item tab6">
+                            <p class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                                <em>
+                                    <strong>Отчетность об эффективности деятельности</strong>
+                                </em>
+                            </p>
+
+
+                        </div>
+
+                        <div class="stage_item_content tab1_content show">
+                            <p>Скачайте перечень документов для подачи заявления на микрозайм.
+                                <br> По возникающим вопросам специалисты Фонда проконсультируют лично или по телефону.
+                                <br> Сформированное заявление регистрируется и передается на дальнейший анализ.</p>
+                        </div>
+                        <div class="stage_item_content tab2_content">
+                            <p>Заявление на микрозайм анализируется специалистами.
+                                <br> Специалистом совместно с представителем заемщика проводится выезд на место ведения бизнеса
+                                и осмотр залога.
+                                <br> Анализируется финансовое состояние и кредитоспособность заемщика.</p>
+                        </div>
+                        <div class="stage_item_content tab3_content">
+                            <p>Кредитный комитет Фонда выносит решение по заявлению по результатам проведенного анализа. В состав
+                                Кредитного комитета входят представители Министерства экономики, торговли и предпринимателства,
+                                общественных объединений предпринимателей и Фонда.</p>
+                        </div>
+                        <div class="stage_item_content tab4_content">
+                            <p>При положительном решении, Фонд готовит договоры для подписания. Банк оформляет дополнительные
+                                соглашения подписанные в трехстороннем порядке между Займодавцем, Заемщиком и Банком. Заемщик
+                                к данному соглашению готовит смету о расходовании денежных средств.
+                                <br> В случае залога недвижимости, договор ипотеки проходит обязательную гос.регистрацию.</p>
+                        </div>
+                        <div class="stage_item_content tab5_content">
+                            <p>Микрозаймы, предоставляемые Фондом - целевые.
+                                <br> Заемщик обязан подтвердить целевое использование займа.
+                                <br> В течение 90 дней с момента получения денежных средств предоставить платежные поручения,
+                                договоры купли-продажи и прочие документы, подтверждающие направление расходования средств.</p>
+                        </div>
+                        <div class="stage_item_content tab6_content">
+                            <p>С момента выдачи микрозайма заемщик 3 года отчитывается в Фонд о показателях деятельности. По
+                                запросу.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- STAGE SECTION END -->
+
+
+
+                <!-- PAGINATOR SECTION -->
+                <div class="wrapper">
+                    <ul class="paginator">
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- PAGINATOR SECTION END -->
+
+            </div>
+
+
+
+    </div>
+    </section>
+
+    <!-- CONTENT SECTION END-->
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer_bottom">
+            <div class="wrapper">
+                <div class="footer_bottom_copy">
+                    <span>© 2018 МКК ФППРМ</span>
+                    <p>При использовании материалов, ссылка на сайт обязательна</p>
+                </div>
+                <div class="footer_bottom_social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-odnoklassniki-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+    <!-- FOOTER END -->
+
+    <div class="fixed_btn" id="fixed-btn">
+        <a href="#header-section" class="top anchor">
+            <img src="./img/feedback/top_icon.png" alt="">
+        </a>
+        <a class="call">
+            <img src="./img/feedback/tel_icon.png" alt="">
+        </a>
+    </div>
+
+
+    <!--Modal-->
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 20 20">
+                            <path fill="#000" d="M10.707 10.5l5.646-5.646c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.646 5.646-5.646-5.646c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l5.646 5.646-5.646 5.646c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l5.646-5.646 5.646 5.646c0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146c0.195-0.195 0.195-0.512 0-0.707l-5.646-5.646z"></path>
+                        </svg>
+                    </button>
+                    <div class="block-caption">
+                        <h2 class="caption">Заполните поля</h2>
+                    </div>
+                    <div class="block-form">
+                        <form method="post">
+                            <div class="error">
+                                <h4 style="color: #ffffff;"></h4>
+                            </div>
+                            <div class="group">
+                                <input type="text" name="modal_name" placeholder="Ваше имя" value="" required="required">
+                            </div>
+                            <div class="group">
+                                <input type="tel" class="input_phone" name="modal_phone" placeholder="Ваш телефон" value="" required="required">
+                            </div>
+                            <div class="group">
+                                <input type="email" name="modal_email" placeholder="Ваш email" value="" required="required">
+                            </div>
+
+                            <input type="checkbox" name="agree" id="check" required>
+                            <label for="check">Я согласен со всеми условиями</label>
+
+
+
+                            <button type="submit" class="btn" value="Отправить">
+                                <span>отправить</span>
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal end-->
+
+    <!--[if IE 9]>
+            <script>
+                window.location = "oldbrowser/index.html";
+            </script>
+    <![endif]-->
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/lightgallery/lightgallery-all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/page.js"></script>
+    <link rel="stylesheet" href="js/visual/style.visual.css">
+    <script src="js/visual/jquery.visual.js"></script>
+
+
+</body>
+
+</html>

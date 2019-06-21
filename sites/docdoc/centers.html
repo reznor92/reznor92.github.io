@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>DOCDOC - Найдите провереного врача и запишитесь на прием</title>
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/nice-date-picker.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="main centers">
+
+        <!-- HEADER SECTION -->
+
+        <header class="header">
+            <!-- HEADER TOP -->
+            <div class="container">
+                <div class="row">
+                    <div class="header_logo col-md-2">
+                        <img src="./img/Medical.png" alt="docdoc">
+                    </div>
+                    <div class="header_select-city col-md-2 col-md-offset-1">
+                        <div class="select-city_inner">
+                            <i class="fas fa-globe-asia"></i>
+                            <select class="select-city">
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Волгоград">Волгоград</option>
+                                <option value="Воронеж">Воронеж</option>
+                                <option value="Екатеринбург">Екатеринбург</option>
+                                <option value="Ижевск">Ижевск</option>
+                                <option value="Казань">Казань</option>
+                                <option value="Краснодар">Краснодар</option>
+                                <option value="Красноярск">Красноярск</option>
+                                <option value="Нижний Новгород">Нижний Новгород</option>
+                                <option value="Новосибирск">Новосибирск</option>
+                                <option value="Пермь">Пермь</option>
+                                <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                                <option value="Самара">Самара</option>
+                                <option value="Сочи">Сочи</option>
+                                <option value="Тюмень">Тюмень</option>
+                                <option value="Уфа">Уфа</option>
+                                <option value="Челябинск">Челябинск</option>
+                                <option value="Ярославль">Ярославль</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="header_phone_area col-md-4 col-md-offset-3">
+                        <div class="header_phone_text">Нужна помощь! <span>Звоните!</span></div>
+                        <span class="header_phone">8 (499) 116-81-78</span>
+                        <div class="personal_area">
+                            <div class="personal_area_title">Личный кабинет</div>
+                            <div class="personal_area_list">
+                                <ul>
+                                    <li><a href="#">Вход</a></li>
+                                    <li><a href="#">Регистрация</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- HEADER TOP END -->
+
+
+            <div class="list_header_form">
+                <div class="container">
+                    <div class="row">
+                        <form class="header_content_form">
+                            <div class="input-container input-container1">
+                                <select class="header_content_form_select" required>
+                                    <option value="">Врач, клиника, услуга</option>
+                                    <option value="Акушер">Акушер</option>
+                                    <option value="Аллерголог">Аллерголог</option>
+                                    <option value="Андролог">Андролог</option>
+                                    <option value="Анестезиолог">Анестезиолог</option>
+                                    <option value="Венеролог">Венеролог</option>
+                                    <option value="Врач функциональной диагностики">Врач функциональной диагностики
+                                    </option>
+                                    <option value="Гастроэнтеролог">Гастроэнтеролог</option>
+                                </select>
+                            </div>
+                            <div class="input-container input-container2">
+                                <select class="header_content_form_select2" required>
+                                    <option value="">Метро, город МО</option>
+                                    <option value="Дёмский">Дёмский</option>
+                                    <option value="Калининский">Калининский</option>
+                                    <option value="Кировский">Кировский</option>
+                                    <option value="Лениниский">Лениниский</option>
+                                    <option value="Октябрьский">Октябрьский</option>
+                                    <option value="Орджоникидзевский">Орджоникидзевский</option>
+                                    <option value="Гастроэнтеролог">Советский</option>
+                                </select>
+                            </div>
+                            <div class="list_header_form_checkboxes">
+                                <p>
+                                    <input type="checkbox" id="childClinic" />
+                                    <label for="childClinic">Детские клиники</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="alltime" />
+                                    <label for="alltime">Круглосуточно</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="polisDMC" checked />
+                                    <label for="polisDMC">По полису ДМС</label>
+                                </p>
+                            </div>
+                            <button type="submit" class="btn">Найти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- HEADER SECTION END -->
+
+        <!-- MEDICAL CENTERS SECTION -->
+
+        <section class="medical_centers">
+            <div class="container">
+                <div class="row">
+                    <h3>Медицинские центры и клиники Москвы</h3>
+                    <div class="medical_centers_content">
+                        <ul>
+                            <li><span>321</span><a href="#">Акушерство</a></li>
+                            <li><span>131</span><a href="#">Аллергология</a></li>
+                            <li><span>165</span><a href="#">Андрология</a></li>
+                            <li><span>33</span><a href="#">Анестезиология</a></li>
+                            <li><span>18</span><a href="#">Артрология</a></li>
+                            <li><span>5</span><a href="#">Вегетология</a></li>
+                            <li><span>182</span><a href="#">Венерология</a></li>
+                            <li><span>51</span><a href="#">Вертебрология</a></li>
+                            <li><span>213</span><a href="#">Гастроэнтерология</a></li>
+                            <li><span>29</span><a href="#">Гематология</a></li>
+                            <li><span>32</span><a href="#">Генетика</a></li>
+                            <li><span>44</span><a href="#">Гепатология</a></li>
+                            <li><span>375</span><a href="#">Гинекология</a></li>
+                            <li><span>66</span><a href="#">Гирудотерапия</a></li>
+                            <li><span>23</span><a href="#">Гомеопатия</a></li>
+                            <li><span>258</span><a href="#">Дерматология</a></li>
+                            <li><span>13</span><a href="#">Диабетология</a></li>
+                            <li><span>76</span><a href="#">Диетология</a></li>
+                            <li><span>122</span><a href="#">Иммунология</a></li>
+                        </ul>
+                        <ul>
+                            <li><span>321</span><a href="#">Инфекционные болезни</a></li>
+                            <li><span>223</span><a href="#">Кардиология</a></li>
+                            <li><span>27</span><a href="#">Кинезиология</a></li>
+                            <li><span>78</span><a href="#">Колопроктология</a></li>
+                            <li><span>205</span><a href="#">Косметология</a></li>
+                            <li><span>58</span><a href="#">Лечебная физкультура</a></li>
+                            <li><span>64</span><a href="#">Логопедия</a></li>
+                            <li><span>127</span><a href="#">Маммология</a></li>
+                            <li><span>153</span><a href="#">Мануальная терапия</a></li>
+                            <li><span>143</span><a href="#">Массаж</a></li>
+                            <li><span>37</span><a href="#">Микология</a></li>
+                            <li><span>40</span><a href="#">Наркология</a></li>
+                            <li><span>303</span><a href="#">Неврология</a></li>
+                            <li><span>24</span><a href="#">Нейропсихология</a></li>
+                            <li><span>25</span><a href="#">Нейрохирургия</a></li>
+                            <li><span>23</span><a href="#">Неонатология</a></li>
+                            <li><span>48</span><a href="#">Нефрология</a></li>
+                            <li><span>15</span><a href="#">Онкодерматология</a></li>
+                            <li><span>125</span><a href="#">Онкология</a></li>
+                        </ul>
+                        <ul>
+                            <li><span>12</span><a href="#">Ортопедия</a></li>
+                            <li><span>80</span><a href="#">Остеопатия</a></li>
+                            <li><span>219</span><a href="#">Отоларингология</a></li>
+                            <li><span>173</span><a href="#">Офтальмология</a></li>
+                            <li><span>1</span><a href="#">Паразитология</a></li>
+                            <li><span>140</span><a href="#">Педиатрия</a></li>
+                            <li><span>54</span><a href="#">Пластическая хирургия</a></li>
+                            <li><span>13</span><a href="#">Подология</a></li>
+                            <li><span>96</span><a href="#">Проктология</a></li>
+                            <li><span>84</span><a href="#">Психиатрия</a></li>
+                            <li><span>105</span><a href="#">Психология</a></li>
+                            <li><span>118</span><a href="#">Психотерапия</a></li>
+                            <li><span>68</span><a href="#">Пульмонология</a></li>
+                            <li><span>39</span><a href="#">Реабилитация</a></li>
+                            <li><span>73</span><a href="#">Ревматология</a></li>
+                            <li><span>79</span><a href="#">Рентгенология</a></li>
+                            <li><span>79</span><a href="#">Репродуктология</a></li>
+                            <li><span>140</span><a href="#">Рефлексотерапия</a></li>
+                            <li><span>22</span><a href="#">Сексология</a></li>
+                        </ul>
+                        <ul>
+                            <li><span>21</span><a href="#">Сомнология</a></li>
+                            <li><span>25</span><a href="#">Спортивная медицина</a></li>
+                            <li><span>249</span><a href="#">Стоматология</a></li>
+                            <li><span>15</span><a href="#">Сурдология</a></li>
+                            <li><span>264</span><a href="#">Терапия</a></li>
+                            <li><span>176</span><a href="#">Травматология</a></li>
+                            <li><span>94</span><a href="#">Трихология</a></li>
+                            <li><span>331</span><a href="#">УЗИ</a></li>
+                            <li><span>260</span><a href="#">Урология</a></li>
+                            <li><span>128</span><a href="#">Физиотерапия</a></li>
+                            <li><span>111</span><a href="#">Флебология</a></li>
+                            <li><span>7</span><a href="#">Фониатрия</a></li>
+                            <li><span>122</span><a href="#">Функциональная диагностика</a></li>
+                            <li><span>5</span><a href="#">Химиотерапия</a></li>
+                            <li><span>233</span><a href="#">Хирургия</a></li>
+                            <li><span>28</span><a href="#">Челюстно-лицевая хирургия</a></li>
+                            <li><span>225</span><a href="#">Эндокринология</a></li>
+                            <li><span>92</span><a href="#">Эндоскопия</a></li>
+                            <li><span>28</span><a href="#">Эпилептология</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MEDICAL CENTERS SECTION END -->
+
+        <!-- ALL CLINICS SECTION -->
+
+        <section class="all_clinics">
+            <div class="all_clinics_filter">
+                <div class="container">
+                    <div class="row">
+                        <h5>Все клиники</h5>
+                        <span>Сортировать по:</span>
+                        <ul>
+                            <li><a href="#" class="active">Рейтингу</a></li>
+                            <li><a href="#">Отзывам</a></li>
+                            <li><a href="#">Стоимости</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="all_clinics_content">
+                <div class="container">
+                    <div class="row">
+                        <div class="all_clinics_content_item">
+                            <div class="all_clinics_content_item_header">
+                                <div class="all_clinics_content_item_header_info">
+                                    <div class="all_clinics_content_item_header_info_logo">
+                                        <div class="all_clinics_content_item_header_info_logo_img">
+                                            <img src="img/clinic/min_232.png" alt="">
+                                        </div>
+                                        <ul>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-gray.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_text">
+                                        <span class="all_clinics_content_item_header_info_text_title">Он Клиник</span>
+                                        <span class="all_clinics_content_item_header_info_text_subtitle">многопрофильный
+                                            медицинский центр</span>
+                                        <ul>
+                                            <li>Сеть клиник</li>
+                                            <li>Первичная стоимость приёма - низкая</li>
+                                        </ul>
+                                        <p>Группа «Он Клиник» – это сеть универсальных лечебно-диагностических центров
+                                            семейного типа, в которых ведут прием больше 600 специалистов 60 ключевых
+                                            медицинских специализаций.</p>
+                                    </div>
+                                </div>
+                                <div class="all_clinics_content_item_header_info_address">
+                                    <div class="all_clinics_content_item_header_info_address_place">
+                                        <span>г. Москва, Цветной б-р, д. 30, корп. 2</span>
+                                        <ul>
+                                            <li>Цветной бульвар (390 м),</li>
+                                            <li>Трубная (540 м), </li>
+                                            <li>Сухаревская (920 м)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_address_phone">
+                                        <span>8 (499) 519-37-05</span>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_address_btn">
+                                        <a href="#" class="btn">Записаться</a>
+                                        <span>Запись в любой филиал клиники</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all_clinics_content_item_filials">
+                                <div class="all_clinics_content_item_filials_item">
+                                    <div class="all_clinics_content_item_filials_item_name">
+                                        <span>Медцентр ОН КЛИНИК на Цветном бульваре</span>
+                                        <div class="all_clinics_content_item_filials_item_stars">
+                                            <ul>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-gray.svg" alt=""></li>
+                                            </ul>
+                                            <span>123 отзыва</span>
+                                        </div>
+                                    </div>
+                                    <div class="all_clinics_content_item_filials_item_address">
+                                        <div class="all_clinics_content_item_filials_item_address_place">
+                                            <span>г. Москва, Цветной б-р, д. 30, корп. 2</span>
+                                            <ul>
+                                                <li>Цветной бульвар (390 м),</li>
+                                                <li>Трубная (540 м), </li>
+                                                <li>Сухаревская (920 м)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="all_clinics_content_item_filials_item_address_time">
+                                            <ul>
+                                                <li>пн-пт: <span>08:00 - 21:00</span></li>
+                                                <li>сб: <span>08:00 - 21:00</span></li>
+                                                <li>вс: <span>08:00 - 21:00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all_clinics_content_item_filials_item">
+                                    <div class="all_clinics_content_item_filials_item_name">
+                                        <span>Медцентр ОН КЛИНИК на Новом Арбате</span>
+                                        <div class="all_clinics_content_item_filials_item_stars">
+                                            <ul>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-gray.svg" alt=""></li>
+                                            </ul>
+                                            <span>1233 отзыва</span>
+                                        </div>
+                                    </div>
+                                    <div class="all_clinics_content_item_filials_item_address">
+                                        <div class="all_clinics_content_item_filials_item_address_place">
+                                            <span>г. Москва, ул. Большая Молчановка, д. 32, стр. 1</span>
+                                            <ul>
+                                                <li>Смоленская (900 м),</li>
+                                                <li>Арбатская (1 км)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="all_clinics_content_item_filials_item_address_time">
+                                            <ul>
+                                                <li>пн-пт: <span>08:00 - 21:00</span></li>
+                                                <li>сб: <span>08:00 - 21:00</span></li>
+                                                <li>вс: <span>08:00 - 21:00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all_clinics_content_item_filials_item">
+                                    <div class="all_clinics_content_item_filials_item_name">
+                                        <span>Медицинский центр Он Клиник на ул. Трёхгорный</span>
+                                        <div class="all_clinics_content_item_filials_item_stars">
+                                            <ul>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-gray.svg" alt=""></li>
+                                            </ul>
+                                            <span>1233 отзыва</span>
+                                        </div>
+                                    </div>
+                                    <div class="all_clinics_content_item_filials_item_address">
+                                        <div class="all_clinics_content_item_filials_item_address_place">
+                                            <span>г. Москва, Цветной б-р, д. 30, корп. 2</span>
+                                            <ul>
+                                                <li>Цветной бульвар (390 м),</li>
+                                                <li>Трубная (540 м), </li>
+                                                <li>Сухаревская (920 м)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="all_clinics_content_item_filials_item_address_time">
+                                            <ul>
+                                                <li>пн-пт: <span>08:00 - 21:00</span></li>
+                                                <li>сб: <span>08:00 - 21:00</span></li>
+                                                <li>вс: <span>08:00 - 21:00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="all_clinics_content_item_filials_link">
+                                    все филиалы (6)
+                                </a>
+                            </div>
+                        </div>
+                        <div class="all_clinics_content_item">
+                            <div class="all_clinics_content_item_header">
+                                <div class="all_clinics_content_item_header_info">
+                                    <div class="all_clinics_content_item_header_info_logo">
+                                        <div class="all_clinics_content_item_header_info_logo_img">
+                                            <img src="img/centers/min_44.jpg" alt="">
+                                        </div>
+                                        <ul>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-gray.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_text">
+                                        <span
+                                            class="all_clinics_content_item_header_info_text_title">МедЦентрСервис</span>
+                                        <span class="all_clinics_content_item_header_info_text_subtitle">медицинская
+                                            клиника</span>
+                                        <ul>
+                                            <li>Сеть клиник</li>
+                                            <li>Первичная стоимость приёма - высокая</li>
+                                        </ul>
+                                        <p>МедЦентрСервис – это группа из 17 многофункциональных медучреждений, в каждой
+                                            из которых оказывают качественную медицинскую помощь.</p>
+                                    </div>
+                                </div>
+                                <div class="all_clinics_content_item_header_info_address">
+                                    <div class="all_clinics_content_item_header_info_address_place">
+                                        <span>г. Москва, Цветной б-р, д. 30, корп. 2</span>
+                                        <ul>
+                                            <li>Цветной бульвар (390 м),</li>
+                                            <li>Трубная (540 м), </li>
+                                            <li>Сухаревская (920 м)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_address_phone">
+                                        <span>8 (499) 519-37-05</span>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_address_btn">
+                                        <a href="#" class="btn">Записаться</a>
+                                        <span>Запись в любой филиал клиники</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all_clinics_content_item_filials">
+                                <div class="all_clinics_content_item_filials_item">
+                                    <div class="all_clinics_content_item_filials_item_name">
+                                        <span>МедЦентрСервис на Авиамоторной</span>
+                                        <div class="all_clinics_content_item_filials_item_stars">
+                                            <ul>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-gray.svg" alt=""></li>
+                                            </ul>
+                                            <span>123 отзыва</span>
+                                        </div>
+                                    </div>
+                                    <div class="all_clinics_content_item_filials_item_address">
+                                        <div class="all_clinics_content_item_filials_item_address_place">
+                                            <span>г. Москва, Цветной б-р, д. 30, корп. 2</span>
+                                            <ul>
+                                                <li>Цветной бульвар (390 м),</li>
+                                                <li>Трубная (540 м), </li>
+                                                <li>Сухаревская (920 м)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="all_clinics_content_item_filials_item_address_time">
+                                            <ul>
+                                                <li>пн-пт: <span>08:00 - 21:00</span></li>
+                                                <li>сб: <span>08:00 - 21:00</span></li>
+                                                <li>вс: <span>08:00 - 21:00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all_clinics_content_item_filials_item">
+                                    <div class="all_clinics_content_item_filials_item_name">
+                                        <span>МедЦентрСервис на Аэропорте</span>
+                                        <div class="all_clinics_content_item_filials_item_stars">
+                                            <ul>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-gray.svg" alt=""></li>
+                                            </ul>
+                                            <span>1233 отзыва</span>
+                                        </div>
+                                    </div>
+                                    <div class="all_clinics_content_item_filials_item_address">
+                                        <div class="all_clinics_content_item_filials_item_address_place">
+                                            <span>г. Москва, ул. Большая Молчановка, д. 32, стр. 1</span>
+                                            <ul>
+                                                <li>Смоленская (900 м),</li>
+                                                <li>Арбатская (1 км)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="all_clinics_content_item_filials_item_address_time">
+                                            <ul>
+                                                <li>пн-пт: <span>08:00 - 21:00</span></li>
+                                                <li>сб: <span>08:00 - 21:00</span></li>
+                                                <li>вс: <span>08:00 - 21:00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all_clinics_content_item_filials_item">
+                                    <div class="all_clinics_content_item_filials_item_name">
+                                        <span>МедЦентрСервис на Белорусской</span>
+                                        <div class="all_clinics_content_item_filials_item_stars">
+                                            <ul>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-pink.svg" alt=""></li>
+                                                <li><img src="img/hert-gray.svg" alt=""></li>
+                                            </ul>
+                                            <span>1233 отзыва</span>
+                                        </div>
+                                    </div>
+                                    <div class="all_clinics_content_item_filials_item_address">
+                                        <div class="all_clinics_content_item_filials_item_address_place">
+                                            <span>г. Москва, Цветной б-р, д. 30, корп. 2</span>
+                                            <ul>
+                                                <li>Цветной бульвар (390 м),</li>
+                                                <li>Трубная (540 м), </li>
+                                                <li>Сухаревская (920 м)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="all_clinics_content_item_filials_item_address_time">
+                                            <ul>
+                                                <li>пн-пт: <span>08:00 - 21:00</span></li>
+                                                <li>сб: <span>08:00 - 21:00</span></li>
+                                                <li>вс: <span>08:00 - 21:00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="all_clinics_content_item_filials_link">
+                                    все филиалы (6)
+                                </a>
+                            </div>
+                        </div>
+                        <div class="all_clinics_content_item">
+                            <div class="all_clinics_content_item_header">
+                                <div class="all_clinics_content_item_header_info">
+                                    <div class="all_clinics_content_item_header_info_logo">
+                                        <div class="all_clinics_content_item_header_info_logo_img">
+                                            <img src="img/centers/min_1343.png" alt="">
+                                        </div>
+                                        <ul>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-gray.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_text">
+                                        <span class="all_clinics_content_item_header_info_text_title">Ист клиник на
+                                            Соколе</span>
+                                        <span class="all_clinics_content_item_header_info_text_subtitle">многопрофильная
+                                            клиника</span>
+                                        <ul>
+                                            <li>Сеть клиник</li>
+                                            <li>Первичная стоимость приёма - высокая</li>
+                                        </ul>
+                                        <p>«Ист Клиник» – многопрофильная клиника, в которой практикуют альтернативные
+                                            методы лечения заболеваний различных органов и систем.</p>
+                                    </div>
+                                </div>
+                                <div class="all_clinics_content_item_header_info_address">
+                                    <div class="all_clinics_content_item_header_info_address_place">
+                                        <span>г. Москва, Цветной б-р, д. 30, корп. 2</span>
+                                        <ul>
+                                            <li>Цветной бульвар (390 м),</li>
+                                            <li>Трубная (540 м), </li>
+                                            <li>Сухаревская (920 м)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_address_phone">
+                                        <span>8 (499) 519-37-05</span>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_address_btn">
+                                        <a href="#" class="btn">Записаться</a>
+                                        <span>Запись в любой филиал клиники</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_clinics_content_item">
+                            <div class="all_clinics_content_item_header">
+                                <div class="all_clinics_content_item_header_info">
+                                    <div class="all_clinics_content_item_header_info_logo">
+                                        <div class="all_clinics_content_item_header_info_logo_img">
+                                            <img src="img/centers/min_13143.jpg" alt="">
+                                        </div>
+                                        <ul>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-pink.svg" alt=""></li>
+                                            <li><img src="img/hert-gray.svg" alt=""></li>
+                                        </ul>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_text">
+                                        <span class="all_clinics_content_item_header_info_text_title">Медицинский центр
+                                            К-Медицина</span>
+                                        <span class="all_clinics_content_item_header_info_text_subtitle">медицинская
+                                            клиника</span>
+                                        <ul>
+                                            <li>Сеть клиник</li>
+                                            <li>Первичная стоимость приёма - высокая</li>
+                                        </ul>
+                                        <p>«К-МЕДИЦИНА» –многопрофильный центр с отделениями кардиологии,
+                                            гастроэнтерологии, неврологии, эндокринологии, проктологии, гинекологии,
+                                            урологии и других направлений.</p>
+                                    </div>
+                                </div>
+                                <div class="all_clinics_content_item_header_info_address">
+                                    <div class="all_clinics_content_item_header_info_address_place">
+                                        <span>г. Москва, Цветной б-р, д. 30, корп. 2</span>
+                                        <ul>
+                                            <li>Цветной бульвар (390 м),</li>
+                                            <li>Трубная (540 м), </li>
+                                            <li>Сухаревская (920 м)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_address_phone">
+                                        <span>8 (499) 519-37-05</span>
+                                    </div>
+                                    <div class="all_clinics_content_item_header_info_address_btn">
+                                        <a href="#" class="btn">Записаться</a>
+                                        <span>Запись в любой филиал клиники</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_clinics_content_paginator">
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">След.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALL CLINICS SECTION END -->
+
+        <!-- CLINICS INFO SECTION -->
+
+        <div class="clinics_info">
+            <div class="container">
+                <div class="row">
+                    <div class="clinics_info_item">
+                        <span>Где найти адреса лучших частных клиник Москвы?</span>
+                        <p>Профессиональный онлайн-сервис DocDoc.ru собрал список лучших клиник Москвы, вам остается
+                            только выбрать подходящее медицинское учреждение и записаться на прием к специалисту.</p>
+                    </div>
+                    <div class="clinics_info_item">
+                        <span>Как найти лучшую клинику в Москве?</span>
+                        <ul>
+                            <li>- выбираете сферу медицины или специалиста, который может оказать Вам помощь;</li>
+                            <li>- уточняете район Москвы, где Вам было бы комфортно пройти обследование в платной
+                                клинике;</li>
+                            <li>- сортируете полученные данные, исходя из стоимости, рейтинга популярности центра или
+                                отзывов.</li>
+                        </ul>
+                    </div>
+                    <div class="clinics_info_item">
+                        <span>Удобство системы поиска медицинской клиники на DocDoc.ru заключается в следующем:</span>
+                        <ul>
+                            <li>- у каждой клиники есть анкета с достоверными и подробными данными, включая адреса
+                                частных клиник и полный перечень услуг;</li>
+                            <li>- при выдаче система поиска сразу указывает уровень цен (например, стоимость приема –
+                                высокая, средняя);</li>
+                            <li>- вы можете сразу записаться на прием в удобное для Вас время.</li>
+                        </ul>
+                    </div>
+                    <div class="clinics_info_alarm">
+                        <img src="img/alarm.svg" alt="">
+                        <span>ОБРАТИТЕ ВНИМАНИЕ!</span>
+                        <p>Информация на странице представлена для ознакомления. Для назначения лечения обратитесь к
+                            врачу.</p>
+                    </div>
+                    <div class="clinics_info_services">
+                        <span>Услуги</span>
+                        <ul>
+                            <li>
+                                <a href="#">Ортопантомограмма</a>
+                            </li>
+                            <li>
+                                <a href="#">Удаление постоянного зуба</a>
+                            </li>
+                            <li>
+                                <a href="#">Пластика уздечки языка</a>
+                            </li>
+                            <li>
+                                <a href="#">Пластика уздечки верхней губы</a>
+                            </li>
+                            <li>
+                                <a href="#">Удаление ретинированного зуба</a>
+                            </li>
+                            <li>
+                                <a href="#">Ультразвуковая чистка зубов Air Flow</a>
+                            </li>
+                            <li>
+                                <a href="#">Косметическая реставрация зубов</a>
+                            </li>
+                            <li>
+                                <a href="#">Цистэктомия с резекцией верхушки корня</a>
+                            </li>
+                            <li>
+                                <a href="#">Восстановление коронковой части зуба</a>
+                            </li>
+                            <li>
+                                <a href="#">Кюретаж лунки удаленного зуба</a>
+                            </li>
+                            <li>
+                                <a href="#">Установка формирователя десны</a>
+                            </li>
+                            <li>
+                                <a href="#">Удаление дентальных имплантатов</a>
+                            </li>
+                            <li>
+                                <a href="#">Удаление капюшона зуба мудрости</a>
+                            </li>
+                            <li>
+                                <a href="#">Лазерное отбеливание зубов</a>
+                            </li>
+                            <li>
+                                <a href="#">Сиалография</a>
+                            </li>
+                            <li>
+                                <a href="#">Ортодонтия</a>
+                            </li>
+                            <li>
+                                <a href="#">Коррекция зубных протезов</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CLINICS INFO SECTION END -->
+
+
+
+        <!-- FOOTER SECTION -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_list col-md-2">
+                        <span>Сервис</span>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Пресса</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-3">
+                        <span>Пациенту</span>
+                        <ul>
+                            <li><a href="#">Врачи</a></li>
+                            <li><a href="#">Клиники</a></li>
+                            <li><a href="#">Диагностика</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Медицинская библиотека</a></li>
+                            <li><a href="#">Справочник заболеваний</a></li>
+                            <li><a href="#">Условия акции “Врачи со скидкой”</a></li>
+                            <li><a href="#">Конфиденциальность</a></li>
+                            <li><a href="#">Согласие на обработку персональных данных</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-2 col-md-offset-1">
+                        <span>ВРАЧУ И КЛИНИКЕ</span>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                        <span>ПАРТНЁРАМ</span>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Партнёрская программа</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-3 col-md-offset-1 footer_copy">
+                        <div class="footer_logo"><img src="./img/logo.png" alt="docdoc"></div>
+                        <img src="./img/data_image_png_base.png" alt="docdoc" class="footer_logo_list">
+                        <ul>
+                            <li>Пишите нам: <span>info@docdoc.ru</span></li>
+                            <li>Звоните нам: 8 (499) 116-81-78</li>
+                            <li>© DOCDOC.RU 2018</li>
+                        </ul>
+                        <ul class="footer_social">
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <div class="footer_company">
+                            <span>Входит в группу компаний</span>
+                            <img src="./img/sberbank.svg" alt="sberbank">
+                            <ul>
+                                <li>ООО «ДОКДОК»</li>
+                                <li>ОГРН 1167746446780</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_info">
+                        <img src="./img/footer-icon.svg" alt="0+">
+                        <span>Информация, представленная на сайте, не может быть использована для постановки диагноза,
+                            назначения лечения и не заменяет прием врача.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- FOOTER SECTION END -->
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/nice-date-picker.js"></script>
+    <script src="js/akusher.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+@media (max-width:1200px) {
+    .bilet .side_left .head {
+        font-size: 25px;
+    }
+}
+@media (max-width:1000px) {
+    .mob {
+        display: inline-block;
+    }
+    .desktop {
+        display:none;
+    }
+    header .main {
+        clear: both;
+    }
+    header .logo {
+        margin-right: 50px;
+    } 
+    header .phone {
+        padding-left: 21px;
+        font-size: 16px;
+        margin: 10px 0px 0px 0px;
+    } 
+    header .email {
+        padding-left: 21px;
+        font-size: 16px;
+        float:right;
+        margin: 10px 0px 0px 0px;
+    }
+    header .soc_top {
+        text-align: center;
+        display: block;
+        margin-left: 0px;
+    }
+    header .main p {
+        font-size: 24px;
+    }
+    header .main p span {
+        font-size: 19px;
+    }
+    header .main h1 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .info h2 {
+        font-size: 25px
+    }
+    .info .item {
+        width:100%;
+        margin: 10px 0px 0px 0px;
+    }
+    .info .head {
+        font-size: 24px;
+    }
+    .info .orange .head {
+        font-size: 25px;
+    }
+    .about .head_top {
+        font-size: 27px;
+        margin-top: 10px;
+    }
+    .about .p_top {
+        font-size:20px;
+        line-height: 20px;
+    }
+    .about .item .head {
+        font-size: 23px;
+    }
+    .about .item p {
+        font-size: 18px;
+    }
+    .about .item img {
+        float:none!important;
+        margin: 0px!important;
+    }
+    .about .item .text {
+        padding: 16px 10px 16px 10px;
+    }
+    .about .sert_info::before {
+        margin-right: 10px;
+    }
+    .about .sert_info {
+        padding-left: 0px;
+    }
+    .about .head {
+        font-size: 19px;
+    }
+    .sub_head {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .custom {
+        margin: 16px 0px 20px 20px;
+    }
+    .custom li {
+        padding: 5px 0px 5px 11px;
+        font-size: 19px;
+    }
+    .description { 
+        margin: -50px 0px 0px;
+    }
+    .description .container {
+        padding-top: 37px;
+        padding-bottom: 0px;
+    }
+    .description .item {
+        width:100%;
+        text-align: left;
+        margin: 0px 0px 30px 0px;
+    }
+    .description .item:last-child {
+        margin-bottom: 0px;
+    }
+    .description .item img {
+        float:left;
+        margin: 0px 10px 10px 0px;
+    }
+    .description .item p {
+        margin: 0px 0px 0px 0px;
+        font-size: 16px;
+    }
+    .description::after {
+        height: 40px;
+    }
+    .bilet .side_left {
+        width:100%;
+    }
+    .bilet .side_right {
+        width:100%;
+    }
+    .bilet .side_left .head {
+        border-radius: 24px 24px 0px 0px;
+        min-height: 20px;
+        padding: 0px;
+    }
+    .bilet .card_img {
+        display:none;
+    }
+    .bilet .side_left {
+        border: 1px solid #4392cf;
+        border-radius: 25px;
+        min-height:auto;
+        background: transparent;
+    }
+    .bilet .side_left .text {
+        padding: 10px;
+    }
+    .bilet .side_left button {
+        margin: 10px auto;
+    }
+    .bilet .side_left:after {
+        content: '';
+        width: 100%;
+        height: 20px;
+        border-top: 1px solid #89bbe1;
+        background: #4392cf;
+        border-radius: 0px 0px 24px 24px;
+    }
+    .bilet .form::after {
+        display:none;
+    }
+    .bilet .side_left button {
+        font-size: 20px;
+    }
+    .bilet .form {
+        border:0px;
+        margin-top: 10px;
+    }
+    .bilet .side_left .text .start {
+        font-size: 22px;
+    }
+    .bilet .side_left .text .time {
+        font-size: 23px;
+    }
+    .bilet .side_right {
+        min-height:auto;
+        background: transparent;
+    }
+    .bilet .side_right .head {
+        background: transparent;
+        color:#1175b7;
+        font-size: 23px;
+        padding: 25px 2px 0px;
+    }
+    .bilet .side_right::before {
+        background: transparent;
+    }
+    .bilet .side_right img {
+        float:left;
+        margin: 30px 10px 0px 2px;
+    }
+    .bilet .side_right .name {
+        font-size: 23px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    .sub_head_form {
+        margin: 30px 0px 10px 0px;
+        font-size:20px;
+    }
+    .bilet .side_right p {
+        font-size:18px;
+        line-height: 26px;
+    }
+    .course .text {
+        padding-top: 10px;
+    }
+    .button_block {
+        margin-top:0px;
+    }
+    footer .menu {
+        text-align: center;
+    }
+    footer .menu a {
+        margin: 0px 0px 5px 0px;
+    }
+}

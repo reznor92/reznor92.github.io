@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'GaleonaModern';
+    src: url('../fonts/GaleonaModern/GaleonaModern.eot');
+    src: url('../fonts/GaleonaModern/GaleonaModern.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GaleonaModern/GaleonaModern.woff') format('woff'),
+        url('../fonts/GaleonaModern/GaleonaModern.ttf') format('truetype');
+}

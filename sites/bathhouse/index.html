@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>БАНЯ ИСТОПКА</title>
+    <bgsound src="music.wav" loop="1" volume="-1000" balance="0" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="16x16" href="img/favicon/16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/lightgallery/lightgallery.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- loader -->
+    <!-- loader -->
+    <div class="load-inner">
+        <div class="showbox">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+                </svg>
+                <span class="logo">
+                    <img src="./img/header/header_logo.png" alt="logo">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- OPEN NAV -->
+
+    <span class="open_nav">
+        <a>
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="4" />
+                <path d="M0,14 30,14" stroke="#fff" stroke-width="4" />
+                <path d="M0,23 30,23" stroke="#fff" stroke-width="4" />
+            </svg>
+        </a>
+    </span>
+
+    <!-- OPEN NAV END-->
+
+    <div class="audio">
+        <audio autoplay controls loop>
+            <source src="Closer.mp3" type="audio/mp3"></source>
+        </audio>
+    </div>
+
+    <div class="main">
+
+        <!-- HEADER SECTION -->
+        <header class="header" id="header-section">
+            <div class="header_top">
+                <div class="wrapper">
+                    <a href="#" class="header_logo">
+                        <img src="./img/header/header_logo.png" alt="баня истопка">
+                    </a>
+                    <nav class="header_nav">
+                        <ul>
+                            <li>
+                                <a href="#prices-sect" class="anchor">Наши цены</a>
+                            </li>
+                            <li>
+                                <a href="#offer-sect" class="anchor">Наши акции</a>
+                            </li>
+                            <li>
+                                <a href="#photos-sect" class="anchor">Фото</a>
+                            </li>
+                            <li>
+                                <a href="#reviews-sect" class="anchor">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#footer-sect" class="anchor">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header_call">
+                        <span>+7 (391) 28-28-003</span>
+                        <a href="#" id="btn_call">Заказать звонок</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="header_slider">
+                <div class="header_slide slide1">
+                    <div class="wrapper">
+                        <div class="slide_info">
+                            <h1>Баня парит, баня правит, баня всё
+                                <br> и всем поправит
+                            </h1>
+                            <a class="btn" id="btn_call3">Заказать обратный звонок</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_slide slide2">
+                    <div class="wrapper">
+                        <div class="slide_info">
+                            <h1>Кто любит
+                                <br> свой народ,
+                                <br> тот должен сводить его
+                                <br> в баню
+                            </h1>
+                            <a class="btn" id="btn_call4">Заказать обратный звонок</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_slide slide3">
+                    <div class="wrapper">
+                        <div class="slide_info">
+                            <h1>Не парься
+                                <br> в жизни,
+                                <br> парься в бане
+                            </h1>
+                            <a class="btn" id="btn_call5">Заказать обратный звонок</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_slide slide4">
+                    <div class="wrapper">
+                        <div class="slide_info">
+                            <h1>Мы расскажем
+                                <br> вам о бане
+                                <br> немного
+                                <br> больше, чем вы
+                                <br> об этом знаете
+                            </h1>
+                            <a class="btn" id="btn_call6">Заказать обратный звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_dots">
+                <div class="wrapper">
+                    <ul>
+                        <li>
+                            <a href="#">баня на дровах</a>
+                        </li>
+                        <li>
+                            <a href="#">семейная баня</a>
+                        </li>
+                        <li>
+                            <a href="#">баня в сергиевом посаде аренда</a>
+                        </li>
+                        <li>
+                            <a href="#">снять баню в сергиевом посаде</a>
+                        </li>
+                        <li>
+                            <a href="#">баня истопка</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- INFO SECTION -->
+        <div class="wrapper eng_title">
+            <h2 class="wow zoomIn animated" style="visibility: visible; animation-name: zoomIn;">We  speak English.
+                We invite guests to our Russian bath on firewood.
+                Τry our bath and you will begin to understand Russia.</h2>
+        </div>
+        
+        <section class="info">
+            <div class="wrapper">
+                <div class="info_content">
+                    <h2>БАНЯ ДЛЯ ВСЕЙ СЕМЬИ В СЕРГИЕВОМ ПОСАДЕ </h2>
+                    <p>Сегодня мы расскажем о первой семейной бане открытой в Сергиевом Посаде, в которую родители могли бы
+                        пойти вместе с детьми. Мы не учитываем общественные бани советского образца, VIP-сауны для ,,досуга,,
+                        и сауны при SPA- и фитнес-центрах. Наши бани созданы для крепкого богатырского здоровья в идеальных
+                        паровых режимах для комфортного прибывания в парной до 20минут и больше. Такие режимы создают парная
+                        обитая огромными липовыми досками с лыком и шириной до 60 см, что и позволяет регулировать естественный
+                        режим паровой бани в которой дышится как в пчелином улье и конечно-же ПЕЧЬ облицованная крупным уральским
+                        змеевиком(серпентинит)шабровского месторождения. В старину змеевик применялся для устранения множества
+                        душевных и телесных хворей, так как считалось, что он может вытягивать из травмированного невидимого
+                        поля человека абсолютно все отрицательные сгустки, змеевик гораздо лучше других камней способен провести
+                        очистку человеческого организма от внешних негативных воздействий, избавляя его от токсинов и шлаков.
+                        А парок из такой печи, изумленье. Закрытая каменка, пять видов камней, включая полудрагоценный нефрит
+                        и жадеит, побалуют вас аэроионами-витаминами воздуха. </p>
+                </div>
+                <div class="info_pic">
+                    <img src="./img/info/info_pic.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- INFO SECTION END -->
+
+        <!-- SERVICES SECTION -->
+        <section class="services">
+            <div class="wrapper">
+                <h2>наши услуги</h2>
+                <div class="services_row">
+                    <div class="services_item">
+                        <img src="./img/services/serv_item1.png" alt="">
+                        <h3>Услуги банщика</h3>
+                        <p>из луговых трав, на пихтовых вениках</p>
+                    </div>
+                    <div class="services_item">
+                        <img src="./img/services/serv_item2.png" alt="">
+                        <h3>Мыльно-берёзовый обмыв</h3>
+                        <p>из луговых трав, на пихтовых вениках</p>
+                    </div>
+                    <div class="services_item">
+                        <img src="./img/services/serv_item3.png" alt="">
+                        <h3>Медово-соляные скрабы</h3>
+                        <p>из луговых трав, на пихтовых вениках</p>
+                    </div>
+                    <div class="services_item">
+                        <img src="./img/services/serv_item4.png" alt="">
+                        <h3>Парение на сене</h3>
+                        <p>из луговых трав, на пихтовых вениках</p>
+                    </div>
+                    <div class="services_item">
+                        <img src="./img/services/serv_item5.png" alt="">
+                        <h3>Ароматерапия</h3>
+                        <p>живыми пучками трав (не химическими маслами из аптеки)</p>
+                    </div>
+                </div>
+                <div class="services_row">
+                    <div class="services_item">
+                        <img src="./img/services/serv_item6.png" alt="">
+                        <h3>Прогрев</h3>
+                        <p>Работа по усиленному прогреву ног и разгону застоявшейся крови</p>
+                    </div>
+                    <div class="services_item">
+                        <img src="./img/services/serv_item7.png" alt="">
+                        <h3>Дыхательные упражнения </h3>
+                        <p>для очистки бронхов от слизи и застоя в лёгких</p>
+                    </div>
+                    <div class="services_item">
+                        <img src="./img/services/serv_item8.png" alt="">
+                        <h3>Ингаляции</h3>
+                        <p>ингаляции эвкалиптовыми вениками</p>
+                    </div>
+                    <div class="services_item">
+                        <img src="./img/services/serv_item9.png" alt="">
+                        <h3>Массаж</h3>
+                        <p>из луговых трав, на пихтовых вениках</p>
+                    </div>
+                    <div class="services_item">
+                        <img src="./img/services/serv_item10.png" alt="">
+                        <h3>Аксессуары</h3>
+                        <p>Всегда в наличии 8 видов различных веников, одноразовые тапочки, шапки, простыни</p>
+                    </div>
+                </div>
+                <span>И многое другое для здравия души и тела</span>
+            </div>
+        </section>
+
+
+        <!-- SERVICES SECTION END -->
+
+        <!-- OFFER SECTION -->
+        <section class="offer" id="offer-sect">
+            <div class="wrapper">
+                <div class="offer_content">
+                    <h2>Так-же у нас уникальное предложение для любителей бани !!!!!!!
+                    </h2>
+                    <p>Баня для вас, там где вы пожелаете, в любое время и в любом месте. Передвижная баня-прицеп 5 метров,
+                        на дровах.
+                        <br>
+                        <span>Цена 1700руб./час,</span> до 50 км от г. Сергиев Посад
+                        <br> (свыше 50 руб. за км) заказ от 3 часов.
+                        <br> Услуги банщика, веники, сено, массаж. 5час/аренды -
+                        <span class="upper">в подарок!!!</span>
+                    </p>
+                </div>
+                <div class="offer_pic">
+                    <img src="./img/offer/offer_pic.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- OFFER SECTION END -->
+
+        <!-- PRICES SECTION -->
+        <section class="prices" id="prices-sect">
+            <div class="wrapper">
+                <h2>Наши цены</h2>
+                <div class="prices_content">
+                    <div class="prices_row">
+                        <div class="prices_day prices_item">
+                            <span>Понедельник</span>
+                            <span>Вторник</span>
+                            <span>Среда</span>
+                        </div>
+                        <div class="prices_time prices_item">
+                            до 17.00 от 3 часов -20% с 17.00 до 23.00 до 6 человек свыше 6 человек доплата (заказ от 2,5 часов)
+                        </div>
+                        <div class="prices_price prices_item">
+                            <span>1200 руб./час</span>
+                            <span>1500 руб./час</span>
+                            <span>600 руб./чел</span>
+                        </div>
+                    </div>
+                    <div class="prices_row2">
+                        <div class="prices_day prices_item">
+                            <span>Четверг</span>
+                        </div>
+                        <div class="prices_time prices_item">
+                            с 11.00 до 15.00 (2 часа)
+                            <br> с 18.00 до 23.00 (2 часа)
+                        </div>
+                        <div class="prices_price prices_item">
+                            <span>600 руб./чел</span>
+                            <span>800 руб./чел</span>
+                        </div>
+                    </div>
+                    <div class="prices_row">
+                        <div class="prices_day prices_item">
+                            <span>пятница</span>
+                            <span>суббота</span>
+                            <span>воскресенье</span>
+                        </div>
+                        <div class="prices_time prices_item">
+                            до 6 человек
+                            <br> свыше 6 человек доплата (заказ от 2,5 часов)
+                        </div>
+                        <div class="prices_price prices_item">
+                            <span>1500 руб./час</span>
+                            <span>600 руб./чел</span>
+                        </div>
+                    </div>
+                    <div class="prices_row2">
+                        <div class="prices_day prices_item">
+                            <span>Дети</span>
+                        </div>
+                        <div class="prices_time prices_item">
+                            до 5 лет
+                            <br> от 5 до 7 лет
+                            <br> от до 14 лет
+                        </div>
+                        <div class="prices_price prices_item">
+                            <span>бесплатно</span>
+                            <span>-30%</span>
+                            <span>-10%</span>
+                        </div>
+                    </div>
+                    <img src="./img/prices/prices_pic.png" alt="" class="prices_pic">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PRICES SECTION END -->
+
+        <!-- FANS SECTION -->
+
+        <section class="fans">
+            <div class="wrapper">
+                <div class="fans_content">
+                    <h2>Для совсем больших ценителей бани
+                        <br> и здорового РУССКОГО фэншуя
+                    </h2>
+                    <p>Баня в лесу (18 км от г.Сергиев Посад), которая топится по серому (камни нагреваются прямым нагревом
+                        от горящих дров и разогреваются до малинового свечения, что и делает пар особенно целебным, доставляя
+                        на полок парильщику так необходимые нам витамины воздуха-аэроионы, но дым выходит через трубу)с открытым
+                        водоёмом, бассейном с травами, сеновалом, чаем заваренным алтайскими травами и настоящим липовым
+                        мёдом из Башкирии. Во время всей процедуры парения Вас будет сопровождать банщик.
+                    </p>
+                    <span>
+                        Цена - 3 часа парения до 5 человек – 7000 рублей, включает -2 веника на выбор, сено и травы в парной, сеновал, бассейн, чай,
+                        мёд, парение веником одного человека.
+                    </span>
+                    <p>По желанию можно заказать уху, шашлык из осетрины, чебуреки, домашнюю выпечку и многое другое по Вашим
+                        гастрономическим предпочтениям, так-же приготовим блюда веганской кухни.</p>
+                </div>
+            </div>
+            <img src="./img/fans/fans_pic.jpg" alt="" class="fans_pic">
+        </section>
+
+        <!-- FANS SECTION END -->
+
+        <!-- ROME SECTION -->
+        <section class="rome">
+            <div class="wrapper">
+                <div class="rome_content">
+                    <h2>Из истории Римских бань</h2>
+                    <p>Гордые люди в тогах, считали ниже своего достоинства обращаться к врачам и лекарствам. Римляне настолько
+                        уверовали в целительность банных процедур, что для излечения и профилактики предпочитали баню всему
+                        остальному, они посещали римские термы…. </p>
+                    <p>В те времена римляне спрашивали друг друга при встрече - “Как потеете?”</p>
+                    <span>Времена другие теперь, но физиология хомосапиенса от этого не поменялась.</span>
+                </div>
+            </div>
+            <img src="./img/rome/rome_pic.jpg" alt="" class="rome_pic">
+        </section>
+
+        <!-- ROME SECTION END -->
+
+        <!-- PHOTOS SECTION -->
+        <section class="photos" id="photos-sect">
+            <h2>Наши Фото</h2>
+            <h3>Заголовок 1</h3>
+            <div class="photos_gallery">
+                <a href="./img/photos/photo1.png">
+                    <img src="./img/photos/photo1.png">
+                    <div class="overlay"></div>
+                </a>
+                <a href="./img/photos/photo2.png">
+                    <img src="./img/photos/photo2.png">
+                    <div class="overlay"></div>
+                </a>
+                <a href="./img/photos/photo3.png">
+                    <img src="./img/photos/photo3.png">
+                    <div class="overlay"></div>
+                </a>
+                <a href="./img/photos/photo4.png">
+                    <img src="./img/photos/photo4.png">
+                    <div class="overlay"></div>
+                </a>
+                <a href="./img/photos/photo1.png">
+                    <img src="./img/photos/photo1.png">
+                    <div class="overlay"></div>
+                </a>
+                <a href="./img/photos/photo2.png">
+                    <img src="./img/photos/photo2.png">
+                    <div class="overlay"></div>
+                </a>
+                <a href="./img/photos/photo3.png">
+                    <img src="./img/photos/photo3.png">
+                    <div class="overlay"></div>
+                </a>
+                <a href="./img/photos/photo4.png">
+                    <img src="./img/photos/photo4.png">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <h3>Заголовок 2</h3>
+            <div class="photos_gallery">
+                <a href="./img/photos/photo5.png">
+                    <img src="./img/photos/photo5.png">
+                    <div class="overlay"></div>
+                </a>
+                <a href="./img/photos/photo6.png">
+                    <img src="./img/photos/photo6.png">
+                    <div class="overlay"></div>
+                </a>
+                <a href="./img/photos/photo7.png">
+                    <img src="./img/photos/photo7.png">
+                    <div class="overlay"></div>
+                </a>
+                <a href="./img/photos/photo8.png">
+                    <img src="./img/photos/photo8.png">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- PHOTOS SECTION END -->
+
+        <!-- STOCK SECTION -->
+
+        <section class="stock">
+            <div class="wrapper">
+                <h2>Ладим бани из липового горбыля и липовой доски</h2>
+                <img src="./img/stock/stock_pic.jpg" alt="" class="stock_pic">
+            </div>
+
+        </section>
+
+        <!-- STOCK SECTION END -->
+
+
+        <!-- REVIEWS SECTION -->
+        <section class="reviews" id="reviews-sect">
+            <div class="wrapper">
+                <h2>наши отзывы</h2>
+                <div class="reviews_content">
+                    <div class="reviews_item">
+                        <div class="reviews_item_pic reviews_item_pic1">
+                            <img src="./img/reviews/reviews_pic1.jpg" alt="">
+                        </div>
+                        <div class="reviews_item_name">
+                            <h4>Анна Еременко</h4>
+                            <span>30.05.2018</span>
+                        </div>
+                        <div class="reviews_item_info">
+                            <span>Очень рекомендую!</span>
+                            <p>Были в банес друзьями, в сосновой. Очень хорошо прогревается парилка, действительно стоящее место.
+                                Очень понравилась купель и прорубь, атмосфера интересная. Расслабились и оздоровили тело
+                                супер, спина перестала болеть.</p>
+                        </div>
+                    </div>
+                    <div class="reviews_item">
+                        <div class="reviews_item_pic reviews_item_pic2">
+                            <img src="./img/reviews/reviews_pic2.jpg" alt="">
+                        </div>
+                        <div class="reviews_item_name">
+                            <h4>Екатерина Котова</h4>
+                            <span>30.05.2018</span>
+                        </div>
+                        <div class="reviews_item_info">
+                            <span>Обязательно приедем еще раз!</span>
+                            <p>Отдыхали недавно в этой бане, нам все понравилось. В парной всегда поддерживалась температура.
+                                После такой процедуры, эффект сохранился на долго, до сих пор хорошо себя чувствую. Придем
+                                в гости еще раз обязательно.</p>
+                        </div>
+                    </div>
+                    <div class="reviews_item">
+                        <div class="reviews_item_pic reviews_item_pic3">
+                            <img src="./img/reviews/reviews_pic3.jpg" alt="">
+                        </div>
+                        <div class="reviews_item_name">
+                            <h4>Илья Абраменко</h4>
+                            <span>30.05.2018</span>
+                        </div>
+                        <div class="reviews_item_info">
+                            <span>Понравилось купание в купели!</span>
+                            <p>Хорошее место для отдыха, парная достаточно с высокой температурой. Интерьер понравился, хорошая
+                                обстановка. Обслуживающий персонал молодец, спасибо им. Хорошая купель, чистая и теплая.
+                                Придем еще раз обязательно.</p>
+                        </div>
+                    </div>
+                    <div class="reviews_item">
+                        <div class="reviews_item_pic reviews_item_pic3">
+                            
+                        </div>
+                        <div class="reviews_item_name">
+                            <h4>Илья Абраменко</h4>
+                            <span>30.05.2018</span>
+                        </div>
+                        <div class="reviews_item_info">
+                            <span>Понравилось купание в купели!</span>
+                            <p>Хорошее место для отдыха, парная достаточно с высокой температурой. Интерьер понравился, хорошая
+                                обстановка. Обслуживающий персонал молодец, спасибо им. Хорошая купель, чистая и теплая.
+                                Придем еще раз обязательно.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- REVIEWS SECTION END -->
+
+        <!-- FEEDBACK SECTION -->
+        <section class="feedback">
+            <div class="wrapper">
+                <div class="feedback_content">
+                    <h2>Оставьте заявку</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Как вас зовут" required>
+                        <input type="phone" placeholder="Ваш телефон" class="input_phone" required>
+                        <input type="checkbox" name="agree" id="check" required>
+                        <label for="check">
+                            <a href="#" target="_blank">
+                                Я даю согласие на обработку моих персональных данных в соответствии с условиями
+                            </a>
+                        </label>
+                        <div id="captcha_callback1" class="captcha-item">
+                            <div style="width: 304px; height: 78px;">
+                                <div>
+                                    <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcSej4UAAAAAN0G_BRYy8IeAx884jhOI3tEqmiz&amp;co=aHR0cDovL3d3dy5hbXQtay5ydTo4MA..&amp;hl=ru&amp;v=v1526884278587&amp;size=normal&amp;cb=yzmzr95qce86"
+                                        width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                </div>
+                                <textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Оставить заявку</button>
+                    </form>
+                </div>
+                <div class="feedback_pic">
+                    <img src="./img/feedback/feedback_pic.jpg" alt="">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FEEDBACK SECTION END -->
+
+        <!-- FOOTER SECTION -->
+
+        <footer class="footer" id="footer-sect">
+            <div class="wrapper">
+                <div class="footer_phone">
+                    <img src="./img/header/header_logo.png" alt="">
+                    <span>+7 (391) 28-28-003</span>
+                    <a id="btn_call2">Заказать звонок</a>
+                </div>
+                <div class="footer_addr">
+                    <h2>Контакты</h2>
+                    <span>Мы находимся по адресу: Лазурный берег 33 , озеро Мясокомбинат</span>
+                    <span>Работаем с 7:00 до 23:00, без перерывов и выходных.</span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- FOOTER SECTION END -->
+
+        <div class="fixed_btn" id="fixed-btn">
+            <a href="#header-section" class="top anchor">
+                <img src="./img/top_arrow.png" alt="">
+            </a>
+        </div>
+
+    </div>
+
+
+
+    <!--Modal-->
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 20 20">
+                            <path fill="#fff" d="M10.707 10.5l5.646-5.646c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.646 5.646-5.646-5.646c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l5.646 5.646-5.646 5.646c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l5.646-5.646 5.646 5.646c0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146c0.195-0.195 0.195-0.512 0-0.707l-5.646-5.646z"></path>
+                        </svg>
+                    </button>
+                    <h2>Оставьте заявку</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Как вас зовут" required>
+                        <input type="phone" placeholder="Ваш телефон" class="input_phone" required>
+                        <input type="checkbox" name="agree" id="check" required>
+                        <label for="check">
+                            <a href="#" target="_blank">
+                                Я даю согласие на обработку моих персональных данных в соответствии с условиями
+                            </a>
+                        </label>
+                        <div id="captcha_callback1" class="captcha-item">
+                            <div style="width: 304px; height: 78px;">
+                                <div>
+                                    <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcSej4UAAAAAN0G_BRYy8IeAx884jhOI3tEqmiz&amp;co=aHR0cDovL3d3dy5hbXQtay5ydTo4MA..&amp;hl=ru&amp;v=v1526884278587&amp;size=normal&amp;cb=yzmzr95qce86"
+                                        width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                </div>
+                                <textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Оставить заявку</button>
+                    </form>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Modal end-->
+
+    <!--[if IE 9]>
+            <script>
+                window.location = "oldbrowser/index.html";
+            </script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/lightgallery/lightgallery-all.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

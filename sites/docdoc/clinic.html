@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>DOCDOC - Найдите провереного врача и запишитесь на прием</title>
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="main clinic">
+
+        <!-- HEADER SECTION -->
+
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header_logo col-md-2">
+                        <img src="./img/Medical.png" alt="docdoc">
+                    </div>
+                    <div class="header_select-city col-md-2 col-md-offset-1">
+                        <div class="select-city_inner">
+                            <i class="fas fa-globe-asia"></i>
+                            <select class="select-city">
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Волгоград">Волгоград</option>
+                                <option value="Воронеж">Воронеж</option>
+                                <option value="Екатеринбург">Екатеринбург</option>
+                                <option value="Ижевск">Ижевск</option>
+                                <option value="Казань">Казань</option>
+                                <option value="Краснодар">Краснодар</option>
+                                <option value="Красноярск">Красноярск</option>
+                                <option value="Нижний Новгород">Нижний Новгород</option>
+                                <option value="Новосибирск">Новосибирск</option>
+                                <option value="Пермь">Пермь</option>
+                                <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                                <option value="Самара">Самара</option>
+                                <option value="Сочи">Сочи</option>
+                                <option value="Тюмень">Тюмень</option>
+                                <option value="Уфа">Уфа</option>
+                                <option value="Челябинск">Челябинск</option>
+                                <option value="Ярославль">Ярославль</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="header_phone_area col-md-4 col-md-offset-3">
+                        <div class="header_phone_text">Нужна помощь! <span>Звоните!</span></div>
+                        <span class="header_phone">8 (499) 116-81-78</span>
+                        <div class="personal_area">
+                            <div class="personal_area_title">Личный кабинет</div>
+                            <div class="personal_area_list">
+                                <ul>
+                                    <li><a href="#">Вход</a></li>
+                                    <li><a href="#">Регистрация</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- HEADER SECTION END -->
+
+        <!-- CLINIC TOP SECTION -->
+
+        <section class="clinic_top">
+            <div class="container">
+                <div class="row">
+                    <div class="clinic_top_content">
+                        <div class="clinic_top_info">
+                            <div class="clinic_top_info_block">
+                                <img src="img/clinic/min_5659.jpg" alt="docdoc">
+                                <ul>
+                                    <li><img src="img/hert-pink.svg" alt=""></li>
+                                    <li><img src="img/hert-pink.svg" alt=""></li>
+                                    <li><img src="img/hert-pink.svg" alt=""></li>
+                                    <li><img src="img/hert-pink.svg" alt=""></li>
+                                    <li><img src="img/hert-gray.svg" alt=""></li>
+                                </ul>
+                                <span>2 отзыва</span>
+                            </div>
+                            <div class="clinic_top_info_title">
+                                <div class="clinic_top_info_breadcrumb">
+                                    <ul>
+                                        <li><a href="#">Главная</a></li>
+                                        <li><a href="#">Клиники</a></li>
+                                        <li><a href="#">А-Медик</a></li>
+                                    </ul>
+                                </div>
+                                <span>А Медик</span>
+                            </div>
+                            <div class="clinic_top_info_slider">
+                                <div class="clinic_top_info_slider_item">
+                                    <img src="img/clinic/5659_3449.jpg" alt="docdoc">
+                                </div>
+                                <div class="clinic_top_info_slider_item">
+                                    <img src="img/clinic/5659_3489.jpg" alt="docdoc">
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="clinic_top_address">
+                            <div class="clinic_top_address_content">
+                                <div class="clinic_top_address_place">
+                                    <span>г. Москва, Цветной б-р, д. 30, корп. 2</span>
+                                    <ul>
+                                        <li>Цветной бульвар (390 м),</li>
+                                        <li>Трубная (540 м), </li>
+                                        <li>Сухаревская (920 м)</li>
+                                    </ul>
+                                </div>
+                                <div class="clinic_top_address_time">
+                                    <ul>
+                                        <li>пн-пт: <span>08:00 - 21:00</span></li>
+                                        <li>сб: <span>08:00 - 21:00</span></li>
+                                        <li>вс: <span>08:00 - 21:00</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CLINIC TOP SECTION END -->
+
+        <!-- CLINIC ABOUT SECTION -->
+
+        <section class="clinic_about">
+            <div class="container">
+                <div class="row">
+                    <div class="clinic_about_content">
+                        <h3>О клинике</h3>
+                        <p>А-Медик: <i class="fas fa-star"></i> 0 врачей <i class="fas fa-star"></i> 2 проверенных
+                            отзыва пациентов <i class="fas fa-star"></i> Лучшая цена записи <i
+                                class="fas fa-star"></i>Актуальные цены на услуги!</p>
+                        <p>Многопрофильный центр «А-Медик» располагается по адресу 1-я Дубровская улица, 13, недалеко от
+                            станции метро «Дубровка». В клинике предлагают услуги узкие специалисты, а также работает
+                            лаборатория и кабинет функциональной диагностики.</p>
+                        <p>В коллективе сотрудников клиники А-Медик работают врачи высшей категории и специалисты с
+                            научными званиями. Их обширный клинический опыт позволяет максимально точно установить
+                            причину заболевания и подобрать эффективную схему его лечения в максимально сжатые сроки.
+                            Высокий профессионализм и личные качества врачей отмечают в своих отзывах довольные пациенты
+                            медицинского центра.</p>
+                        <p>В клинике «А-Медик» пациентам предлагают все виды стоматологических услуг, консультации и
+                            лечение у гинеколога и уролога. В центре работает массажный кабинет с квалифицированными
+                            специалистами, собственная лаборатория и УЗИ-диагностика всех органов и систем. Для ожидания
+                            пациентам предлагается удобный холл с бесплатным Wi-Fi, прессой и напитками, а помещения
+                            оборудованы удобными пандусами для колясок.</p>
+                        <p>В прайсе пациенты смогут найти всю информацию о стоимости услуг, а по телефону сотрудники
+                            регистратуры расскажут о действующих акциях и бонусных предложениях.</p>
+                    </div>
+                    <h4>Цены на диагностические услуги</h4>
+                    <div class="clinic_about_buttons">
+                        <a href="#" class="btn">УЗИ (ультразвуковое исследование)</a>
+                        <a href="#" class="btn">УЗИ для беременных</a>
+                        <a href="#" class="btn active">Эндоскопические методы исследования</a>
+                    </div>
+                    <div class="clinic_about_doctors">
+                        <div class="clinic_about_doctors_content">
+                            <h3>Врачи клиники (0)</h3>
+                        </div>
+                        <div class="clinic_about_doctors_filter">
+                            <select class="clinic_about_doctors_filter_select" required>
+                                <option value="Специализация">Специализация</option>
+                                <option value="Специализация 1">Специализация 1</option>
+                                <option value="Специализация 2">Специализация 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="clinic_about_reviews">
+                        <div class="clinic_about_reviews_content">
+                            <h3>Проверенные отзывы пациентов о клинике "А-Медик"</h3>
+                            <div class="clinic_about_reviews_content_item">
+                                <div class="clinic_about_reviews_content_item_header">
+                                    <ul>
+                                        <li><img src="img/hert-pink.svg" alt=""></li>
+                                        <li><img src="img/hert-pink.svg" alt=""></li>
+                                        <li><img src="img/hert-pink.svg" alt=""></li>
+                                        <li><img src="img/hert-pink.svg" alt=""></li>
+                                        <li><img src="img/hert-gray.svg" alt=""></li>
+                                    </ul>
+                                    <span>Отлично</span>
+                                </div>
+                                <div class="clinic_about_reviews_content_item_text">
+                                    <p>Очень понравилось. Очень помогла. Врач доброжелателен и внимателен. Осталась
+                                        довольна.</p>
+                                </div>
+                                <div class="clinic_about_reviews_content_item_author">
+                                    <span>Диана, 08 сентября 2015, лечащий врач: <a href="#">Оламова Афифа
+                                            Охонлаловна</a></span>
+                                </div>
+                            </div>
+                            <div class="clinic_about_reviews_content_item">
+                                <div class="clinic_about_reviews_content_item_header">
+                                    <ul>
+                                        <li><img src="img/hert-pink.svg" alt=""></li>
+                                        <li><img src="img/hert-pink.svg" alt=""></li>
+                                        <li><img src="img/hert-pink.svg" alt=""></li>
+                                        <li><img src="img/hert-pink.svg" alt=""></li>
+                                        <li><img src="img/hert-gray.svg" alt=""></li>
+                                    </ul>
+                                    <span>Отлично</span>
+                                </div>
+                                <div class="clinic_about_reviews_content_item_text">
+                                    <p>Мне понравился врач, очень внимателен, прием хороший и качество работы мне
+                                        понравилось.</p>
+                                </div>
+                                <div class="clinic_about_reviews_content_item_author">
+                                    <span>Ризида, 21 мая 2015, лечащий врач: <a href="#">Ганиев Зияд Аманович</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clinic_about_reviews_info">
+                            <h3>Как мы собираем отзывы</h3>
+                            <p>Вы можете оставить отзыв на DocDoc только в том случае, если записывались на прием с
+                                помощью нашего портала. Каждый отзыв проходит тщательную проверку и это позволяет нам
+                                исключить появление рекламных или заказных отзывов.</p>
+                            <p>DocDoc не публикует отзывы, которые содержат оскорбления и ненормативную лексику.</p>
+                            <div class="clinic_about_reviews_info_form">
+                                <form>
+                                    <span class="clinic_about_reviews_info_form_title">Оставьте свой отзыв. Нам важно
+                                        ваше мнение</span>
+                                    <div class="clinic_about_reviews_info_form_stars">
+                                        <span>Ваша оценка клинике:</span>
+                                        <div class="clinic_about_reviews_info_form_rating"></div>
+                                    </div>
+                                    <span>Отзыв о клинике:</span>
+                                    <textarea placeholder="Расскажите ваши впечатления о клинике." required></textarea>
+                                    <span>Введите ваше имя:</span>
+                                    <div class="input_wrap">
+                                        <input type="text" placeholder="Контактное лицо" required>
+                                    </div>
+                                    <span>Введите ваш телефон:</span>
+                                    <div class="input_wrap">
+                                        <input id="clinic_about_reviews_info_form_tel" type="tel" placeholder="+7 (___) ___-__-__" required>
+                                    </div>
+                                    <span class="add_info">*на указанный вами номер будет отправлено SMS с кодом
+                                        подтверждения</span>
+                                    <button type="submit">Оставить отзыв</button>
+                                    <div class="clinic_about_reviews_info_form_close">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clinic_about_licences">
+                        <h3>Лицензии и сертификаты клиники "А-Медик"</h3>
+                        <div class="clinic_about_licences_photos">
+                            <img src="img/clinic/5659_3945.jpg" alt="">
+                            <img src="img/clinic/5659_3947.jpg" alt="">
+                            <img src="img/clinic/5659_3949.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLINIC ABOUT SECTION END -->
+
+        <!-- CLINIC NEAR SECTION -->
+
+        <section class="clinic_near">
+            <div class="container">
+                <div class="row">
+                    <h4>Клиники поблизости</h4>
+                    <div class="clinic_near_slider">
+                        <a href="#" class="clinic_near_slider_item">
+                            <div class="clinic_near_slider_item_header">
+                                <div class="clinic_near_slider_item_header_photo">
+                                    <img src="img/clinic/min_232.png" alt="">
+                                </div>
+                                <div class="clinic_near_slider_item_header_info">
+                                    <span class="clinic_near_slider_item_header_info_name">Медицинский центр ОН КЛИНИК
+                                        на Таганке
+                                    </span>
+                                    <p>Уровень цен:</p>
+                                    <span class="clinic_near_slider_item_header_info_price">от 1890 руб.</span>
+                                    <p>51 отзыв</p>
+                                </div>
+                            </div>
+                            <div class="clinic_near_slider_item_address">
+                                <ul>
+                                    <li>Цветной бульвар,</li>
+                                    <li>Трубная,</li>
+                                    <li>Сухаревская</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="clinic_near_slider_item">
+                            <div class="clinic_near_slider_item_header">
+                                <div class="clinic_near_slider_item_header_photo">
+                                    <img src="img/clinic/min_232.png" alt="">
+                                </div>
+                                <div class="clinic_near_slider_item_header_info">
+                                    <span class="clinic_near_slider_item_header_info_name">Медцентр ОН КЛИНИК БЕЙБИ на
+                                        Таганке
+                                    </span>
+                                    <p>Уровень цен:</p>
+                                    <span class="clinic_near_slider_item_header_info_price">от 1890 руб.</span>
+                                    <p>11 отзыв</p>
+                                </div>
+                            </div>
+                            <div class="clinic_near_slider_item_address">
+                                <ul>
+                                    <li>Цветной бульвар,</li>
+                                    <li>Трубная,</li>
+                                    <li>Сухаревская</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="clinic_near_slider_item">
+                            <div class="clinic_near_slider_item_header">
+                                <div class="clinic_near_slider_item_header_photo">
+                                    <img src="img/clinic/min_14081.png" alt="">
+                                </div>
+                                <div class="clinic_near_slider_item_header_info">
+                                    <span class="clinic_near_slider_item_header_info_name">Клиника Помощь на Коломенской
+                                    </span>
+                                    <p>Уровень цен:</p>
+                                    <span class="clinic_near_slider_item_header_info_price">от 1890 руб.</span>
+                                    <p>31 отзыв</p>
+                                </div>
+                            </div>
+                            <div class="clinic_near_slider_item_address">
+                                <ul>
+                                    <li>Цветной бульвар,</li>
+                                    <li>Трубная,</li>
+                                    <li>Сухаревская</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="clinic_near_slider_item">
+                            <div class="clinic_near_slider_item_header">
+                                <div class="clinic_near_slider_item_header_photo">
+                                    <img src="img/clinic/min_14081.png" alt="">
+                                </div>
+                                <div class="clinic_near_slider_item_header_info">
+                                    <span class="clinic_near_slider_item_header_info_name">Клиника Помощь на Коломенской
+                                    </span>
+                                    <p>Уровень цен:</p>
+                                    <span class="clinic_near_slider_item_header_info_price">от 1890 руб.</span>
+                                    <p>31 отзыв</p>
+                                </div>
+                            </div>
+                            <div class="clinic_near_slider_item_address">
+                                <ul>
+                                    <li>Цветной бульвар,</li>
+                                    <li>Трубная,</li>
+                                    <li>Сухаревская</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLINIC NEAR SECTION END -->
+
+
+
+        <!-- FOOTER SECTION -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_list col-md-2">
+                        <span>Сервис</span>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Пресса</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-3">
+                        <span>Пациенту</span>
+                        <ul>
+                            <li><a href="#">Врачи</a></li>
+                            <li><a href="#">Клиники</a></li>
+                            <li><a href="#">Диагностика</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Медицинская библиотека</a></li>
+                            <li><a href="#">Справочник заболеваний</a></li>
+                            <li><a href="#">Условия акции “Врачи со скидкой”</a></li>
+                            <li><a href="#">Конфиденциальность</a></li>
+                            <li><a href="#">Согласие на обработку персональных данных</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-2 col-md-offset-1">
+                        <span>ВРАЧУ И КЛИНИКЕ</span>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                        <span>ПАРТНЁРАМ</span>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Партнёрская программа</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list col-md-3 col-md-offset-1 footer_copy">
+                        <div class="footer_logo"><img src="./img/logo.png" alt="docdoc"></div>
+                        <img src="./img/data_image_png_base.png" alt="docdoc" class="footer_logo_list">
+                        <ul>
+                            <li>Пишите нам: <span>info@docdoc.ru</span></li>
+                            <li>Звоните нам: 8 (499) 116-81-78</li>
+                            <li>© DOCDOC.RU 2018</li>
+                        </ul>
+                        <ul class="footer_social">
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <div class="footer_company">
+                            <span>Входит в группу компаний</span>
+                            <img src="./img/sberbank.svg" alt="sberbank">
+                            <ul>
+                                <li>ООО «ДОКДОК»</li>
+                                <li>ОГРН 1167746446780</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_info">
+                        <img src="./img/footer-icon.svg" alt="0+">
+                        <span>Информация, представленная на сайте, не может быть использована для постановки диагноза,
+                            назначения лечения и не заменяет прием врача.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- FOOTER SECTION END -->
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="js/clinic.js"></script>
+</body>
+
+</html>

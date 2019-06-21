@@ -1,0 +1,5964 @@
+@import "fonts.css";
+
+* {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+	color: black;
+	background-color: #fff;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+h2 {
+	text-align: center;
+	color: #000000;
+	font-size: 2.625em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+
+/* header */
+
+.header {
+	padding-top: 20px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #e5e7ec;
+	margin-bottom: 77px;
+}
+
+.header_logo {
+	padding-left: 25px;
+}
+
+.header_logo img {
+	width: 170px;
+}
+
+.header_select-city {
+	position: relative;
+	color: #848d9f;
+	font-size: 0.875em;
+	font-weight: 300;
+	font-variant: small-caps;
+	padding-left: 22px;
+	margin-top: 17px;
+	cursor: pointer;
+}
+
+.fa-globe-asia {
+	position: absolute;
+	left: -20px;
+	top: 0;
+}
+
+.header_select-city .selectize-dropdown {
+	position: absolute;
+	top: 40px!important;
+    left: -13px!important;
+    z-index: 1000;
+	width: 169px!important;
+	height: auto!important;
+	background-color: white;
+	box-shadow: 0 0 11.3px 0.7px rgba(0, 0, 0, 0.35);
+	padding: 5px 0;
+}
+
+.header_select-city input[type="select-one"] {
+	display: none!important;
+}
+
+.header_select-city .selectize-dropdown .option {
+	color: #222;
+	font-size: 14px;
+	font-weight: 400;
+	font-variant: small-caps;
+	padding: 5px 23px;
+	cursor: pointer;
+}
+
+.header_select-city .selectize-dropdown .option:hover {
+	background-color: #d8f5f8;
+}
+
+.header_select-city .selectize-dropdown .option.selected {
+	position: relative;
+}
+
+.header_select-city .selectize-dropdown .option.selected:before {
+	position: absolute;
+	left: 6px;
+    top: 7px;
+    font-size: 11px;
+	font-family: "Font Awesome 5 Free";
+   	content: "\f00c";
+   	display: inline-block;
+   	vertical-align: middle;
+	font-weight: 900;
+	color: #00aeca;
+}
+
+
+/* .header_select-city:before {
+	position: absolute;
+	left: 2px;
+	top: 61%;
+    font-size: 13px;
+	font-family: "Font Awesome 5 Free";
+   	content: "\f57e";
+   	display: inline-block;
+   	vertical-align: middle;
+   	font-weight: 900;
+} */
+
+.fa-chevron-down {
+	cursor: pointer;
+	vertical-align: middle;
+	font-weight: 700;
+	font-size: 10px;
+	display: inline-block;
+	margin-left: 4px;
+	position: absolute;
+	right: -15px;
+    top: 4px;
+}
+
+.select-city_inner {
+	position: relative;
+	width: max-content;
+}
+
+.header_select-city .selectize-control.select-city.single {
+	width: auto;
+}
+
+.header_phone_area {
+	text-align: right;
+	margin-top: -2px;
+	padding-right: 6px;
+}
+
+.header_phone_text {
+	color: #222;
+	font-weight: 400;
+	font-variant: small-caps;
+}
+
+.header_phone_text span {
+	color: #fe246c;
+	font-weight: 700;
+}
+
+.header_phone {
+	color: #222;
+	font-family: Muller;
+	font-size: 1.375em;
+	font-weight: 700;
+	padding-top: 8px;
+	padding-bottom: 5px;
+	display: block;
+}
+
+.personal_area_title {
+	color: #0094e1;
+	font-size: 0.750em;
+	font-weight: 400;
+	font-variant: small-caps;
+	cursor: pointer;
+}
+
+.personal_area_list {
+	font-size: 0.875em;
+	font-weight: 400;
+	text-align: left;
+	position: absolute;
+	top: 76px;
+    right: 7px;
+	box-shadow: 0 0 8.3px 0.3px rgba(0, 0, 0, 0.45);
+	font-variant: small-caps;
+	display: none;
+	z-index: 9999;
+	background-color: #fff;
+}
+
+.personal_area_list .show {
+	display: block;
+}
+
+.personal_area_list ul {
+	margin: 4px 0;
+}
+
+.personal_area_list ul li {
+	padding: 3px 23px;
+}
+
+.personal_area_list ul li:hover {
+	background-color: #d8f5f8;
+}
+
+.personal_area_list ul li a {
+	color: #222;
+}
+
+.header_content {
+	margin-top: 123px;
+}
+
+.header_content h1 {
+	text-align: center;
+	color: black;
+	font-size: 3.500em;
+	width: 58%;
+    line-height: 59px;
+	margin: auto;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+.header_content_form {
+	max-width: 960px;
+    margin: 36px auto 62px;
+}
+
+.header_content_form .selectize-input {
+	width: 389px!important;
+	height: 40px;
+	border: 1px solid #ced1db;
+	border-radius: 5px;
+	outline: none;
+	padding-left: 25px;
+	padding-right: 50px;
+	color: #848d9f;
+	font-size: 0.875em;
+	font-weight: 700;
+	line-height: 38px;
+}
+
+.header_content_form input[type="select-one"] {
+	position: absolute!important;
+	width: auto!important;
+	outline: none;
+	border: none;
+	left: auto!important;
+	color: #848d9f;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 38px;
+	height: 38px;
+	cursor: pointer;
+}
+
+.header_content_form .selectize-dropdown {
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+.header_content_form .selectize-dropdown-content {
+	padding-left: 160px;
+	width: 388px;
+	max-height: 254px;
+	background-color: white;
+	border: 1.49px solid #ebebeb;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 3px;
+	overflow-y: scroll;
+}
+
+.header_content_form .selectize-dropdown-content .option {
+	color: #828288;
+	font-family: Calibri;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 24px;
+	font-variant: small-caps;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.header_content_form, .input-container1 .selectize-dropdown-content .option:first-of-type {
+	position: relative;
+}
+
+.input-container1 .selectize-dropdown-content .option:nth-child(1):before {
+	position: absolute;
+	top: 0;
+	content: 'Специализация';
+	left: -148px;
+	color: #737373;
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: 400;
+	font-variant: small-caps;
+}
+
+.header_content_form .selectize-dropdown-content .option:hover {
+	font-weight: 400;
+	color: #444;
+}
+
+.header_content_form .input-container2 .selectize-dropdown-content {
+	padding-left: 36px;
+}
+
+.header_content_form, .input-container2 .selectize-dropdown-content .option {
+	position: relative;
+}
+
+
+.header_content_form .input-container2 .selectize-dropdown-content .option:before {
+	position: absolute;
+	left: -20px;
+    top: 9px;
+	content: '';
+	width: 8px;
+	height: 8px;
+	background-color: #ffcb31;
+	border-radius: 10em;
+}
+
+.header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(2):before {
+	background-color: #44b85c;
+}
+
+.header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(3):before {
+	background-color: #ffa8af;
+}
+
+.header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(4):before {
+	background-color: #f58631;
+}
+
+.header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(5):before {
+	background-color: yellow;
+}
+
+.header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(6):before {
+	background-color: #19c1f3;
+}
+
+.header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(7):before {
+	background-color: #ffa8af;
+}
+
+.input-container {
+	position: relative;
+	width: 389px;
+	display: inline-block;
+	margin-right: 30px;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.header_content_form .input-container:after {
+	position: absolute;
+	top: 33%;
+	right: 20px;
+	font-family: "Font Awesome 5 Free";
+	content: '\f002';
+   	display: inline-block;
+   	vertical-align: middle;
+	font-weight: 700;
+	width: 16px;
+	height: 16px;
+	color: #848d9f;
+}
+
+.header_content_form .input-container:last-of-type:after {
+	content: '\f3c5';
+}
+
+.header_content_form .btn {
+	padding: 0 20px;
+	height: 40px;
+	background-color: #fa5872;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: .5s ease-in;
+	border: 1px solid #fa5872;
+	cursor: pointer;
+}
+
+.header_content_form .btn:hover {
+	background-color: #fff;
+	color: #fa5872;
+	border: 1px solid #fa5872;
+}
+
+.header_subcontent_title {
+	text-align: center;
+	color: #848d9f;
+	font-size: 1.125em;
+	font-weight: 700;
+	font-variant: small-caps;
+	margin-bottom: 32px;
+}
+
+.header_subcontent_items {
+	max-width: 935px;
+	display: block;
+	margin: auto;
+}
+
+.header_subcontent_items:after {
+	clear: both;
+	content: '';
+	display: block;
+	height: 0;
+}
+
+.header_subcontent_item {
+	width: 300px;
+	float: left;
+	margin-bottom: 25px;
+	font-size: 0.875em;
+	font-weight: 600;
+	color: #222;
+	font-variant: small-caps;
+}
+
+.header_subcontent_item img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.header_subcontent_item_text {
+	vertical-align: middle;
+	display: inline-block;
+	width: 61%;
+	line-height: 17px;
+}
+
+.header_subcontent_item_text a {
+	color: #0094e1;
+}
+
+/* header end */
+
+
+/* advantages */
+
+.advantages {
+	border-bottom: 1px solid #e5e7ec;
+	margin-bottom: 71px;
+}
+
+.advantages_content {
+	margin-top: 56px;
+	padding-bottom: 97px;
+}
+
+.advantages_tabs {
+	margin: auto;
+	max-width: 670px;
+	border-bottom: 1px solid #e6e6e6;
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantages_tab {
+	display: inline-block;
+	padding-bottom: 17px;
+	cursor: pointer;
+	color: #00aec7;
+	font-size: 1.15em;
+	font-weight: 400;
+	position: relative;
+}
+
+.advantages_tab.active {
+	color: #444;
+}
+
+.advantages_tab.active:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	content: '';
+	background-color: #fd7187;
+}
+
+.advantages_tabs_content {
+	margin: 68px auto 0;
+	position: relative;
+	max-width: 680px;
+	display: none;
+}
+
+.advantages_tabs_content1_card {
+	width: 326px;
+	height: 470px;
+	background-color: #dcdde1;
+	border: 1.49px solid #e6e6e6;
+	border-radius: 5px;
+	margin: auto;
+	padding-top: 18px;
+	text-align: center;
+}
+
+.card_name {
+	color: #444;
+	font-size: 1.500em;
+	font-family: Calibri;
+	font-weight: 300;
+	line-height: 30px;
+	font-variant: small-caps;
+}
+
+.card_specialization {
+	color: #666;
+	font-family: Calibri;
+	font-size: 0.875em;
+	font-weight: 300;
+	line-height: 27px;
+	margin-bottom: 8px;
+}
+
+.card_stars {
+	margin-top: 11px;
+}
+
+.card_stars span {
+	display: block;
+	color: #a2a0a0;
+	font-family: Calibri;
+	font-size: 0.875em;
+	font-weight: 400;
+	margin: 7px;
+}
+
+.card_review {
+	width: 320px;
+	margin: auto;
+	background-color: white;
+	border-radius: 3px;
+	height: 161px;
+	text-align: left;
+	padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 39px;
+}
+
+.card_review_title {
+	color: #222;
+	font-family: 'Muller';
+	font-size: 0.875em;
+	font-weight: bold;
+}
+
+.card_review p {
+	color: #222;
+	font-family: Calibri;
+	font-size: 0.750em;
+	font-weight: 400;
+	margin-top: 13px;
+}
+
+.card_info {
+	position: absolute;
+	color: #333;
+	font-family: Calibri;
+	font-size: 0.875em;
+	font-weight: 300;
+	line-height: 18px;
+	font-variant: small-caps;
+	padding: 5px 15px;
+	text-align: right;
+	max-width: 130px;
+	border-right: 5px solid #00aec7;
+	top: 40px;
+	left: 12px;
+}
+
+.card_info:after {
+	position: absolute;
+	right: -119%;
+    top: 55%;
+	content: url(../img/advan_card_arrow1.png);
+}
+
+.card_info:nth-child(odd) {
+	right: 10px;
+	left: auto;
+	text-align: left;
+	border-left: 5px solid #00aec7;
+	border-right: none;
+	top: 170px;
+}
+
+.card_info:nth-child(odd):after {
+	position: absolute;
+	right: 114%;
+    top: 44%;
+	content: url(../img/advan_card_arrow2.png);
+}
+
+.advantages_tabs_content:nth-child(n+1) img {
+	margin: auto;
+	display: block;
+}
+
+.card_info2:after {
+	position: absolute;
+	right: -112%;
+    top: 74%;
+	content: url(../img/advan_card2_arrow1.png);
+}
+
+.card_info2:nth-child(odd):after {
+	position: absolute;
+	right: 112%;
+    top: -138%;
+	content: url(../img/advan_card2_arrow2.png);
+}
+
+.card_info2 {
+    top: 95px;
+    left: 16px;
+}
+
+.card_info2:nth-child(odd) {
+	right: 18px;
+	top: 137px;
+	left: auto;
+}
+
+.card_info3:after {
+	position: absolute;
+	right: -112%;
+	top: 44%;
+	content: url(../img/advan_card2_arrow1.png);
+}
+
+.card_info3:nth-child(odd):after {
+	position: absolute;
+	right: 112%;
+    top: -110%;
+	content: url(../img/advan_card2_arrow2.png);
+}
+
+.card_info3 {
+	top: 49px;
+    left: 17px;
+}
+
+.card_info3:nth-child(odd) {
+	right: 18px;
+	top: 385px;
+	left: auto;
+}
+
+/* advantages end */
+
+/* thanks */
+
+.thanks {
+	padding-bottom: 98px;
+	border-bottom: 1px solid #e5e7ec;
+}
+
+.thanks_heart {
+	max-width: 890px;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 163px;
+}
+
+.thanks_heart_img {
+	width: 34%;
+    display: inline-block;
+    margin-left: 176px;
+}
+
+.thanks_heart_img img {
+	width: 100%;
+}
+
+.thanks_heart_text {
+	display: inline-block;
+	width: 37%;
+	vertical-align: top;
+	margin-top: 16px;
+	float: right;
+}
+
+.thanks_heart_text span {
+	display: block;
+	font-variant: small-caps;
+	font-family: 'Muller';
+	font-size: 1.750em;
+	font-weight: normal;
+}
+
+.thanks_heart_text span.heart_title {
+	color: black;
+	font-size: 1.563em;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.thanks_heart_text span.heart_count {
+	color: #ff256c;
+	font-size: 4.188em;
+	font-weight: bold;
+	margin: 15px 0;
+}
+
+.thanks_counts {
+	display: flex;
+	justify-content: space-around;
+}
+
+.thanks_count {
+	text-align: center;
+}
+
+.thanks_count span {
+	color: #333;
+	font-family: 'Muller';
+	font-size: 2.875em;
+	font-weight: bold;
+	font-variant: small-caps;
+	margin-bottom: 1px;
+	display: block;
+}
+
+.thanks_count p {
+	color: #333;
+	font-family: Calibri;
+	font-size: 1.250em;
+	font-weight: 300;
+	line-height: 30px;
+	width: 75%;
+	margin: auto;
+}
+
+/* thanks end*/
+
+/* phone */
+
+.phone {
+	background-color: #f2f3f5;
+	padding-top: 120px;
+	padding-bottom: 76px;
+	border-bottom: 1px solid #e5e7ec;
+}
+
+.phone_img img {
+	width: 91%;
+}
+
+.phone h2 {
+	text-align: left;
+	font-family: 'Muller';
+	font-size: 2.625em;
+	font-weight: bold;
+	line-height: 30px;
+	font-variant: small-caps;
+}
+
+.phone_info {
+	margin-top: 76px;
+}
+
+.phone_info ul {
+	margin-top: 39px;
+    margin-bottom: 30px;
+}
+
+.phone_info ul li {
+	color: black;
+	font-family: Calibri;
+	font-size: 1.250em;
+	font-weight: 300;
+	line-height: 30px;
+	font-variant: small-caps;
+}
+
+.phone_info_form_title {
+	color: #333;
+	font-family: Calibri;
+	font-size: 1.250em;
+	font-weight: 700;
+	line-height: 30px;
+	margin-bottom: 21px;
+	display: block;
+}
+
+.phone_info_form {
+	margin-bottom: 50px;
+}
+
+.phone_info_form input {
+	width: 242px;
+	height: 40px;
+	background-color: white;
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	outline: none;
+	color: #333;
+	font-size: 1.250em;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-left: 12px;
+	margin-right: 5px;
+    vertical-align: top;
+}
+
+.phone_info_form .btn {
+	padding: 0 35px;
+	height: 40px;
+	background-color: #00aeca;
+	border-radius: 3px;
+	color: white;
+	font-weight: 700;
+	font-variant: small-caps;
+	transition: .5s ease-in;
+	border: 1px solid #00aeca;
+	cursor: pointer;
+}
+
+.phone_info_form .btn:hover {
+	background-color: #fff;
+	color: #00aeca;
+	border: 1px solid #00aeca;
+}
+
+.phone_info_apps a:first-of-type {
+	margin-right: 20px;
+}
+
+/* phone end */
+
+/* polis */
+
+.polis {
+	padding: 79px 0;
+	border-bottom: 1px solid #e5e7ec;
+}
+
+.polis_info {
+	text-align: left;
+}
+
+.polis h2 {
+	text-align: left;
+	font-family: 'Muller';
+	font-size: 2.625em;
+	font-weight: bold;
+	font-variant: small-caps;
+	width: 90%;
+}
+
+.polis_info {
+	margin-top: 57px;
+}
+
+.polis_info p {
+	color: #828288;
+	font-family: Calibri;
+	font-weight: 300;
+	line-height: 24px;
+	width: 85%;
+	margin-top: 15px;
+}
+
+.polis_form {
+	width: 280px;
+	height: 290px;
+	background-color: #f2f3f5;
+	border-radius: 5px;
+	padding: 30px 23px 25px;
+}
+
+.polis_form input {
+	width: 100%;
+	height: 40px;
+	background-color: white;
+	border: 1px solid #cfd1dc;
+	border-radius: 3px;
+	outline: none;
+	color: #828288;
+	font-weight: 600;
+	font-variant: small-caps;
+	padding: 0 12px;
+	margin-bottom: 20px;
+}
+
+.polis_form .btn {
+	width: 190px;
+	height: 40px;
+	background-color: #ff256c;
+	border-radius: 2px;
+	color: white;
+	font-weight: 700;
+	font-variant: small-caps;
+	transition: .5s ease-in;
+	border: 1px solid #ff256c;
+	cursor: pointer;
+	font-size: 0.875em;
+	margin-top: 14px;
+}
+
+.polis_form .btn:hover {
+	background-color: #fff;
+	color: #ff256c;
+	border: 1px solid #ff256c;
+}
+
+/* polis end */
+
+/* about */
+
+.about {
+	padding-top: 91px;
+    padding-bottom: 195px;
+}
+
+.about_content {
+	margin: auto;
+	margin-top: 65px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 945px;
+}
+
+.about_content img {
+	height: max-content;
+}
+
+/* about end */
+
+/* question */
+
+.question {
+	padding-bottom: 84px;
+	border-bottom: 1px solid #e5e7ec;
+}
+
+.question_content {
+	margin-top: 59px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.question_img {
+	margin-left: 75px;
+    width: 18%;
+	display: inline-block;
+}
+
+.question_img img {
+	width: 100%;
+}
+
+.question_info {
+	margin-right: 162px;
+    padding-left: 15px;
+}
+
+.question_item {
+	max-width: 600px;
+	margin-bottom: 15px;
+}
+
+.question_item_title {
+	color: #333;
+	font-family: Calibri;
+	font-size: 1.625em;
+	font-weight: 400;
+	line-height: 30px;
+	font-variant: small-caps;
+	position: relative;
+	cursor: pointer;
+}
+
+.question_item_title:before {
+	position: absolute;
+	left: -25px;
+    top: 3px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	content: "\f078";
+   	display: inline-block;
+   	vertical-align: middle;
+	font-weight: 900;
+	color: #00aec7;
+	transition: .5s ease-in;
+}
+
+.question_item_text {
+	color: #222;
+	font-family: Calibri;
+	font-size: 1.125em;
+	font-weight: 400;
+	line-height: 30px;
+	font-variant: small-caps;
+	margin-top: 6px;
+	padding-left: 5px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.question_item.active .question_item_title {
+	color: #ff256c;
+}
+
+.question_item.active .question_item_title:before {
+	color: #ff256c;
+	transform: rotate(180deg);
+	transition: .5s ease-in;
+}
+
+/* question end */
+
+/* specialization */
+
+.specialization {
+	padding-top: 91px;
+	padding-bottom: 78px;
+	border-bottom: 1px solid #e5e7ec;
+}
+
+.specialization_content {
+	margin-top: 51px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 72px;
+}
+
+.specialization_content ul {
+	/* margin-left: 60px; */
+}
+
+.specialization_content ul li {
+	margin-bottom: 18px;
+	color: #ababb6;
+	font-family: Calibri;
+	font-size: 1.125em;
+	font-weight: 300;
+	line-height: 14px;
+	font-variant: small-caps;
+}
+
+.specialization_content ul li span {
+	width: 50px;
+	display: inline-block;
+}
+
+.specialization_content ul li a {
+	color: #00aec7;
+	transition: .3s ease-in;
+}
+
+.specialization_content ul li a:hover {
+	color: #ff256c;
+}
+
+.specialization_img {
+	width: 19%;
+}
+
+.specialization_img img {
+	width: 100%;
+}
+
+/* specialization end */
+
+/* helping */
+
+.helping {
+	padding-top: 91px;
+	padding-bottom: 103px;
+	text-align: center;
+}
+
+.helping_subtitle {
+	max-width: 600px;
+	margin: auto;
+	margin-top: 13px;
+    margin-bottom: 37px;
+	font-family: Calibri;
+	font-size: 1.250em;
+	line-height: 24px;
+	font-variant: small-caps;
+	color: #828288;
+	font-weight: 300;
+}
+
+.helping_subtitle span {
+	color: black;
+	font-weight: 700;
+}
+
+.helping_form input {
+	width: 359px;
+	height: 42px;
+	border: 2.07px solid #ccc;
+	border-radius: 4px;
+	outline: none;
+	color: #828287;
+	font-family: Calibri;
+	font-size: 1.250em;
+	font-weight: 300;
+	line-height: 24px;
+	font-variant: small-caps;
+	padding-left: 15px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+}
+
+.helping_form .btn {
+	padding: 0 20px;
+	height: 41px;
+	background-color: #fa5872;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: .5s ease-in;
+	border: 1px solid #ff256c;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.helping_form .btn:hover {
+	background-color: #fff;
+	color: #ff256c;
+	border: 1px solid #ff256c;
+}
+
+/* helping end */
+
+/* footer */
+
+.footer {
+	padding-top: 22px;
+	padding-bottom: 25px;
+	background-color: #3e424c;
+	overflow: hidden;
+}
+
+.footer .row {
+	position: relative;
+}
+
+.footer_list span {
+	color: #787980;
+	font-family: 'Muller';
+	font-size: 1.125em;
+	font-weight: bold;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.footer_list ul {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.footer_list ul li a {
+	color: #929298;
+	font-family: Calibri;
+	font-weight: 300;
+	line-height: 21px;
+	font-variant: small-caps;
+	position: relative;
+	padding-left: 15px;
+}
+
+.footer_list ul li a:hover {
+	color: white;
+	transition: .3s ease-in;
+}
+
+.footer_list ul li a:before {
+	position: absolute;
+	left: 0;
+    top: -1px;
+	font-size: 12px;
+	font-family: "Font Awesome 5 Free";
+	content: "\f054";
+   	display: inline-block;
+   	vertical-align: middle;
+	font-weight: 900;
+}
+
+.footer_logo {
+	width: 140px;
+	height: 31px;
+	margin-bottom: 23px;
+}
+
+.footer_logo img {
+	width: 100%;
+}
+
+.footer_logo_list {
+	position: absolute;
+	top: 4px;
+	right: -847px;
+}
+
+.footer_copy ul li {
+	color: #929298;
+	font-family: Calibri;
+	line-height: 24px;
+	font-variant: small-caps;
+}
+
+.footer_copy ul li span {
+	color: #929298;
+	font-family: Calibri;
+	line-height: 24px;
+	font-variant: small-caps;
+	font-weight: 700;
+}
+
+.footer_list ul.footer_social {
+	margin-bottom: 32px;
+	margin-top: 18px;
+}
+
+.footer_social li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.footer_social li:last-child {
+	margin-right: 0;
+}
+
+.footer_list ul.footer_social li a {
+	padding-left: 0;
+	width: 46px;
+	height: 46px;
+	background-color: #4d5059;
+	display: block;
+	line-height: 47px;
+	text-align: center;
+	border-radius: 10em;
+	font-size: 24px;
+}
+
+.footer_list ul.footer_social li a:before {
+	display: none;
+}
+
+.footer_company span, .footer_info span {
+	color: #929298;
+	font-family: Calibri;
+	font-size: 0.750em;
+	font-weight: 300;
+	line-height: 24px;
+	font-variant: small-caps;
+	text-transform: inherit;
+	margin-bottom: 5px;
+}
+
+.footer_info {
+	max-width: 600px;
+    position: absolute;
+    bottom: 34px;
+    left: 20px;
+}
+
+.footer_info img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.footer_info span {
+	margin-bottom: 0;
+	vertical-align: middle;
+	display: inline-block;
+	width: 85%;
+	line-height: 16px;
+	margin-left: 14px;
+}
+
+/* footer end */
+
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+	background-color: rgba(80,99,125,0.7);
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-content {
+	width: 500px;
+	height: 260px;
+	background-color: #fff;
+	box-shadow: 0 0 15.1px 5.9px rgba(0, 0, 0, 0.35);
+    animation-name: modalopen;
+	animation-duration: 1s;
+	position: relative;
+	text-align: center;
+	padding-top: 35px;
+}
+
+.modal_close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.modal_close:hover {
+	opacity: .5;
+}
+
+.modal span {
+	color: #333;
+	font-size: 1.313em;
+	font-weight: 700;
+	line-height: 18px;
+	font-variant: small-caps;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.modal p {
+	color: #333;
+	font-size: 0.875em;
+	font-weight: 700;
+	line-height: 20px;
+	font-variant: small-caps;
+	width: 70%;
+	margin: auto;
+}
+
+@keyframes modalopen {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+/* modal end */
+
+/* list PAGE */
+
+.list_header_content {
+	margin-top: 50px;
+}
+
+.list_header_content img {
+	width: 97%;
+    margin: auto;
+    display: block;
+}
+
+.list .header_content_form {
+	max-width: 945px;
+	margin: 0 auto;
+}
+
+.list_header_form {
+	margin-top: 30px;
+	padding-top: 41px;
+	padding-bottom: 85px;
+	background-color: #f2f3f5;
+	border-bottom: 1px solid #e5e7ec;
+	border-top: 1px solid #e5e7ec;
+}
+
+.list .header_content_form .selectize-input {
+	width: 389px!important;
+	height: 40px;
+	border: 1px solid #ced1db;
+	border-radius: 5px;
+	outline: none;
+	padding-left: 25px;
+	padding-right: 50px;
+	color: #848d9f;
+	font-size: 0.875em;
+	font-weight: 700;
+	line-height: 38px;
+	background-color: #fff;
+}
+
+.list .header_content_form input[type="select-one"] {
+	position: absolute!important;
+	width: auto!important;
+	outline: none;
+	border: none;
+	left: auto!important;
+	color: #848d9f;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 38px;
+	height: 38px;
+	cursor: pointer;
+}
+
+.list .header_content_form .selectize-dropdown {
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+.list .header_content_form .selectize-dropdown-content {
+	padding-left: 160px;
+	width: 388px;
+	max-height: 254px;
+	background-color: white;
+	border: 1.49px solid #ebebeb;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 3px;
+	overflow-y: scroll;
+}
+
+.list .header_content_form .selectize-dropdown-content .option {
+	color: #828288;
+	font-family: Calibri;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 24px;
+	font-variant: small-caps;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.list .header_content_form, .input-container1 .selectize-dropdown-content .option:first-of-type {
+	position: relative;
+}
+
+.list .input-container1 .selectize-dropdown-content .option:nth-child(1):before {
+	position: absolute;
+	top: 0;
+	content: 'Специализация';
+	left: -148px;
+	color: #737373;
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: 400;
+	font-variant: small-caps;
+}
+
+.list .header_content_form .selectize-dropdown-content .option:hover {
+	font-weight: 400;
+	color: #444;
+}
+
+.list .header_content_form .input-container2 .selectize-dropdown-content {
+	padding-left: 36px;
+}
+
+.list .header_content_form, .input-container2 .selectize-dropdown-content .option {
+	position: relative;
+}
+
+
+.list .header_content_form .input-container2 .selectize-dropdown-content .option:before {
+	position: absolute;
+	left: -20px;
+    top: 9px;
+	content: '';
+	width: 8px;
+	height: 8px;
+	background-color: #ffcb31;
+	border-radius: 10em;
+}
+
+.list .header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(2):before {
+	background-color: #44b85c;
+}
+
+.list .header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(3):before {
+	background-color: #ffa8af;
+}
+
+.list .header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(4):before {
+	background-color: #f58631;
+}
+
+.list .header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(5):before {
+	background-color: yellow;
+}
+
+.list .header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(6):before {
+	background-color: #19c1f3;
+}
+
+.list .header_content_form .input-container2 .selectize-dropdown-content .option:nth-child(7):before {
+	background-color: #ffa8af;
+}
+
+.list .input-container {
+	position: relative;
+	width: 389px;
+	display: inline-block;
+	margin-right: 28px;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+
+
+.list .header_content_form .btn {
+	padding: 0 20px;
+	height: 40px;
+	background-color: #fa5872;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: .5s ease-in;
+	border: 1px solid #fa5872;
+	cursor: pointer;
+}
+
+.list .header_content_form .btn:hover {
+	background-color: #fff;
+	color: #fa5872;
+	border: 1px solid #fa5872;
+}
+
+.list_header_form h2 {
+	margin-bottom: 37px;
+	font-size: 37px;
+}
+
+.list .header {
+	border-bottom: none;
+}
+
+.list_header_form .input-container:after {
+	position: absolute;
+	top: 33%;
+	right: 20px;
+	font-family: "Font Awesome 5 Free";
+	content: "\f078";
+   	display: inline-block;
+   	vertical-align: middle;
+	font-weight: 700;
+	width: 16px;
+	height: 16px;
+	color: #848d9f;
+}
+
+.list_header_form [type="checkbox"]:not(:checked),
+.list_header_form [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+.list_header_form [type="checkbox"]:not(:checked) + label,
+.list_header_form [type="checkbox"]:checked + label {
+	position: relative;
+	padding-left: 20px;
+	cursor: pointer;
+	color: #222;
+	font-size: 14px;
+	font-weight: 400;
+	font-variant: small-caps;
+}
+
+.list_header_form [type="checkbox"]:not(:checked) + label:before,
+.list_header_form [type="checkbox"]:checked + label:before {
+	content: '';
+	position: absolute;
+	left: 0; 
+	top: 4px;
+	background: transparent;
+  	width: 12px;
+	height: 12px;
+	border: 1px solid #ced1db;
+	border-radius: 3px;
+}
+
+.list_header_form [type="checkbox"]:not(:checked) + label:after,
+.list_header_form [type="checkbox"]:checked + label:after {
+  	content: url('../img/form_check.png');
+  	position: absolute;
+  	top: 4px;
+    left: 0;
+    transition: all .2s;
+	border-radius: 3px;
+}
+
+.list_header_form [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.list_header_form [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.list_header_form_checkboxes p {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.list_header_form_checkboxes {
+	position: absolute;
+	left: 0;
+	bottom: -34px;
+}
+
+.header_content_form .selectize-dropdown-content {
+	z-index: 999;
+    position: relative;
+}
+
+/* list page content */
+
+.list_page {
+	padding-bottom: 30px;
+}
+
+.list_page_wrapper {
+	max-width: 946px;
+	margin: 0 auto;
+}
+
+.list_page_breadcrumb {
+	margin-bottom: 7px;
+}
+
+.list_page_breadcrumb li {
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+}
+
+.list_page_breadcrumb li:after {
+	position: absolute;
+	right: -9px;
+	top: 0;
+	color: #848d9f;
+	font-size: 12px;
+	font-weight: 400;
+	font-variant: small-caps;
+	content: '/';
+}
+
+.list_page_breadcrumb li:last-of-type:after {
+	display: none;
+}
+
+.list_page_breadcrumb a {
+	color: #848d9f;
+	font-size: 12px;
+	font-weight: 400;
+	font-variant: small-caps;
+	vertical-align: top;
+}
+
+.list_page_content_title {
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 36px;
+	font-variant: small-caps;
+	color: #222;
+	margin-bottom: 24px;
+}
+
+.list_page_content_title span {
+	color: #848d9f;
+}
+
+.list_page_content_subtitle {
+	position: relative;
+	color: #222;
+	line-height: 21px;
+	font-variant: small-caps;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.list_page_info p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	font-variant: small-caps;
+	color: #222;
+	margin-top: 20px;
+}
+
+.list_page_info p span {
+	font-weight: 700;
+}
+
+.list_page_info_close {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 21px;
+	font-variant: small-caps;
+	color: #0094e1;
+	margin-top: 1px;
+	display: inline-block;
+	margin-bottom: 18px;
+}
+
+.list_page_content_filter li {
+	display: inline-block;
+	padding: 0 17px;
+	height: 30px;
+	background-color: #eef2f8;
+	text-align: center;
+	line-height: 30px;
+	margin-right: -4px;
+}
+
+.list_page_content_filter li.active {
+	background-color: #848d9f;
+}
+
+.list_page_content_filter li:first-of-type {
+	border-radius: 4px 0px 0px 4px;
+}
+
+.list_page_content_filter li:last-of-type {
+	border-radius: 0px 4px 4px 0px;
+}
+
+.list_page_content_filter li a {
+	color: #222;
+	font-size: 16px;
+	font-weight: 400;
+	font-variant: small-caps;
+}
+
+.list_page_content_filter li.active a {
+	color: #f2f3f5;
+}
+
+
+.list_page_content_filter_days, .list_page_content_filter {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.list_page_content_filter_days .selectize-input {
+	width: 210px!important;
+	outline: none;
+	padding-left: 25px;
+	color: #f2f3f5;
+	font-size: 0;
+	font-variant: small-caps;
+	line-height: 30px;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 4px;
+	cursor: pointer;
+	position: relative;
+}
+
+.filters {
+	position: relative;
+}
+
+.list_page_content_filter_days {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.list_page_content_filter_days_btn {
+	border: none;
+	outline: none;
+	min-width: 210px;
+	width: max-content;
+	padding-left: 15px;
+	padding-right: 35px;
+	position: absolute;
+	color: #f2f3f5;
+	font-size: 16px;
+	font-variant: small-caps;
+	line-height: 30px;
+	height: 30px;
+	background-color: #fe246c;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.list_page_content_filter_days input[type="select-one"] {
+	position: absolute!important;
+	width: auto!important;
+	outline: none;
+	border: none;
+	left: auto!important;
+	background-color: #fe246c;
+	color: #f2f3f5;
+	font-size: 16px;
+	font-variant: small-caps;
+	line-height: 30px;
+	cursor: pointer;
+	height: 100%;
+	display: none;
+}
+
+.list_page_content_filter_days input[type="select-one"]::placeholder {
+	color: #f2f3f5;
+}
+
+.list_page_content_filter_days_select {
+	position: relative;
+}
+
+.list_page_content_filter_days .selectize-dropdown {
+	position: absolute;
+	left: 0;
+	top: 44px!important;
+	z-index: 999;
+}
+
+.list_page_content_filter_days .selectize-dropdown-content {
+	width: 194px;
+	height: 190px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 9.3px 0.7px rgba(0, 0, 0, 0.35);
+	padding: 5px 0;
+}
+
+.list_page_content_filter_days .selectize-dropdown-content .option {
+	cursor: pointer;
+	color: black;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 8px;
+	padding-left: 30px;
+}
+
+.list_page_content_filter_days_btn:after {
+    position: absolute;
+	top: 8%;
+    right: 14px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+	color: #fff;
+	font-size: 10px;
+}
+
+
+.list_page_content_filter_days .selectize-dropdown .option:hover {
+	background-color: #00aeca;
+	color: #ffffff;
+}
+
+.list_page_content_filter_days .selectize-dropdown .option.selected {
+	position: relative;
+}
+
+.list_page_content_filter_days .selectize-dropdown .option[data-value="Выбрать другой день"] {
+	position: relative;
+}
+
+.list_page_content_filter_days .selectize-dropdown .option[data-value="Выбрать другой день"]:before {
+	position: absolute;
+	left: 12px;
+    top: 8px;
+   	content: url('../img/arrow-form-right.svg');
+   	display: inline-block;
+	vertical-align: middle;
+	width: 7px;
+	height: 13px;
+	transform: rotate(180deg);
+}
+
+.list_page_content_filter_days .selectize-dropdown .option.selected:before {
+	position: absolute;
+	left: 11px;
+    top: 9px;
+    font-size: 11px;
+	font-family: "Font Awesome 5 Free";
+   	content: "\f00c";
+   	display: inline-block;
+   	vertical-align: middle;
+	font-weight: 900;
+	color: #00aeca;
+}
+
+.list_page_content_filter_days .selectize-dropdown .option.removeIcon:before {
+	display: none;
+}
+
+
+.list_page_content_filter_calendar {
+	display: none;
+	left: -260px;
+    top: 43px;
+	z-index: 111;
+	position: absolute;
+}
+
+.nice-date-picker-warpper {
+	width: 247px;
+	height: 332px;
+	padding: 6px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 9.3px 0.7px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+}
+
+.nice-date-title, 
+.nice-date-picker-header .prev-date-btn, .next-date-btn, .nice-date-picker-body tr th, .nice-date-picker-body tr td {
+	color: black;
+	font-size: 14px;
+	font-weight: 400;
+}
+.nice-date-picker-body tr td {
+	line-height: 34px;
+}
+
+.nice-date-picker-body tr, .nice-date-picker-body tr td {
+	width: 26px;
+	height: 26px;
+	border-radius: 10em; 
+}
+
+.nice-date-picker-body tr .nice-current {
+	width: 26px;
+	height: 26px;
+	background-color: #ffd3e2;
+	border-radius: 10em; 
+}
+
+.nice-date-picker-body tr .nice-active {
+	background-color: #00aeca;
+	color: #ffffff;
+	border-radius: 10em; 
+}
+
+.nice-date-title {
+	float: left;
+	text-align: left;
+	margin-left: 8px;
+	font-weight: bold;
+}
+
+.nice-date-picker-header span, .nice-date-picker-header a {
+	height: 46px;
+}
+
+.nice-date-picker-body tr th {
+	height: 20px;
+	line-height: 20px;
+}
+
+.nice-date-picker-header .prev-date-btn {
+	right: 41px;
+	top: 13px;
+	left: auto;
+	font-size: 0;
+	content: url('../img/arrow-form-right.svg');
+	transform: rotate(180deg);
+	width: 7px;
+	height: 13px;
+}
+
+.nice-date-picker-header .next-date-btn {
+	right: 15px;
+	top: 13px;
+	font-size: 0;
+	width: 7px;
+	height: 13px;
+	content: url('../img/arrow-form-right.svg');
+}
+
+.nice-date-picker-body tr th {
+	font-weight: bold;
+}
+
+.nice-date-picker-header {
+	height: 36px;
+}
+
+.calendar-online {
+	color: #848d9f;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	text-align: center;
+	max-width: 100%;
+	position: absolute;
+	bottom: 10px;
+}
+
+.nice-date-picker-body tr th:nth-child(n+6), .nice-date-picker-body tr, .nice-date-picker-body tr td:nth-child(n+6) {
+	color: #fe246c;
+}
+
+/* list page doctors */
+
+.list_page_doctors {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	background-color: #f2f3f5;
+}
+
+.list_page_doctors_card {
+	width: 98%;
+    margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px; 
+	padding-left: 50px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.card_recomendation {
+	width: 163px;
+	height: 25px;
+	background-color: yellow;
+	background-image: linear-gradient(88deg, #553577 0%, #fe246c 100%);
+	border-radius: 0px 3px 3px 0px;
+	color: white;
+	font-size: 12px;
+	font-weight: 400;
+	font-variant: small-caps;
+	text-align: center;
+	line-height: 25px;
+	position: absolute;
+	bottom: 16px;
+	left: 0;
+}
+
+.card_recomendation img {
+	width: 55px;
+	margin-right: 5px;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.card_recomendation span {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.card_column1 {
+	display: inline-block;
+	max-width: 133px;
+	vertical-align: top;
+}
+
+.card_photo {
+	position: relative;
+}
+
+.card_photo img {
+	border-radius: 10em;
+	width: 112px;
+}
+
+.card_photo_like {
+	position: absolute;
+	left: -13px;
+	top: -5px;
+	display: block;
+	
+}
+
+.card_photo_like img {
+	width: 46px;
+	height: 47px;
+}
+
+.card_rating {
+	margin-top: 14px;
+}
+
+.card_rating li {
+	display: inline-block;
+	margin-bottom: 9px;
+    margin-right: -1px;
+}
+
+.card_rating p {
+	color: #222;
+	font-size: 12px;
+	font-variant: small-caps;
+	font-weight: 400;
+}
+
+.card_rating p span {
+	font-weight: 700;
+	line-height: 14px;
+}
+
+.card_column2 {
+	display: inline-block;
+	width: 385px;
+	margin-left: 29px;
+	vertical-align: top;
+}
+
+.card_prof {
+	color: #222;
+	font-size: 12px;
+	font-weight: 400;
+	font-variant: small-caps;
+}
+
+.card_name {
+	font-size: 21px;
+	font-weight: 700;
+	font-variant: small-caps;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.list_page_doctors_card_blue .card_name,
+.list_page_doctors_card_blue .card_phone,
+.list_page_doctors_card_blue .card_address {
+	color: #003ee1;
+}
+
+.card_experience {
+	color: #222;
+	font-size: 16px;
+	font-weight: 700;
+	font-variant: small-caps;
+	margin-bottom: 7px;
+}
+
+.card_category {
+	color: #222;
+	font-size: 16px;
+	font-weight: 400;
+	font-variant: small-caps;
+	margin-bottom: 16px;
+}
+
+.card_price span {
+	color: #222;
+	font-size: 16px;
+	font-variant: small-caps;
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.card_price span .card_price_old {
+	color: #848d9f;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: line-through;
+	font-variant: small-caps;
+	margin-left: 8px;
+	vertical-align: top;
+}
+
+.card_price_discount {
+	display: inline-block;
+	width: 46px;
+	height: 20px;
+	background-color: #fe246c;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 20px;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+	font-variant: small-caps;
+	vertical-align: middle;
+	margin-left: 7px;
+}
+
+
+
+.card_price_info {
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.card_price span.card_price_add {
+	color: #11b836;
+	font-size: 12px;
+	vertical-align: middle;
+	margin-left: 7px;
+	line-height: 16px;	
+}
+
+.card_price {
+	position: relative;
+}
+
+.card_price_info_detail {
+	position: absolute;
+	padding: 15px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 9.3px 0.7px rgba(0, 0, 0, 0.35);
+	top: 24px;
+	left: 0;
+	z-index: 999;
+	max-width: 321px;
+	display: none;
+}
+
+.card_price_info_detail span {
+	color: black;
+	font-size: 12px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.card_price_info_detail span.card_price_info_detail_address, .card_price_info_detail p {
+	color: #848d9f;
+	font-size: 10px;
+	font-weight: 300;
+	margin-bottom: 12px;
+	display: block;
+}
+
+.card_price_info_detail span.card_price_info_detail_address {
+	font-variant: initial;
+}
+
+.card_price_info_detail p {
+	margin-bottom: 0;
+	line-height: 16px;
+}
+
+.card_price_info_detail_price {
+	position: absolute;
+	right: 30px;
+	top: 15px;
+}
+
+.card_phone {
+	margin-top: 24px;
+	font-size: 16px;
+	font-weight: 400;
+	font-variant: small-caps;
+	margin-bottom: 17px;
+}
+
+.card_phone span {
+	color: #848d9f;
+	font-size: 12px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.card_peoples {
+	color: #222;
+	font-size: 12px;
+	font-weight: 400;
+	font-variant: small-caps;
+}
+
+.card_peoples span {
+	display: inline-block;
+	margin-left: 3px;
+	position: relative;
+	padding-left: 18px;
+}
+
+
+.card_peoples span:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: url('../img/check-green.svg');
+}
+
+.card_column3 {
+	vertical-align: middle;
+	display: inline-block;
+	max-width: 300px;
+}
+
+.card_month {
+	color: #222;
+	font-size: 12px;
+	font-weight: 400;
+	font-variant: small-caps;
+	margin-bottom: 7px;
+}
+
+.card_tab {
+	width: 88px;
+	height: 31px;
+	background-color: white;
+	border: 1px solid #ebebeb;
+	border-radius: 8px;
+	position: relative;
+	color: #222;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 29px;
+	font-variant: small-caps;
+	text-align: center;
+	display: inline-block;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.card_tab.active {
+	background-color: #848d9f;
+	color: #ffffff;
+}
+
+.card_tab.active:after {
+	content: url('../img/card_tab_traingle.png');
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: -14px;
+}
+
+.card_tab_content {
+	margin-top: 13px;
+	margin-bottom: 25px;
+	display: none;
+}
+
+.card_tab_content.active {
+	display: block;
+}
+
+.card_tab_content p {
+	color: #848d9f;
+	font-size: 13px;
+	font-weight: 400;
+	font-variant: small-caps;
+	position: relative;
+	padding-left: 20px;
+	line-height: 20px;
+}
+
+.card_tab_content p:after {
+	position: absolute;
+	content: url('../img/close.svg');
+	left: 0;
+	top: 5px;
+}
+
+.card_address {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	font-variant: small-caps;
+}
+
+.card_address span {
+	font-size: 14px;
+	display: block;
+	line-height: 23px;
+}
+
+.card_address_streets {
+	margin-top: 5px;
+}
+
+.card_address_streets span {
+	position: relative;
+	color: #222;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	font-variant: small-caps;
+	display: inline-block;
+	margin-right: 45px;
+	padding-left: 17px;
+}
+
+.card_address_streets span:before {
+	position: absolute;
+	left: 0;
+    top: 6px;
+	content: '';
+	width: 8px;
+	height: 8px;
+	background-color: #0078bf;
+	border-radius: 10em;
+}
+
+.card_address_streets ul li:nth-child(2) span:before {
+	background-color: #ed1b35;
+}
+
+.card_address_streets li {
+	position: relative;
+	max-width: 200px;
+}
+
+.card_address_streets p {
+	color: #b8b8b9;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	font-variant: small-caps;
+	position: absolute;
+	padding-left: 15px;
+	right: 0;
+	top: 0;
+}
+
+.card_address_streets ul li:nth-child(1) p {
+	right: 50px;
+}
+
+.card_address_streets ul li:nth-child(2) p {
+	right: 33px;
+}
+
+.card_address_streets ul li:nth-child(3) p {
+	right: 15px;
+}
+
+.card_address_streets p:before {
+	position: absolute;
+	left: 0;
+    top: 1px;
+	content: url('../img/men-icon.svg');
+	width: 8px;
+	height: 11px;
+}
+
+.list_pagination {
+	max-width: 546px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.list_pagination li {
+	display: inline-block;
+}
+
+.list_pagination li a {
+	display: inline-block;
+	width: 31px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid #ced1db;
+	border-radius: 3px;
+	color: #848d9f;
+	font-size: 16px;
+	font-weight: 400;
+	font-variant: small-caps;
+	text-align: center;
+	vertical-align: top;
+	line-height: 30px;
+	transition: .3s ease-in;
+	margin: 0 2px;
+}
+
+.list_pagination li a:hover, .list_pagination li a.active {
+	background-color: #848d9f;
+	color: white;
+}
+
+.list_pagination li:first-of-type a,
+.list_pagination li:last-of-type a {
+	width: 40px;
+	height: 30px;
+	margin-right: 20px;
+}
+
+.list_pagination li:first-of-type a img,
+.list_pagination li:last-of-type a img {
+	width: 100%;
+}
+
+.list_pagination li:first-of-type a img {
+	transform: rotate(180deg);
+}
+
+.list_pagination li:first-of-type a:hover,
+.list_pagination li:last-of-type a:hover {
+	background-color: #fff;
+	opacity: .5;
+}
+
+.list_pagination li:last-of-type a {
+	margin-right: auto;
+	margin-left: 20px;
+}
+
+.list_pagination li.list_pagination_last_page {
+	position: relative;
+	padding-left: 23px;
+}
+
+.list_pagination li.list_pagination_last_page:before {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: '...';
+	color: #c8c8c8;
+	font-size: 20px;
+	font-weight: 400;
+	font-variant: small-caps;
+}
+
+.list_pagination li a.arrow_fade {
+	opacity: .7;
+}
+
+/* list page questions */
+
+.list_page_questions {
+	padding-top: 22px;
+	padding-bottom: 34px;
+}
+
+.list_page_questions_content {
+	width: 98%;
+    margin: auto;
+}
+
+.list_page_questions_title {
+	color: #848d9f;
+	font-size: 14px;
+	font-weight: 400;
+	font-variant: small-caps;
+	display: block;
+	margin-bottom: 13px;
+}
+
+.list_page_questions_item {
+	margin-bottom: 30px;
+	max-width: 800px;
+}
+
+.list_page_questions_item span {
+	display: block;
+	color: #222;
+	font-size: 28px;
+	font-weight: 400;
+	font-variant: small-caps;
+	margin-bottom: 19px;
+}
+
+.list_page_questions_item p {
+	color: #222;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	font-variant: small-caps;
+}
+
+.list_page_questions_item p a {
+	color: #0094e1;
+}
+
+.list_page_questions_alarm {
+	background-color: white;
+	border: 1px solid #ced1db;
+	border-radius: 3px;
+	padding: 15px 20px;
+	font-size: 14px;
+	line-height: 20px;
+	font-variant: small-caps;
+	color: black;
+	font-weight: 400;
+	max-width: 1000px;
+	margin-top: -14px;
+}
+
+.list_page_questions_alarm span {
+	display: inline-block;
+	color: #ff256c;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+.list_page_questions_alarm img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.list_page_questions_alarm p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* list page reviews */
+
+.list_page_reviews span {
+	color: #222;
+	font-size: 21px;
+	font-weight: 700;
+	font-variant: small-caps;
+	margin-bottom: 26px;
+	display: block;
+}
+
+.list_page_reviews_row {
+	display: flex;
+	justify-content: space-between;
+	max-width: 86%;
+	display: none;
+}
+
+.list_page_reviews_content {
+	margin: auto;
+	width: 98%;
+}
+
+.list_page_reviews_item {
+	max-width: 390px;
+	margin-bottom: 10px;
+}
+
+.list_page_reviews_item:last-of-type {
+	margin-right: 10px;
+}
+
+.list_page_reviews_item_header {
+	margin-bottom: 20px;
+}
+
+.list_page_reviews_item_img {
+	width: 50px;
+	height: 49px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.list_page_reviews_item_img img {
+	width: 50px;
+	height: 49px;
+	border-radius: 10em;
+}
+
+.list_page_reviews_item_name {
+	display: inline-block;
+	max-width: 334px;
+	vertical-align: middle;
+}
+
+.list_page_reviews_item_name span {
+	margin-bottom: 7px;
+	font-size: 16px;
+}
+
+.list_page_reviews_item_name p {
+	color: #222;
+	font-size: 12px;
+	font-weight: 300;
+	font-variant: small-caps;
+}
+
+.list_page_reviews_item_info {
+	color: #222;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	font-variant: small-caps;
+}
+
+.list_page_reviews_item_info span {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 16px;
+	font-variant: small-caps;
+	margin-top: 14px;
+	display: block;
+}
+.list_page_reviews_item_info a {
+	color: #0036ff;
+	font-size: 12px;
+	font-weight: 300;
+	margin-top: -4px;
+	display: block;
+	font-variant: initial;
+}
+
+.list_page_reviews a.showMoreReviews {
+	width: 230px;
+	height: 35px;
+	background-color: white;
+	border: 1px solid #ced1db;
+	border-radius: 3px;
+	color: #222;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 35px;
+	display: inline-block;
+	text-align: center;
+	margin-top: 11px;
+	transition: .3s ease-in;
+}
+
+.list_page_reviews a.showMoreReviews:hover {
+	opacity: .5;
+}
+
+/* list page all */
+
+.list_page_all {
+	margin-top: 71px;
+	padding-bottom: 35px;
+}
+
+.list_page_all_content {
+	margin: auto;
+	width: 98%;
+}
+
+.list_page_all_akushers {
+	background-color: #f2f3f5;
+	border-radius: 3px;
+	padding-top: 56px;
+	padding-bottom: 80px;
+	padding-left: 65px;
+	padding-right: 65px;
+	max-width: 570px;
+}
+
+.list_page_all_akushers span {
+	display: block;
+	color: #222;
+	font-size: 28px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.list_page_all_akushers li {
+	color: #222;
+	font-size: 12px;
+	font-weight: 400;
+	margin-bottom: 3px;
+}
+
+.list_page_all_specializations {
+	margin-top: 25px;
+}
+.list_page_all_specializations span {
+	color: #222;
+	font-size: 21px;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 19px;
+}
+
+.list_page_all_specializations_content .letter {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 13px;
+}
+
+.list_page_all_specializations_content ul {
+	margin-bottom: 30px;
+	width: 230px;
+}
+
+.list_page_all_specializations_content li {
+	margin-bottom: 7px;
+}
+
+.list_page_all_specializations_content li a {
+	color: #0094e1;
+	font-size: 16px;
+	font-weight: 400;
+	transition: .3s ease-in;
+}
+
+.list_page_all_specializations_content li a:hover {
+	color: #ff256c;
+}
+
+.list_page_all_specializations_showMore {
+	width: 135px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid #ced1db;
+	border-radius: 3px;
+	color: #222;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 30px;
+	display: block;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	transition: .3s ease-in;
+}
+
+.list_page_all_specializations_showMore:hover {
+	opacity: .5;
+}
+
+.list_page_all_specializations_content {
+	height: 240px;
+	overflow: hidden;
+	display: flex;
+	flex-flow: row wrap;
+	width: 110%;
+	-webkit-mask-image: linear-gradient(to bottom, black 97%, transparent 100%);
+}
+
+.list_page_all_specializations_content.active {
+	height: 100%;
+} 
+
+
+/* DOCTOR PAGE */
+
+/* header */
+
+.doctor .header {
+	margin-bottom: 0;
+}
+
+.doctor .header_content_form .input-container:after {
+	position: absolute;
+	top: 33%;
+	right: 20px;
+	font-family: "Font Awesome 5 Free";
+	content: "\f078";
+   	display: inline-block;
+   	vertical-align: middle;
+	font-weight: 700;
+	width: 16px;
+	height: 16px;
+	color: #848d9f;
+}
+
+.doctor_header_content h2 {
+	color: #222;
+	font-size: 18px;
+	font-variant: small-caps;
+}
+
+.doctor_header_content {
+	margin-top: 37px;
+}
+
+.doctor .header_content_form {
+    max-width: 948px;
+	margin: 17px auto 0;
+}
+
+.doctor .list_header_content {
+	border-top: 1px solid #e5e7ec;
+	padding-top: 20px;
+}
+
+.doctor_form_example {
+	margin-top: 15px;
+	font-size: 12px;
+	font-weight: 400;
+	position: absolute;
+	left: 0;
+	bottom: -23px;
+}
+
+.doctor_form_example span {
+	display: inline-block;
+	color: #222;
+}
+
+.doctor_form_example p {
+	display: inline-block;
+	color: #848d9f;
+}
+
+/* doctor detail */
+
+.doctor_detail_top_content {
+	display: flex;
+	justify-content: space-between;
+	max-width: 96%;
+    margin: auto;
+}
+
+.doctor_detail_header {
+	padding-top: 43px;
+	padding-bottom: 30px;
+	max-width: 700px;
+	display: inline-block;
+}
+
+.doctor_detail_photo {
+	display: inline-block;
+	max-width: 170px;
+	position: relative;
+	text-align: center;
+}
+
+.doctor_detail_ava {
+	display: block;
+	width: 162px;
+	height: 162px;
+	border-radius: 10em;
+}
+
+.doctor_detail_photo_like {
+	position: absolute;
+	left: -10px;
+	top: 10px;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+}
+
+
+.doctor_detail_stars {
+	margin: 10px 0;
+}
+
+.doctor_detail_stars li {
+	display: inline-block;
+	margin: 0px;
+}
+
+.doctor_detail_stars li img {
+	width: 19px;
+	height: 19px;
+}
+
+.doctor_detail_photo_info {
+	color: #848d9f;
+	font-size: 12px;
+	font-variant: small-caps;
+	font-weight: 400;
+	width: 65%;
+    margin: auto;
+}
+
+.doctor_detail_photo_info span {
+	font-weight: 700;
+} 
+
+.doctor_detail_header_info {
+	display: inline-block;
+	max-width: 300px;
+	vertical-align: top;
+	margin-left: 19px;
+}
+
+.doctor_detail_header_breadcrumb li {
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+}
+
+.doctor_detail_header_breadcrumb li:after {
+	position: absolute;
+	right: -9px;
+	top: 0;
+	color: #828288;
+	font-size: 13px;
+	font-weight: 400;
+	font-variant: small-caps;
+	content: '/';
+}
+
+.doctor_detail_header_breadcrumb li:last-of-type:after {
+	display: none;
+}
+
+.doctor_detail_header_breadcrumb a {
+	color: #828288;
+	font-size: 13px;
+	font-weight: 400;
+	font-variant: small-caps;
+	vertical-align: top;
+}
+
+.doctor_detail_header_breadcrumb {
+	margin-bottom: 14px;
+}
+
+.doctor_detail_header_name {
+	color: black;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+.doctor_detail_header_prof {
+	color: #66666c;
+	font-family: Calibri;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	margin-bottom: 8px;
+}
+
+.doctor_detail_header_prof span {
+	display: block;
+}
+
+.doctor_detail_header_price {
+	font-family: Calibri;
+	font-size: 18px;
+	line-height: 22px;
+	color: black;
+	font-weight: 400;
+}
+
+.doctor_detail_header_price .old_price {
+	color: #66666c;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+
+.doctor_detail_header_price .new_price {
+	color: black;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.doctor_detail_header_price p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.doctor_detail_header_price img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 8px;
+}
+
+.doctor_detail_header_price_discount {
+	color: #f2f3f5;
+	font-family: Calibri;
+	font-size: 12px;
+	font-weight: 700;
+	font-variant: small-caps;
+	width: 54px;
+	height: 21px;
+	background-image: url('../img/doctor/discount_bg.png');
+	line-height: 21px;
+	text-align: center;
+	display: inline-block;
+	padding-left: 8px;
+}
+
+.doctor_detail_map #map {
+	height: 300px;
+}
+
+.doctor_detail_map {
+	margin-right: -19px;
+	width: 454px;
+	height: 100%;
+}
+
+/* doctor detail info */
+
+.doctor_information {
+	display: flex;
+	justify-content: space-between;
+	padding: 41px 0;
+	background-color: #eeeff3;
+	padding-bottom: 14px;
+}
+
+.doctor_information_detail_content {
+	max-width: 573px;
+}
+
+.doctor_information_detail_content h3 {
+	color: black;
+	font-family: Calibri;
+	font-size: 24px;
+	font-weight: 400;
+	font-variant: small-caps;
+}
+
+.doctor_information_detail_content_subtitle {
+	color: #66666c;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	padding-left: 15px;
+	display: block;
+	margin-top: 35px;
+}
+
+.doctor_information_detail_content_more {
+	margin-bottom: 18px;
+}
+
+.doctor_information_detail_content p {
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #66666c;
+}
+
+.doctor_information_detail_content p a {
+	color: #0c99e2;
+	display: block;
+}
+
+.doctor_information_detail_content_reviews {
+	margin-top: 39px;
+    margin-bottom: 26px;
+    padding: 26px 0;
+	border-top: 1px solid #ced1db;
+	border-bottom: 1px solid #ced1db;
+	padding-bottom: 44px;
+}
+
+.doctor_information_detail_content_reviews_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.doctor_information_detail_content_reviews_header a {
+	color: #1593db;
+	font-size: 13px;
+	font-weight: 300;
+	text-decoration: underline;
+}
+
+.doctor_information_detail_content_reviews_item {
+	margin-top: 20px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 8.6px 0.4px rgba(0, 0, 0, 0.34);
+	width: 100%;
+	padding: 20px 40px;
+}
+
+.doctor_information_detail_content_reviews_item_title ul {
+	display: inline-block;
+}
+
+.doctor_information_detail_content_reviews_item_title li {
+	display: inline-block;
+	margin: 0px;
+}
+
+.doctor_information_detail_content_reviews_item .doctor_information_detail_content_reviews_item_title span {
+	color: #010101;
+	font-family: Calibri;
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 5px;
+}
+
+.doctor_information_detail_content_reviews_item p {
+	color: #010101;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	margin: 10px 0;
+	display: block;
+}
+
+.doctor_information_detail_content_reviews_item span {
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #9a9a9a;
+}
+.doctor_information_detail_content_reviews_item span a {
+	color: #0c99e2;
+}
+
+.doctor_information_detail_content_reviews_buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 35px;
+}
+
+.doctor_information_detail_content_reviews_buttons .show_more_reviews {
+	height: 30px;
+	background-color: #848d9f;
+	border-radius: 3px;
+	line-height: 30px;
+	padding: 0 20px;
+	color: white;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	transition: .3s ease-in;
+}
+
+.doctor_information_detail_content_reviews_buttons .show_more_reviews:hover {
+	background-color: #666c79;
+}
+
+.doctor_information_detail_content_reviews_buttons .add_review {
+	height: 30px;
+	background-color: white;
+	border: 1px solid #ced1db;
+	border-radius: 3px;
+	padding: 0 45px;
+	line-height: 30px;
+	color: black;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	transition: .3s ease-in;
+}
+
+.doctor_information_detail_content_reviews_buttons .add_review:hover {
+	background-color: #dcdbdb;
+}
+
+.doctor_information_detail_content_specialization h3, .doctor_information_detail_content_specialist h3 {
+	margin-bottom: 17px;
+}
+
+.doctor_information_detail_content_specialization span, .doctor_information_detail_content_specialist span {
+	color: #66666c;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.doctor_information_detail_content_specialization ul, .doctor_information_detail_content_specialist ul {
+	padding-left: 27px;
+    margin-top: 22px;
+    margin-bottom: 29px;
+}
+
+.doctor_information_detail_content_specialization li, .doctor_information_detail_content_specialist li {
+	color: #66666c;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 30px;
+	display: inline-block;
+	line-height: 22px;
+}
+
+.doctor_information_detail_content_specialist li {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.doctor_information_detail_content_specialization {
+	margin-bottom: 49px;
+}
+
+.doctor_information_detail {
+	position: relative;
+	padding: 0 22px;
+}
+
+.doctor_information_detail_sidebar {
+	background-color: white;
+	box-shadow: 0 0 8.6px 0.4px rgba(0, 0, 0, 0.34);
+	width: 411px;
+	position: absolute;
+	right: 27px;
+    top: -87px;
+}
+
+.doctor_information_detail_sidebar_title {
+	background-color: #fe246c;
+	text-align: center;
+	color: white;
+	font-family: Calibri;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 20px 0;
+}
+
+.doctor_information_detail_sidebar_item {
+	margin-bottom: 40px;
+}
+
+.doctor_information_detail_sidebar_item_header {
+	position: relative;
+	border-top: 1px solid #eeeff3;
+	border-bottom: 1px solid #eeeff3;
+	padding: 15px 0;
+	text-align: center;
+}
+
+.doctor_information_detail_sidebar_item_header_day {
+	color: #66666c;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+	display: inline-block;
+	max-width: 60px;
+    margin: 0 12px;
+}
+
+.doctor_information_detail_sidebar_item_header_nav {
+	position: absolute;
+	top: 42%;
+	width: 11px;
+	height: 15px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.doctor_information_detail_sidebar_item_header_nav_left {
+	background-image: url('../img/doctor/arrow-sidebar-left.svg');
+	left: 10px;
+}
+
+.doctor_information_detail_sidebar_item_header_nav_right {
+	background-image: url('../img/doctor/arrow-sidebar-right.svg');
+	right: 10px;
+}
+
+.doctor_information_detail_sidebar_item_content {
+	text-align: center;
+	padding: 25px 0;
+}
+
+.doctor_information_detail_sidebar_item_content span {
+	color: #66666c;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.doctor_information_detail_sidebar_item_content ul {
+	margin-bottom: 5px;
+}
+
+.doctor_information_detail_sidebar_item_content ul li {
+	width: 80px;
+	height: 30px;
+	background-image: url('../img/doctor/sidebar_line.png');
+	background-position: center;
+	background-size: initial;
+	background-repeat: no-repeat;
+	color: white;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 9px;
+}
+
+.doctor_information_detail_sidebar_item_content ul li:last-of-type {
+	background-color: #00aec7;
+	background-image: none;
+	cursor: pointer;
+	transition: .3s ease-in;
+}
+
+.doctor_information_detail_sidebar_item_content ul li:last-of-type:hover {
+	background-color: #027586;
+}
+
+.doctor_information_detail_sidebar_item_address {
+	color: black;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+	padding: 0 40px;
+}
+
+.doctor_information_detail_sidebar_item_address p, .doctor_information_detail_sidebar_item_address li {
+	color: #828288;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.doctor_information_detail_sidebar_item_address li {
+	display: inline-block;
+	position: relative;
+	padding-left: 10px;
+	margin-right: 3px;
+}
+
+.doctor_information_detail_sidebar_item_address li:before {
+	position: absolute;
+	left: 0;
+	top: 7px;
+	width: 6px;
+	height: 6px;
+	background-color: yellow;
+	border-radius: 10em;
+	content: '';
+}
+
+.doctor_information_detail_sidebar_item_address li:nth-child(2):before {
+	background-color: lime;
+}
+
+.doctor_information_detail_sidebar_item_price {
+	padding: 0 40px;
+	color: black;
+	font-family: Calibri;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 16px;
+	margin-top: 9px;
+	margin-bottom: 15px;
+}
+
+.doctor_information_detail_sidebar_item_phone {
+	padding: 0 40px;
+	color: #00aec7;
+	font-family: Calibri;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+/* doctor near */
+
+.doctor_near {
+	padding-top: 27px;
+	padding-bottom: 55px;
+}
+
+.doctor_near h3 {
+	color: black;
+	font-family: Calibri;
+	font-size: 24px;
+	font-weight: 400;
+	margin: 0 21px;
+}
+
+.doctor_near_slider {
+	margin: auto;
+	margin-top: 15px;
+    max-width: 953px;
+}
+
+.doctor_near_slider_item {
+	width: 290px;
+	height: 230px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 8.6px 0.4px rgba(0, 0, 0, 0.34);
+	padding: 21px 17px;
+	margin: 10px 15px;
+}
+
+.doctor_near_slider_item_header_photo {
+	width: 80px;
+	height: 80px;
+	border-radius: 10em;
+	overflow: hidden;
+	text-align: center;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.doctor_near_slider_item_header_photo img {
+	margin: auto;
+	display: block;
+	width: 100%;
+}
+
+.doctor_near_slider_item_header_info {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 150px;
+	padding-bottom: 15px;
+}
+
+.doctor_near_slider_item_header_info_name {
+	color: black;
+	font-family: Calibri;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 18px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.doctor_near_slider_item_header_info p {
+	color: #828288;
+	font-family: Calibri;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 13px;
+}
+
+.doctor_near_slider_item_header_info_price {
+	color: black;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	display: block;
+	margin: 7px 0;
+}
+
+.doctor_near_slider_item_address {
+	border-top: 1px solid #ced1db;
+	padding-top: 15px;
+    padding-left: 4px;
+}
+
+.doctor_near_slider_item_address ul {
+	width: 85%;
+}
+
+.doctor_near_slider_item_address li {
+	position: relative;
+	padding-left: 10px;
+	color: black;
+	font-family: Calibri;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 13px;
+	display: inline-block;
+	margin-right: 2px;
+}
+
+.doctor_near_slider_item_address li:before {
+	position: absolute;
+	left: 0;
+	top: 4px;
+	content: '';
+	width: 6px;
+	height: 6px;
+	background-color: #ced1db;
+	border-radius: 10em;
+}
+
+.doctor_near_slider_item_address li:nth-child(2):before {
+	background-color: lime;
+}
+
+.doctor_near_slider_item_address li:nth-child(3):before {
+	background-color: red;
+}
+
+.doctor_near_slider .slick-slide, 
+.doctor_near_slider .slick-slide *{ outline: none !important; }
+
+.doctor_near_slider .slick-arrow {
+	position: absolute;
+	left: -63px;
+	top: 44%;
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/doctor/arrow-big-left.svg);
+    background-size: cover;
+	width: 20px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+    font-size: 0;
+    opacity: .5;
+    cursor: pointer;
+	z-index: 11;
+	outline: none;
+}
+
+.doctor_near_slider .slick-arrow:hover {
+	opacity: 1;
+}
+
+.doctor_near_slider .slick-next {
+	left: auto;
+	right: -76px;
+	transform: rotate(180deg);
+}
+
+
+/* DOCTOR PAGE END */
+
+/* CLINIC PAGE */
+
+/* clinic top */
+
+.clinic .header {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 17px;
+}
+
+.clinic_top_content {
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.34);
+	background-color: #f6f6f8;
+}
+
+.clinic_top_content:after {
+	clear: both;
+	height: 0;
+	display: block;
+	content: '';
+}
+
+.clinic_top_info {
+	padding: 27px 17px;
+	position: relative;
+	padding-bottom: 55px;
+	
+}
+
+.clinic_top_info::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 100px;
+	left: 0;
+	right: 0;
+	-webkit-box-shadow: inset 0px 150px 57px -62px rgba(0,0,0,0.57);
+	-moz-box-shadow: inset 0px 150px 57px -62px rgba(0,0,0,0.57);
+	box-shadow: inset 0px 150px 57px -62px rgba(0,0,0,0.57);
+	z-index: 99;
+
+} 
+
+.clinic_top_info_block {
+	width: 147px;
+	height: 212px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.34);
+	text-align: center;
+	display: inline-block;
+	z-index: 99;
+	position: relative;
+}
+
+.clinic_top_info_block ul {
+	padding-top: 6px;
+    padding-bottom: 2px;
+	border-top: 1px solid #e6e6e6;
+	display: block;
+	margin-top: 7px;
+}
+
+.clinic_top_info_block ul li {
+	display: inline-block;
+	margin: -1px;
+}
+.clinic_top_info_block ul li img {
+	width: 19px;
+	height: 18px;
+}
+
+.clinic_top_info_block span {
+	color: #828288;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.clinic_top_info_title {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 26px;
+	z-index: 99;
+	position: relative;
+}
+
+.clinic_top_info_breadcrumb li {
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+}
+
+.clinic_top_info_breadcrumb li:after {
+	position: absolute;
+	right: -9px;
+	top: 0;
+	color: #bebebe;
+	font-size: 12px;
+	font-weight: 400;
+	font-variant: small-caps;
+	content: '/';
+}
+
+.clinic_top_info_breadcrumb li:last-of-type:after {
+	display: none;
+}
+
+.clinic_top_info_breadcrumb a {
+	color: #bebebe;
+	font-size: 12px;
+	font-weight: 400;
+	font-variant: small-caps;
+	vertical-align: top;
+}
+
+.clinic_top_info_title span {
+	color: white;
+	font-family: Calibri;
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 28px;
+	display: block;
+	margin-top: 7px;
+}
+
+.clinic_top_info_slider {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	overflow: hidden;
+}
+
+.clinic_top_info_slider img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+
+.clinic_top_info_slider .slick-arrow {
+	position: absolute;
+	left: 20px;
+	bottom: 13px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/clinic/prev.svg);
+	background-size: 45%;
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-position: center;
+    font-size: 0;
+    opacity: .5;
+    cursor: pointer;
+	z-index: 111;
+	outline: none;
+	border: 1px solid #f6f6f8;
+	border-radius: 50%;
+}
+
+.clinic_top_info_slider .slick-arrow:hover {
+	opacity: 1;
+}
+
+.clinic_top_info_slider .slick-next {
+	left: auto;
+	right: 20px;
+	transform: rotate(180deg);
+}
+
+.clinic_top_content {
+	justify-content: space-between;
+	display: flex;
+}
+
+.clinic_top_info {
+	width: 48%;
+}
+
+.clinic_top_address {
+	width: 50%;
+}
+
+.clinic_top_info_slider .slick-list,
+.clinic_top_info_slider .slick-track {
+    height: 100%;
+}
+
+.clinic_top_address {
+	padding: 18px 43px;
+}
+
+.clinic_top_address_content {
+	width: 100%;
+	height: 265px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.34);
+	padding: 40px 85px;
+	color: #66666c;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.clinic_top_address_place {
+	padding-left: 30px;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.clinic_top_address_place:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: url('../img/clinic/clinic_mark.png');
+}
+
+.clinic_top_address_place ul li, .clinic_top_address_time li {
+	position: relative;
+	display: block;
+	margin-top: 8px;
+}
+
+.clinic_top_address_place ul li {
+	padding-left: 13px;
+    margin-left: 5px;
+}
+
+.clinic_top_address_time li {
+	max-width: 158px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.clinic_top_address_place ul li:before {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	content: '';
+	width: 6px;
+	height: 6px;
+	background-color: lime;
+	border-radius: 10em;
+}
+
+.clinic_top_address_place ul li:nth-child(2):before {
+	background-color: #e3007b;
+}
+
+.clinic_top_address_place ul li:nth-child(3):before {
+	background-color: cyan;
+}
+
+.clinic_top_address_time {
+	padding-left: 30px;
+	position: relative;
+}
+
+.clinic_top_address_time:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: url('../img/clinic/clinic_time.png');
+}
+
+/* clinic about */
+
+.clinic_about {
+	background-color: #eeeff3;
+	padding-top: 25px;
+	padding-bottom: 110px;
+}
+
+.clinic_about_content {
+	max-width: 550px;
+	color: #66666c;
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.clinic_about_content h3 {
+	color: black;
+	font-family: Calibri;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.clinic_about_content p {
+	margin-bottom: 10px;
+}
+
+.clinic_about h4 {
+	color: black;
+	font-family: Calibri;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 22px;
+	margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.clinic_about_buttons .btn {
+	display: inline-block;
+	height: 30px;
+	background-color: #f6f6f8;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.34);
+	line-height: 30px;
+	color: black;
+	font-family: Calibri;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 0 36px;
+    margin-right: 4px;
+	transition: .3s ease-in;
+}
+
+.clinic_about_buttons .btn:hover, .clinic_about_buttons .btn.active {
+	color: white;
+	background-color: #858d9f;
+}
+
+.clinic_about_doctors {
+	border-top: 1px solid #a7a7a7;
+	border-bottom: 1px solid #a7a7a7;
+	padding-top: 17px;
+    padding-bottom: 40px;
+    margin-top: 64px;
+	position: relative;
+}
+
+.clinic_about_doctors_content h3 {
+	color: #222;
+	font-family: Calibri;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.clinic_about_doctors_filter {
+	position: absolute;
+	right: 47px;
+	top: 24px;
+}
+
+.clinic_about_doctors_filter .selectize-input {
+	padding-left: 12px;
+	padding-right: 42px;
+	height: 30px;
+	background-color: white;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.34);
+	outline: none;
+	color: #828288;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+.clinic_about_doctors_filter input[type="select-one"] {
+	display: none;
+}
+
+.clinic_about_doctors_filter .selectize-dropdown {
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+.clinic_about_doctors_filter .selectize-dropdown-content {
+	padding: 5px;
+	background-color: white;
+	border: 1.49px solid #ebebeb;
+	margin-bottom: 3px;
+	color: #828288;
+	font-size: 16px;
+	line-height: 30px;
+	cursor: pointer;
+	font-variant: small-caps;
+}
+
+.clinic_about_doctors_filter_select .selectize-input {
+	position: relative;
+	cursor: pointer;
+}
+
+.clinic_about_doctors_filter_select .selectize-input:after {
+	position: absolute;
+	top: 2px;
+    right: 11px;
+	font-size: 11px;
+	font-family: "Font Awesome 5 Free";
+   	content: "\f078";
+   	display: inline-block;
+   	vertical-align: middle;
+	font-weight: 900;
+	color: #828288;
+}
+
+/* clinic about reviews */
+
+.clinic_about_reviews {
+	justify-content: space-between;
+	display: flex;
+	padding-top: 17px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #a7a7a7;
+}
+
+.clinic_about_reviews_content {
+	max-width: 659px;
+}
+
+.clinic_about_reviews_content h3, .clinic_about_reviews_info h3 {
+	color: #222;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.clinic_about_reviews_content_item {
+	width: 100%;
+	padding: 25px 70px 15px 25px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.34);
+	margin-bottom: 15px;
+}
+
+.clinic_about_reviews_content_item_header li {
+	display: inline-block;
+	margin: -1px;
+}
+
+.clinic_about_reviews_content_item_header li img {
+	width: 19px;
+	height: 18px;
+}
+
+.clinic_about_reviews_content_item_header ul {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.clinic_about_reviews_content_item_header span {
+	display: inline-block;
+	color: #222;
+	font-family: Calibri;
+	font-size: 20px;
+	font-weight: 400;
+	vertical-align: unset;
+	margin-left: 15px;
+}
+
+.clinic_about_reviews_content_item_text {
+	margin: 12px 0;
+	color: #222;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.clinic_about_reviews_content_item_author {
+	margin-top: 16px;
+}
+
+.clinic_about_reviews_content_item_author span {
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	color: #9a9a9a;
+}
+
+.clinic_about_reviews_content_item_author span a {
+	color: #1a95d3;
+}
+
+.clinic_about_reviews_info {
+	max-width: 452px;
+	margin-right: 30px;
+}
+
+.clinic_about_reviews_info h3 {
+	margin-bottom: 16px;
+}
+
+.clinic_about_reviews_info p {
+	color: #66666c;
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.clinic_about_reviews_info p:first-of-type {
+	margin-bottom: 22px;
+}
+
+.clinic_about_reviews_info_form {
+	margin-top: 20px;
+}
+
+.clinic_about_reviews_info_form form {
+	width: 100%;
+	padding: 27px 39px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.34);
+	position: relative;
+}
+
+.clinic_about_reviews_info_form span.clinic_about_reviews_info_form_title {
+	text-align: center;
+	color: #222;
+	font-family: Calibri;
+	font-size: 15px;
+	font-weight: 700;
+	padding-bottom: 16px;
+    width: 86%;
+	border-bottom: 1px solid #ced1db;
+	margin: auto;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.clinic_about_reviews_info_form span {
+	color: #66666c;
+	font-size: 18px;
+	font-weight: 400;
+	font-variant: small-caps;
+	font-family: Calibri;
+}
+
+.clinic_about_reviews_info_form ul {
+	display: inline-block;
+	vertical-align: sub;
+	margin-left: 20px;
+}
+
+.clinic_about_reviews_info_form li {
+	display: inline-block;
+	margin: -1px;
+}
+
+.clinic_about_reviews_info_form li img {
+	width: 25px;
+	height: 23px;
+}
+
+.clinic_about_reviews_info_form_stars {
+	margin-bottom: 28px;
+}
+.clinic_about_reviews_info_form_rating {
+	display: inline-block;
+	vertical-align: text-bottom;
+	margin-left: 16px;
+}
+
+.clinic_about_reviews_info_form textarea {
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.34);
+	margin-top: 10px;
+	color: #66666c;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+	padding-left: 14px;
+    padding-top: 12px;
+	outline: none;
+	border: none;
+	margin-bottom: 20px;
+}
+
+.clinic_about_reviews_info_form input {
+	width: 100%;
+	height: 30px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.34);
+	line-height: 30px;
+	outline: none;
+	border: none;
+	padding-left: 55px;
+	color: #9a9a9a;
+	font-size: 16px;
+	font-weight: 400;
+	
+}
+
+.input_wrap {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.clinic_about_reviews_info_form .input_wrap:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 40px;
+	border-right: 1px solid #eeeff3; 
+	content: '';
+	background-image: url('../img/clinic/people.svg');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.clinic_about_reviews_info_form .input_wrap:nth-of-type(3):before {
+	background-image: url('../img/clinic/phone.svg');
+}
+
+.clinic_about_reviews_info_form .add_info {
+	color: #9a9a9a;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 12px;
+	display: block;
+	margin-bottom: 21px;
+}
+
+.clinic_about_reviews_info_form button {
+	width: 195px;
+	height: 35px;
+	background-color: #ff256c;
+	border-radius: 3px;
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 35px;
+	text-transform: uppercase;
+	border: none;
+	margin: auto;
+	display: block;
+	transition: .3s ease-in;
+	outline: none;
+}
+
+.clinic_about_reviews_info_form button:hover {
+	background-color: #bd0641;
+}
+
+.clinic_about_reviews_info_form_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.clinic_about_reviews_info_form_close i {
+	color: #b9bec9;
+	font-size: 24px;
+	font-weight: 700;
+	transition: .3s ease-in;
+}
+
+.clinic_about_reviews_info_form_close i:hover {
+	color: #929496;
+}
+
+/* clinic about licences */
+
+.clinic_about_licences {
+	margin-top: 40px;
+}
+
+.clinic_about_licences h3 {
+	color: #222;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.clinic_about_licences_photos {
+	margin-top: 22px;
+	justify-content: space-between;
+	display: flex;
+	align-self: center;
+}
+
+.clinic_about_licences_photos img {
+	width: 31%;
+	align-self: center;
+}
+
+/* clinic near */
+
+.clinic_near {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.clinic_near h4 {
+	color: black;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 11px;
+}
+
+.clinic_near_slider {
+	margin: auto;
+	margin-top: 15px;
+	max-width: 998px;
+}
+
+.clinic_near_slider_item {
+	width: 290px;
+	height: 230px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 8.6px 0.4px rgba(0, 0, 0, 0.34);
+	padding: 23px 12px;
+	margin: 10px 15px;
+	display: block;
+}
+
+.clinic_near_slider_item_header_photo {
+	text-align: center;
+	display: inline-block;
+	margin-right: 13px;
+	width: 83px;
+	height: 83px;
+	border: 1px solid #ced1db;
+	line-height: 83px;
+}
+
+.clinic_near_slider_item_header_photo img {
+	margin: auto;
+	width: 92%;
+	display: inline-block;
+}
+
+.clinic_near_slider_item_header_info {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 155px;
+	padding-bottom: 15px;
+}
+
+.clinic_near_slider_item_header_info_name {
+	color: black;
+	font-family: Calibri;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 15px;
+	margin-bottom: 7px;
+	display: block;
+}
+
+.clinic_near_slider_item_header_info p {
+	color: #828288;
+	font-family: Calibri;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 13px;
+}
+
+.clinic_near_slider_item_header_info_price {
+	color: black;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	display: block;
+	margin: 7px 0;
+    margin-top: 22px;
+}
+
+.clinic_near_slider_item_address {
+	border-top: 1px solid #ced1db;
+	padding-top: 15px;
+    padding-left: 4px;
+}
+
+.clinic_near_slider_item_address ul {
+	width: 85%;
+}
+
+.clinic_near_slider_item_address li {
+	position: relative;
+	padding-left: 13px;
+	color: black;
+	font-family: Calibri;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 13px;
+	display: inline-block;
+	margin-right: 2px;
+}
+
+.clinic_near_slider_item_address li:before {
+	position: absolute;
+	left: 0;
+	top: 4px;
+	content: '';
+	width: 6px;
+	height: 6px;
+	background-color: #ced1db;
+	border-radius: 10em;
+}
+
+.clinic_near_slider_item_address li:nth-child(2):before {
+	background-color: lime;
+}
+
+.clinic_near_slider_item_address li:nth-child(3):before {
+	background-color: red;
+}
+
+.clinic_near_slider .slick-slide, 
+.clinic_near_slider .slick-slide *{ outline: none !important; }
+
+.clinic_near_slider .slick-arrow {
+	position: absolute;
+	left: -63px;
+	top: 44%;
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/doctor/arrow-big-left.svg);
+    background-size: cover;
+	width: 20px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+    font-size: 0;
+    opacity: .5;
+    cursor: pointer;
+	z-index: 11;
+	outline: none;
+}
+
+.clinic_near_slider .slick-arrow:hover {
+	opacity: 1;
+}
+
+.clinic_near_slider .slick-next {
+	left: auto;
+	right: -76px;
+	transform: rotate(180deg);
+}
+
+/* CLINIC PAGE END */
+
+
+/* CENTERS PAGE */
+
+.centers .list_header_form {
+	background-color: #fff;
+	border: none;
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 47px;
+}
+
+.centers .list_header_form .container {
+	border-bottom: 1px solid #e5e7ec;
+}
+
+.centers .header_content_form {
+	margin-bottom: 78px;
+	margin-top: 23px;
+}
+
+.centers .header {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.centers .list_header_form .input-container1:after {
+	content: '\f002';
+}
+.centers .header_content_form .btn {
+	width: 165px;
+	height: 45px;
+	background-color: #828288;
+	border-radius: 5px;
+	border: none;
+}
+
+.centers .header_content_form .btn:hover {
+	color: #ffffff;
+	background-color: #505052;
+}
+
+.centers .input-container, 
+.centers .header_content_form .selectize-input, 
+.centers .header_content_form .selectize-dropdown-content {
+	width: 358px!important;
+}
+
+.centers .header_content_form .selectize-input {
+	height: 44px;
+	line-height: 44px;
+}
+
+.centers .header_content_form input[type="select-one"] {
+	line-height: 44px;
+	height: 42px;
+}
+
+.centers .list_header_form_checkboxes {
+	bottom: -32px;
+}
+
+/* medical centers */
+.medical_centers h3 {
+	color: #222;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 24px;
+	margin-bottom: 34px;
+}
+
+.medical_centers_content {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 37px;
+	border-bottom: 1px solid #e5e7ec;
+	margin-bottom: 22px;
+}
+
+.medical_centers_content ul li {
+	margin-bottom: 14px;
+	color: #ababb6;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.medical_centers_content ul li span {
+	width: 35px;
+	display: inline-block;
+}
+
+.medical_centers_content ul li a {
+	color: #00aecb;
+	transition: .3s ease-in;
+}
+
+.medical_centers_content ul li a:hover {
+	color: #ff256c;
+}
+
+/* all clinics */
+.all_clinics_filter {
+	box-shadow: 0 6px 10.6px -5.4px rgba(0, 0, 0, 0.34);
+	padding-bottom: 16px;
+	z-index: 999;
+    position: relative;
+}
+
+.all_clinics_filter h5 {
+	color: black;
+	font-size: 22px;
+	font-weight: 700;
+	display: inline-block;
+	padding-right: 28px;
+	margin-right: 14px;
+	border-right: 1px solid #eeeff3;
+}
+
+.all_clinics_filter span {
+	color: #303030;
+	font-size: 16px;
+	font-weight: 400;
+	display: inline-block;
+	margin-right: 18px;
+}
+
+.all_clinics_filter ul li {
+	display: inline-block;
+	margin-right: 12px;
+}
+
+.all_clinics_filter ul {
+	display: inline-block;
+}
+
+.all_clinics_filter ul li a {
+	padding: 0 10px;
+	height: 30px;
+	background-color: #f2f2f3;
+	border-radius: 4px;
+	color: #828288;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 30px;
+	display: block;
+	transition: .3s ease-in;
+}
+
+.all_clinics_filter ul li a:hover, .all_clinics_filter ul li a.active {
+	background-color: #ced1db;
+	color: #26b4cf;
+}
+
+.all_clinics_content {
+	padding-top: 20px;
+	background-color: #eeeff3;
+}
+
+.all_clinics_content_item {
+	position: relative;
+	background-color: white;
+	box-shadow: 0 0 8.6px 0.4px rgba(0, 0, 0, 0.34);
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.all_clinics_content_item_header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.all_clinics_content_item_header_info {
+	padding: 28px 40px;
+	width: 57.5%;
+	border-right: 1px solid #ced1db;
+}
+
+.all_clinics_content_item_header_info_logo {
+	display: inline-block;
+	max-width: 148px;
+	margin-right: 37px;
+}
+
+.all_clinics_content_item_header_info_logo_img {
+	width: 140px;
+	height: 140px;
+	border: 1px solid #ced1db;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.all_clinics_content_item_header_info_logo_img img {
+	width: 95%;
+}
+
+.all_clinics_content_item_header_info_logo ul {
+	text-align: center;
+}
+
+.all_clinics_content_item_header_info_logo ul li {
+	display: inline-block;
+	margin: -1px;
+}
+
+.all_clinics_content_item_header_info_logo ul li img {
+	width: 19px;
+	height: 18px;
+}
+
+.all_clinics_content_item_header_info_text {
+	display: inline-block;
+	max-width: 320px;
+	vertical-align: top;
+	color: #66666c;
+	font-family: Calibri;
+}
+
+.all_clinics_content_item_header_info_text_title {
+	color: #0094e1;
+	font-size: 26px;
+	font-weight: 400;
+	display: block;
+}
+
+.all_clinics_content_item_header_info_text_subtitle {
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 11px 0;
+}
+
+.all_clinics_content_item_header_info_text li {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 13px;
+}
+
+.all_clinics_content_item_header_info_text p {
+	margin-top: 28px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.all_clinics_content_item_header_info_address {
+	padding-left: 24px;
+    padding-top: 30px;
+	width: 42%;
+	vertical-align: top;
+}
+
+.all_clinics_content_item_header_info_address_place {
+	padding-left: 30px;
+	position: relative;
+	margin-bottom: 10px;
+	color: #66666c;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.all_clinics_content_item_header_info_address_place:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: url('../img/clinic/clinic_mark.png');
+}
+
+.all_clinics_content_item_header_info_address_place ul li, .all_clinics_content_item_header_info_address_phone {
+	position: relative;
+	display: inline-block;
+	margin-top: 7px;
+}
+
+.all_clinics_content_item_header_info_address_place ul {
+	max-width: 90%;
+}
+
+.all_clinics_content_item_header_info_address_place ul li {
+	padding-left: 9px;
+    margin-left: 5px;
+}
+
+.all_clinics_content_item_header_info_address_place ul li:before {
+	position: absolute;
+	left: -1px;
+    top: 3px;
+	content: '';
+	width: 6px;
+	height: 6px;
+	background-color: lime;
+	border-radius: 10em;
+}
+
+.all_clinics_content_item_header_info_address_place ul li:nth-child(2):before {
+	background-color: cyan;
+}
+
+.all_clinics_content_item_header_info_address_place ul li:nth-child(3):before {
+	background-color: #e3007b;
+}
+
+.all_clinics_content_item_header_info_address_phone {
+	padding-left: 30px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.all_clinics_content_item_header_info_address_phone span {
+	color: black;
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.all_clinics_content_item_header_info_address_phone:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url('../img/centers/phone.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 16px;
+	height: 16px;
+	content: '';
+}
+
+.all_clinics_content_item_header_info_address_btn {
+	margin-left: 30px;
+}
+
+.all_clinics_content_item_header_info_address_btn a {
+	width: 160px;
+	height: 45px;
+	background-color: #00aec7;
+	border-radius: 4px;
+	color: white;
+	font-family: Calibri;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 45px;
+	text-transform: uppercase;
+	text-align: center;
+	transition: .3s ease-in;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.all_clinics_content_item_header_info_address_btn a:hover {
+	background-color: #016371;
+}
+
+.all_clinics_content_item_header_info_address_btn span {
+	color: #828288;
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	max-width: 100px;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.all_clinics_content_item_filials_item {
+	border-top: 1px solid #ced1db;
+	display: flex;
+    justify-content: space-between;
+}
+
+.all_clinics_content_item_filials_item_name {
+	width: 57.5%;
+	border-right: 1px solid #ced1db;
+	padding: 37px 41px;
+}
+
+.all_clinics_content_item_filials_item_name span {
+	display: block;
+	color: #222;
+	font-family: Calibri;
+	font-size: 22px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.all_clinics_content_item_filials_item_stars ul {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.all_clinics_content_item_filials_item_stars ul li {
+	display: inline-block;
+	margin: -1px;
+}
+
+.all_clinics_content_item_filials_item_stars ul li img {
+	width: 19px;
+	height: 18px;
+}
+
+.all_clinics_content_item_filials_item_stars span {
+	display: inline-block;
+	color: #828288;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	vertical-align: text-top;
+}
+
+.all_clinics_content_item_filials_item_address {
+	width: 42%;
+	padding-left: 24px;
+    padding-top: 27px;
+}
+
+.all_clinics_content_item_filials_item_address_place, .all_clinics_content_item_filials_item_address_time {
+	padding-left: 30px;
+	position: relative;
+	margin-bottom: 20px;
+	color: #66666c;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.all_clinics_content_item_filials_item_address_place:before {
+	position: absolute;
+	left: -1px;
+	top: 3px;
+	content: url('../img/clinic/clinic_mark.png');
+}
+
+.all_clinics_content_item_filials_item_address_place ul li, .all_clinics_content_item_filials_item_address_time li {
+	position: relative;
+	display: inline-block;
+	margin-top: 7px;
+}
+
+.all_clinics_content_item_filials_item_address_place ul {
+	max-width: 90%;
+}
+
+.all_clinics_content_item_filials_item_address_place ul li {
+	padding-left: 9px;
+    margin-left: 5px;
+}
+
+.all_clinics_content_item_filials_item_address_place ul li:before {
+	position: absolute;
+	left: -1px;
+	top: 3px;
+	content: '';
+	width: 6px;
+	height: 6px;
+	background-color: lime;
+	border-radius: 10em;
+}
+
+.all_clinics_content_item_filials_item_address_place ul li:nth-child(2):before {
+	background-color: cyan;
+}
+
+.all_clinics_content_item_filials_item_address_place ul li:nth-child(3):before {
+	background-color: #e3007b;
+}
+
+.all_clinics_content_item_filials_item_address_time li {
+	max-width: 145px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.all_clinics_content_item_filials_item_address_time {
+	padding-left: 30px;
+	position: relative;
+}
+
+.all_clinics_content_item_filials_item_address_time:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: url('../img/clinic/clinic_time.png');
+}
+
+.all_clinics_content_item_filials_link {
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	width: 145px;
+	height: 30px;
+	background-color: white;
+	border-radius: 0px 0px 3px 3px;
+	box-shadow: -0.1px 7px 10.6px -2.6px rgba(0, 0, 0, 0.34);
+	color: #0094e1;
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+}
+
+.all_clinics_content_paginator {
+	margin: auto;
+	text-align: center;
+	margin-bottom: 26px;
+}
+
+.all_clinics_content_paginator li {
+	display: inline-block;
+	margin: 5px;
+}
+
+.all_clinics_content_paginator li a {
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.34);
+	text-align: center;
+	padding: 5px 10px;
+	color: #858d9f;
+	font-family: Calibri;
+	font-size: 15px;
+	font-weight: 400;
+	display: block;
+	min-width: 25px;
+	transition: .3s ease-in;
+}
+
+.all_clinics_content_paginator li a:hover, .all_clinics_content_paginator li a.active {
+	background-color: #858d9f;
+	color: #ffffff;
+}
+
+/* clinics info */
+
+.clinics_info {
+	padding-top: 66px;
+	padding-bottom: 42px;
+}
+
+.clinics_info_item {
+	margin-bottom: 20px;
+}
+
+.clinics_info_item span {
+	color: #222;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.clinics_info_item p {
+	color: #828288;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.clinics_info_item li {
+	padding-left: 20px;
+	color: #828288;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.clinics_info_alarm {
+	background-color: white;
+	border: 1px solid #ced1db;
+	border-radius: 3px;
+	padding: 15px 20px;
+	font-size: 14px;
+	line-height: 20px;
+	font-variant: small-caps;
+	color: black;
+	font-weight: 400;
+	max-width: 1000px;
+	margin-top: 23px;
+	margin-bottom: 38px;
+}
+
+.clinics_info_alarm span {
+	display: inline-block;
+	color: #ff256c;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+.clinics_info_alarm img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.clinics_info_alarm p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.clinics_info_services span {
+	font-size: 16px;
+	color: #222;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 13px;
+}
+
+.clinics_info_services li {
+	display: block;
+	margin-bottom: 13px;
+}
+
+.clinics_info_services li a {
+	color: #828288;
+	font-weight: 400;
+	font-size: 16px;
+	transition: .3s ease-in;
+}
+
+.clinics_info_services li a:hover {
+	color: #222222;
+}
+
+
+
+/* CENTERS PAGE END */
+
+
+/* media */
+
+@media only screen and (max-width: 1025px) {
+	body {
+		font-size: 15px;
+	}
+	.header_select-city {
+		width: 108px;
+	}
+	.header_phone_area {
+		width: 30%;
+	}
+	.question_info {
+		margin-right: 0;
+	}
+	.footer_logo_list {
+		right: -840px;
+	}	
+	.footer_social li {
+		margin-right: 5px;
+	}
+}
+
+@media only screen and (max-width: 993px) {
+	body {
+		font-size: 13px;
+	}	
+	.header_logo {
+		float: left;
+		width: 150px;
+	}
+	.header_select-city {
+		float: right;
+	}
+	.header_select-city .fa-chevron-down {
+		top: 2px;
+	}
+	.header_select-city .selectize-dropdown {
+		left: -120px!important;
+	}
+	.header_select-city {
+		width: auto;
+		margin-right: 6px;
+	}
+	.header_phone_area {
+		text-align: right;
+		margin-top: 50px;
+		padding-right: 6px;
+		width: 100%;
+	}
+	.header_content h1{
+		width: 89%;
+	}
+	.input-container, .list .input-container, .centers .input-container {
+		width: 85%!important;
+		margin: auto;
+		display: block;
+	}
+	.header_content_form input, .list .list_header_form input {
+		width: 100%;
+		margin: auto;
+		display: block;
+		margin-bottom: 15px;
+	}
+	.header_content_form .btn, .list .list_header_form .btn {
+		margin: auto;
+		display: block;
+	}
+	.header_subcontent_item {
+		float: none;
+		margin: 25px auto;
+	}
+	.card_info {
+		display: none;
+	}
+	.advantages_tab {
+		text-align: center;
+	}
+	.thanks_heart_img {
+		width: 45%;
+		display: block;
+		margin: 5px auto;
+	}
+	.thanks_heart {
+		margin: 40px auto;
+	}
+	.thanks_heart_text {
+		display: block;
+		text-align: center;
+		float: none;
+		width: 100%;
+	}
+	.thanks_count span {
+		font-size: 2em;
+	}
+	.thanks_count p {
+		font-size: 1em;
+		line-height: 20px;
+	}
+	.thanks {
+		padding-bottom: 65px;
+	}
+	.phone_img img {
+		display: block;
+		width: 65%;
+		margin: auto;
+	}
+	.phone {
+		padding-top: 65px;
+		padding-bottom: 65px;
+	}
+	.phone_info {
+		margin-top: 15px;
+		text-align: center;
+	}
+	.phone h2 {
+		text-align: center;
+	}
+	.phone_info ul {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}	
+	.phone_info_form input {
+		width: 175px;
+	}
+	.polis {
+		padding: 65px 0;
+	}
+	.polis_info {
+		margin-top: 15px;
+		text-align: center;
+	}	
+	.polis h2 {
+		text-align: center;
+		margin: auto;
+	}
+	.polis_form {
+		margin: auto;
+	}
+	.polis_info p {
+		margin: 15px auto;
+	}
+	.about {
+		padding-top: 65px;
+		padding-bottom: 130px;
+	}
+	.about_content {
+		flex-flow: wrap;
+		justify-content: space-around;
+	}
+	.about_content img {
+		margin: 15px;
+	}
+	.question_content {
+		justify-content: space-around;
+		flex-flow: column;
+		margin-top: 25px;
+	}
+	.question_img {
+		width: 40%;
+		margin: auto;
+	}
+	.question_info {
+		width: 80%;
+		margin: auto;
+		margin-top: 25px;
+	}
+	.question {
+		padding-bottom: 45px;
+	}
+	.specialization {
+		padding-top: 65px;
+		padding-bottom: 25px;
+	}
+	.specialization_content {
+		margin-top: 51px;
+		display: flex;
+		justify-content: space-around;
+		padding: 27px;
+		flex-wrap: wrap;
+		position: relative;
+		padding-bottom: 155px;
+	}
+	.specialization_img {
+		width: 10%;
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.helping {
+		padding-top: 65px;
+		padding-bottom: 65px;
+	}
+	.helping_form input {
+		width: 61%;
+		margin: auto;
+		margin-bottom: 25px;
+	}
+	.footer_info {
+		position: relative;
+		left: auto;
+		top: auto;
+		bottom: auto;
+		margin: auto;
+		width: 95%;
+		margin-top: 20px;
+	}
+	.footer_company img {
+		display: block;
+	}
+	.footer_list {
+		width: 85%;
+		margin: auto;
+	}
+	.footer_copy {
+		margin-top: 50px;
+	}
+
+	.modal-content {
+		width: 300px;
+	}
+
+	.modal p {
+		width: 90%;
+	}
+
+	.header_content_form .selectize-dropdown, .list .list_header_form .selectize-dropdown {
+		top: 41px!important;
+		z-index: 9999;
+	}
+	.header_content_form .selectize-input, 
+	.list .list_header_form .selectize-input,
+	.centers .list_header_form .selectize-input {
+		width: auto!important;
+		margin-bottom: 25px;
+		
+	}
+	.header_content_form .selectize-dropdown-content, 
+	.list .list_header_form .selectize-dropdown-content,
+	.centers .list_header_form .selectize-dropdown-content {
+		width: 100%!important;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.specialization_content {
+		justify-content: space-between;
+	}
+	.specialization_img  {
+		bottom: 45px;
+	}
+	.header_logo {
+		padding-left: 3px;
+	}	
+	.header_content {
+		margin-top: 45px;
+	}
+
+	.header_content_form .selectize-dropdown-content {
+		padding-left: 130px;
+	}
+	.input-container1 .selectize-dropdown-content .option:nth-child(1):before {
+		left: -120px;
+	}
+
+	.advantages_tab {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	.list_page_all_specializations_content {
+		width: 103%;
+	}
+}
+
+@media only screen and (max-width: 993px) {
+	
+	.card_column2 {
+		width: 240px;
+	}
+
+	.list_page_reviews_row {
+		max-width: 100%;
+	}
+	.list_pagination {
+		text-align: center;
+	}
+	.list_page_all_akushers {
+		text-align: center;
+		max-width: 100%;
+	}
+	.list_page_all_specializations_content {
+		text-align: center;
+		width: 100%;
+	}
+	.list_page_all_specializations {
+		text-align: center;
+	}
+
+	.list_header_form_checkboxes {
+		text-align: center;
+		margin-bottom: 20px;
+		position: relative;
+		left: auto;
+		bottom: auto;
+	}
+}
+
+@media only screen and (max-width: 765px) {
+	.list_page_wrapper {
+		padding: 0 10px;
+	}
+	.list_page_content_filter {
+		margin-right: 0;
+	}
+	.list_page_content_filter_days {
+		margin-top: 20px;
+		text-align: left;
+		position: relative;
+	}
+	.filters {
+		text-align: center;
+	}
+
+	.list_page_doctors_card {
+		text-align: center;
+		padding: 20px;
+		padding-top: 37px;
+	}
+	.card_rating {
+		margin-bottom: 15px;
+	}
+	.card_column2 {
+		margin-left: auto;
+	}
+	.card_price span.card_price_add {
+		vertical-align: unset;
+	}
+	.card_tab {
+		width: 80px;
+	}
+	.card_tab_content {
+		text-align: left;
+	}
+	.card_address_streets li {
+		max-width: 255px;
+	}
+	.card_recomendation {
+		bottom: auto;
+		top: 0px;
+	}
+	.list_page_content_title {
+		font-size: 26px;
+		margin-bottom: 15px;
+	}
+	.list_page_content_filter li {
+		margin: 3px;
+		border-radius: 4px!important;
+	}
+	.card_column1, .card_column2, .card_column3 {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+	.card_photo {
+		width: 115px;
+		margin: auto;
+	}
+	.card_column3 {
+		max-width: 262px;
+		margin: auto;
+		margin-top: 15px;
+	}
+	.list_pagination li {
+		margin-bottom: 10px;
+	}
+
+	.list_page_questions_content {
+		text-align: center;
+	}
+	.list_page_questions_item span {
+		font-size: 24px;
+	}
+	.list_page_reviews_row {
+		flex-flow: column wrap;
+	}
+	.list_page_reviews span {
+		font-size: 20px;
+		text-align: center;
+	}
+	.list_page_reviews_item {
+		max-width: 100%;
+		text-align: center;
+	}
+	.list_page_reviews_item_info span {
+		font-size: 12px;
+	}
+	.list_page_reviews_item_img {
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	.list_page_reviews a.showMoreReviews {
+		margin: auto;
+		display: block;
+	}
+	.list_page_all_akushers {
+		padding: 20px;
+	}
+	.list_page_all_specializations_content ul {
+		width: 100%;
+	}
+	.list_page_content_filter_calendar {
+		left: -17px;
+	}
+
+	.list_header_form_checkboxes {
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
+
+
+/* doctor page media */
+
+@media only screen and (max-width: 1200px) {
+	.doctor_information_detail_content {
+		max-width: 307px;
+	}
+	.doctor_information_detail_content_reviews_buttons {
+		flex-flow: column wrap;
+		align-content: center;
+	}
+	.doctor_information_detail_content_reviews_buttons .show_more_reviews {
+		margin-bottom: 30px;
+	}	
+	.doctor_information_detail_sidebar {
+		right: -9px;
+	}
+	.doctor_detail_map img {
+		width: 100%;
+		height: 100%;
+	}
+	.doctor_near_slider {
+		max-width: 750px;
+	}
+}
+
+@media only screen and (max-width: 928px) {
+	.doctor_near_slider .slick-arrow {
+		left: -10px;
+	}
+	.doctor_near_slider .slick-next {
+		left: auto;
+		right: -10px;
+
+	}
+	.doctor_near_slider_item {
+		height: auto;
+	}
+	.doctor_near_slider {
+		max-width: 300px;
+	}
+	.doctor_detail_top_content {
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 769px) {
+	.doctor_information_detail_sidebar {
+		position: relative;
+		top: auto;
+		right: auto;
+		max-width: 400px;
+		width: 100%;
+		margin: 20px auto;
+		padding-bottom: 10px;
+	}
+	.doctor_form_example {
+		position: relative;
+		bottom: auto;
+		left: auto;
+		margin: 20px 0;
+		text-align: center;
+		line-height: 17px;
+	}
+	.doctor_detail_top_content {
+		flex-flow: column wrap;
+	}
+	.doctor_detail_header {
+		text-align: center;
+	}
+	.doctor_detail_map {
+		margin: 10px auto;
+		width: 100%;
+	}
+	.doctor_detail_map #map {
+		height: 300px;
+	}
+	.doctor_detail_header_breadcrumb {
+		margin: 20px 0;
+	}
+	.doctor_information_detail {
+		width: 100%;
+		text-align: center;
+	}
+	.doctor_information_detail_content {
+		max-width: 100%;
+		width: 100%;
+	}
+	.doctor_information_detail_content_reviews_header a {
+		text-align: right;
+	}
+	.doctor_information_detail_content_reviews_item {
+		padding: 10px;
+	}
+	.doctor_information_detail_content_reviews_buttons .show_more_reviews {
+		margin-bottom: 10px;
+	}
+	.doctor_information_detail_content_specialization ul, .doctor_information_detail_content_specialist ul {
+		padding-left: 0;
+		margin: 10px 0;
+	}
+	.doctor_information_detail_content_specialization li, .doctor_information_detail_content_specialist li {
+		margin: 3px;
+		font-size: 12px;
+		line-height: 17px;
+	}
+	.doctor_information_detail_sidebar_item_header_day {
+		font-size: 12px;
+		max-width: 40px;
+		margin: 0 7px;
+	}
+	.doctor_information_detail_sidebar_item_content {
+		padding: 10px 0;
+	}
+	.doctor_information_detail_sidebar_item_content ul li {
+		width: 45px;
+		height: 24px;
+		font-size: 14px;
+		line-height: 25px;
+	}
+	.doctor_information_detail_sidebar_item_address {
+		padding: 0 20px;
+	}
+	.doctor_information_detail_sidebar_item_price  {
+		font-size: 15px;
+		margin-bottom: 9px;
+	}
+	.doctor_information_detail_sidebar_item {
+		margin-bottom: 20px;
+	}
+	.doctor_near_slider_item_header_photo {
+		margin-right: 1px;
+	}
+}
+
+
+/* clinic page media */
+
+@media only screen and (max-width: 1200px) {
+	.clinic_near_slider {
+		max-width: 750px;
+	}
+	.clinic_top_address_content {
+		padding: 40px;
+	}
+	.clinic_about_reviews_content {
+		max-width: 48%;
+	}
+	.clinic_about_reviews_info {
+		max-width: 409px;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.clinic_top_address_content {
+		padding: 30px;
+		height: auto;
+	}
+	.clinic_top_info_title {
+		margin-left: 15px;
+	}
+
+	.clinic_near_slider .slick-arrow {
+		left: -30px;
+	}
+	.clinic_near_slider .slick-next {
+		left: auto;
+		right: -30px;
+	}
+	.clinic_near_slider_item {
+		height: auto;
+	}
+	.clinic_near_slider {
+		max-width: 300px;
+	}
+	.clinic_near_slider_item_header_info {
+		max-width: 135px;
+	}
+	.clinic_about_reviews_info {
+		max-width: 48%;
+	}	
+	.clinic_about_reviews_info_form ul {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.clinic_near_slider_item_header_photo {
+		margin-right: 1px;
+	}
+	.clinic_near_slider .slick-arrow {
+		left: -10px;
+	}
+	.clinic_near_slider .slick-next {
+		left: auto;
+		right: -10px;
+	}
+	.clinic_top_content {
+		flex-flow: column wrap;
+	}
+	.clinic_top_info, .clinic_top_address {
+		width: 100%;
+	}
+	.clinic_top_address {
+		padding: 10px;
+	}
+	.clinic_top_info_block {
+		width: 100px;
+		height: 165px;
+	}
+	.clinic_top_info_block img {
+		width: 100%;
+	}
+	.clinic_about_content {
+		text-align: center;
+		margin: auto;
+		padding: 0 20px;
+	}
+	.clinic_about h4 {
+		text-align: center;
+	}
+	.clinic_about_buttons .btn {
+		margin: 10px auto;
+	}
+	.clinic_about_buttons {
+		text-align: center;
+	}
+	.clinic_about_doctors_filter {
+		position: relative;
+		right: auto;
+		top: auto;
+		margin: 20px auto;
+		max-width: 300px;
+	}
+	.clinic_about_doctors_content {
+		text-align: center;
+	}
+	.clinic_about_reviews {
+		flex-flow: column wrap;
+		justify-content: center;
+	}
+	.clinic_about_reviews_content, .clinic_about_reviews_info {
+		width: 100%;
+		max-width: 100%;
+	}
+	.clinic_about_reviews_content h3, .clinic_about_reviews_info h3,
+	.clinic_about_reviews_info p {
+		text-align: center;
+	}
+	.clinic_about_reviews_content_item {
+		width: 90%;
+		margin: 10px auto;
+		padding: 20px;
+		max-width: 500px;
+	}
+
+	.clinic_about_reviews_info_form form {
+		width: 90%;
+		max-width: 500px;
+		margin: 20px auto;
+		padding: 20px;
+	}
+
+	.clinic_about_licences_photos {
+		flex-flow: column wrap;
+		text-align: center;
+	}
+
+	.clinic_about_licences_photos img {
+		width: 90%;
+		margin: 10px;
+	}
+	.clinic_about_licences {
+		margin-top: 25px;
+		text-align: center;
+	}
+	.clinic_near h4 {
+		text-align: center;
+	}
+	.clinic_about_reviews_info_form_rating {
+		display: block;
+		margin-left: 0;
+		padding: 0;
+		margin-top: 5px;
+	}
+}
+
+/* centers media */
+
+@media only screen and (max-width: 1200px) {
+	.all_clinics_content_item_header_info_logo {
+		margin-right: 12px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.centers .list_header_form_checkboxes {
+		bottom: auto;
+	}
+	.medical_centers_content {
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	.medical_centers_content ul {
+		width: 50%;
+	}
+	.medical_centers h3 {
+		text-align: center;
+	}
+	.all_clinics_content_item_header_info_text {
+		max-width: 175px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.list_header_form_checkboxes p {
+		margin: 10px;
+	}
+	.medical_centers h3 {
+		font-size: 24px;
+	}
+	.medical_centers_content ul {
+		width: 100%;
+		text-align: center;
+	}
+	.all_clinics_filter {
+		text-align: center;
+	}
+	.all_clinics_filter span {
+		margin: 10px;
+	}
+	.all_clinics_filter h5 {
+		margin: 5px;
+	}
+	.all_clinics_content_item_header, .all_clinics_content_item_filials_item {
+		flex-flow: column wrap;
+		padding-bottom: 25px;
+	}
+	.all_clinics_content_item_header_info, .all_clinics_content_item_filials_item_name {
+		width: 100%;
+		text-align: center;
+		border-right: none;
+	}
+	.all_clinics_content_item_header_info_text {
+		max-width: 100%;
+	}
+	.all_clinics_content_item_header_info_logo {
+		margin: 20px;
+	}
+	.all_clinics_content_item_header_info_address, .all_clinics_content_item_filials_item_address {
+		width: 100%;
+		padding-top: 5px;
+	}
+	.all_clinics_content_item_header_info_address_btn span {
+		max-width: 100%;
+		margin: 10px;
+		margin-left: 0;
+	}
+	.all_clinics_content_item_filials_link {
+		bottom: -29px;
+	}
+	.clinics_info {
+		text-align: center;
+		padding: 30px 0;
+		width: 90%;
+		margin: auto;
+	}
+	.clinics_info_item li {
+		padding: 0;
+	}
+	.all_clinics_content_item {
+		width: 90%;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+	.clinics_info_services li a {
+		font-size: 13px;
+	}
+
+}
+
+
